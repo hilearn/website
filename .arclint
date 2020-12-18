@@ -6,8 +6,14 @@
       "exclude": "(^migrations/|^misc|^wtidata/)",
       "type": "flake8",
       "severity": {
-        "W503": "disabled"
+      "W503": "disabled"
       }
+      }
+      ,
+    "bandit": {
+      "type": "bandit",
+      "include": "(\\.py$)",
+      "exclude": "(\\./.venv$)"
     }
   }
 }

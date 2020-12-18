@@ -39,6 +39,9 @@ update_venv: requirements.txt ${venv}/bin/pip
 	@echo "\tsource .venv/current/bin/activate"
 .PHONY: update_venv
 
+freeze:
+	python flask_app/freeze.py
+.PHONY: freeze
 
 test:
 ifeq ($(second), $(word 2, $(MAKECMDGOALS)))

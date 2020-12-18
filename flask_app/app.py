@@ -1,7 +1,6 @@
 from flask import Flask
-from flask_smorest import Api
 import os
-from .team import blp_team
+from flask_app.team import blp_team
 from pathlib import Path
 
 app = Flask(__name__)
@@ -12,6 +11,11 @@ if os.environ.get('FLASK_ENV') is None:
 
 app.config.from_object(f"{Path(__file__).parent.name}.config.{app.config['ENV'].title()}Config")  # noqa
 
+app.static_folder = 'static'
+app.add_url_rule('/static/<path:filename>',
+                 endpoint='static',
+                 subdomain='static',
+                 view_func=app.send_static_file)
 
-api = Api(app)
-api.register_blueprint(blp_team)
+
+app.register_blueprint(blp_team)

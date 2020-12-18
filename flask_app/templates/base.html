@@ -3,7 +3,7 @@
 <html style="height: 100vh" lang="en">
 <head>
     <title>hilearn</title>
-    <meta property="og:image" content="{{ url_for('static', filename='img/logo.png') }}" />
+    <meta property="og:image" content="{{ url_for('static', filename='img/logo.svg') }}" />
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -42,7 +42,6 @@
           rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/trader.css') }}">
     <link href="{{ url_for('static', filename='css/hilearn.css') }}" rel="stylesheet">
     {% block headcontent %}
     {% endblock %}
@@ -74,13 +73,13 @@
                       {% block centralnavbar %}
                       <ul class="navbar-nav text-uppercase ml-auto">
                           <li class="nav-item">
-                              <a class="nav-link" href="/team#team"
+                              <a class="nav-link" href="/team/#team"
                                  title="About Us">
                                   About Us
                               </a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="/team#careers"
+                              <a class="nav-link" href="/team/#careers"
                                  title="About Us">
                                   Careers
                               </a>

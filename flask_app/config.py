@@ -13,3 +13,5 @@ class DevelopmentConfig:
     # Static digest
     FLASK_STATIC_DIGEST_BLACKLIST_FILTER = []
     FLASK_STATIC_DIGEST_GZIP_FILES = True
+
+    FREEZER_RELATIVE_URLS = True

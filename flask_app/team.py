@@ -156,9 +156,10 @@ OPENINGS = [
 ]
 
 
-@blp_team.route("/team")
+@blp_team.route("/team/")
 def team():
-    return render_template('team.html', team=TEAM_MEMBERS, openings=OPENINGS)
+    return render_template('team.html', team=TEAM_MEMBERS,
+                           openings=OPENINGS, static="static")
 
 
 @blp_team.route("/")
@@ -166,11 +167,11 @@ def index():
     return render_template('index.html', static="static")
 
 
-@blp_team.route("/jobs")
+@blp_team.route("/jobs/")
 def jobs():
-    return render_template('jobs.html', openings=OPENINGS)
+    return render_template('jobs.html', openings=OPENINGS, static="static")
 
 
-@blp_team.route("/interview")
+@blp_team.route("/interview/")
 def interview():
-    return render_template('interview.html')
+    return render_template('interview.html', static="static")
