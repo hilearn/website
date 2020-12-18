@@ -1,0 +1,19 @@
+div.container {
+  display: table;
+  table-layout: fixed;
+}
+div.block {
+  display: table;
+}
+h2 {
+  margin: 10
+}
+.trade-sell {
+  color: red;
+}
+.trade-buy {
+  color: green;
+}
+.number {
+  text-align: right;
+}
