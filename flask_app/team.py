@@ -144,7 +144,6 @@ OPENINGS = [
 def team():
     members = []
     for i in range((len(TEAM_MEMBERS) + 3) // 4):
-        print(i)
         members.append(TEAM_MEMBERS[4 * i: 4 * (i + 1)])
     return render_template('team.html', team=members,
                            openings=OPENINGS, static="static")

@@ -40,7 +40,7 @@ update_venv: requirements.txt ${venv}/bin/pip
 .PHONY: update_venv
 
 freeze:
-	python flask_app/freeze.py
+	${_python} flask_app/freeze.py
 .PHONY: freeze
 
 test:
