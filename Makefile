@@ -1,5 +1,5 @@
 PROJECT = website
-PYTHON=python3.7
+PYTHON=python3.8
 PYTHON_VERSION=$(shell ${PYTHON} --version 2>&1 | cut -c 8-10)
 venv_name = py${PYTHON_VERSION}-${PROJECT}
 venv = .venv/${venv_name}
