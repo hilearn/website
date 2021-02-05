@@ -43,6 +43,10 @@ freeze:
 	${_python} flask_app/freeze.py
 .PHONY: freeze
 
+run:
+	. ${venv}/bin/activate; FLASK_ENV=development FLASK_APP=flask_app.app:app flask run --port 7000
+.PHONY: freeze
+
 test:
 ifeq ($(second), $(word 2, $(MAKECMDGOALS)))
 	python -m coverage erase

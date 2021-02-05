@@ -13,7 +13,7 @@
                   <h4>{{ job.title }}</h4>
                   <p class="company-position text-muted">{{ job.level }}</p>
 
-                  <p class="long-bio"> {{ job.overview}}</p>
+                  <p class="long-bio"> {{ job.overview | safe }}</p>
 
                   {% if job.descriptions|length > 1 %}
                   <p> As a {{ job.title }} you will </p>

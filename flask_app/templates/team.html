@@ -54,7 +54,7 @@
 
                         </br>
 
-                        Last updated April 2020 (post COVID-19).
+                        Last updated February 2021.
                     </h3>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                         <h5>{{ job.title }}</h5>
                         <div>
                             <p class="company-position text-muted">{{ job.level }}</p>
-                            <p class="long-bio"> {{ job.short }}</p>
+                            <p class="long-bio"> {{ job.short | safe }}</p>
                         </div>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item">

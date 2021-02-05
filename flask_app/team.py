@@ -96,9 +96,69 @@ TEAM_MEMBERS = [
 
 OPENINGS = [
     {
+        'id': 'fe_eng_lead',
+        'title': 'Front-End Engineer',
+        'level': 'Lead',
+        'overview': "We're trying to expand our team of Senior Front end Developers to work on a familty of fiancial advise products housed under the <a href='https://www.aqqru.com'>Aqqru</a> brand and powered by Wealthtech's state of the art fGPS&trade; API.",  # noqa
+        'descriptions': [
+            'Understand the business needs and code them.',
+            'Add new features to the algorithm, e.g. consider taking a loan to buy a car',  # noqa
+        ],
+        'tech_stack': [
+            'React + Redux',
+            'webpack',
+        ],
+        'skills': [
+            'Very good coding skills with JS/CSS (5+ years of front-end developement)'
+            'Knowledge of version control software such as Git',
+            'Understanding of development workflows',
+            'Desire to learn and grow',
+        ],
+        'short': "We are looking for a Senior Front End Developer (with an experience leading) to take a front seat on developing one of our customer facing products - <a href='https://www.aqqru.com'>Aqqru webapp</a>", # noqa
+    },
+    {
+        'id': 'fe_eng',
+        'title': 'Front-End Engineer',
+        'level': 'Senior/Mid',
+        'overview': "We're trying to expand our team of Senior Front end Developers to work on a familty of fiancial advise products housed under the <a href='https://www.aqqru.com'>Aqqru</a> brand and powered by Wealthtech's state of the art fGPS&trade; API.",  # noqa
+        'descriptions': [
+            'Understand the business needs and code them.',
+            'Add new features to the algorithm, e.g. consider taking a loan to buy a car',  # noqa
+        ],
+        'tech_stack': [
+            'React + Redux',
+            'webpack',
+        ],
+        'skills': [
+            'Intimate familiarity with django',
+            'Knowledge of version control software such as Git',
+            'Understanding of development workflows',
+        ],
+        'short': "We are looking for Front End Developers to join our current team and work on our familty of Financial Advise products: <a href='https://www.aqqru.com'>Aqqru webapp</a>, <a href='https://www.aqqru.com/calc/car'>Affordability Calculators</a>, etc.",  # noqa
+    },
+    {
+        'id': 'quant_eng',
+        'title': 'Quant Engineer',
+        'level': 'Senior/Mid/Junior/Intern',
+        'overview': 'We are looking for more people to join our team as Quant Engineers to work on fGPS&trade; Financial Advice Engine.',  # noqa
+        'descriptions': [
+            'Write production code that will use the research results.',
+        ],
+        'skills': [
+            'Mathematical Modeling Capabilities',
+            'Knowledge of version control software such as Git',
+            'Proficiency with C#',
+        ],
+        'tech_stack': [
+            'C# - dotnet core 3.1',
+            'kubernetes with Helm',
+        ],
+        'short': 'We are looking for people with a decent foundation in Computer Science, Mathematics, and an understanding of the Scientific Method. Who wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
+    },
+    {
         'id': 'research_eng',
         'title': 'Research Engineer',
-        'level': 'Mid',
+        'level': 'Senior/Mid',
         'overview': 'We are looking for more people to join our team as Research Engineers and work on data related exciting projects.',  # noqa
         'descriptions': [
             'Develop models for predictions',
@@ -110,32 +170,50 @@ OPENINGS = [
             'Proficiency with python',
         ],
         'tech_stack': [
-            'Python',
+            'Python 3.7+',
             'Tensforflow',
             'Flask',
         ],
         'short': 'We are looking for people with a decent foundation in Computer Science, Mathematics, and an understanding of the Scientific Method. Who wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
     },
     {
-        'id': 'web_eng',
-        'title': 'Web Engineer',
-        'level': 'Senior',
-        'overview': "We're hiring a Senior Web Developer to join our small and fast growing team to work on making  Aqqru - an automated financial advice platform powered by Wealthtech’s state of the art Life fGPS API.",  # noqa
+        'id': 'backend_eng',
+        'title': 'Backend Engineer',
+        'level': 'Senior/Mid/Intern',
+        'overview': 'We are looking for more people to join our team as Research Engineers and work on data related exciting projects.',  # noqa
         'descriptions': [
-            'Understand the business needs and code them.',
-            'Add new features to the algorithm, e.g. consider taking a loan to buy a car',  # noqa
-        ],
-        'tech_stack': [
-            'Django 3.1',
-            'JavaScript (ES6), jQuery',
-            'webpack',
+            'Write APIs that power front facing web and mobile applications',
+            'Write high performance production code',
         ],
         'skills': [
-            'Intimate familiarity with django',
             'Knowledge of version control software such as Git',
-            'Understanding of development workflows',
+            'Proficiency with python',
+            'Understanding of Service Architecture',
         ],
-        'short': "We're hiring a Senior Web Developer to join our small and fast growing team to work on making  Aqqru - an automated financial advice platform powered by Wealthtech’s state of the art Life fGPS API.",  # noqa
+        'tech_stack': [
+            'Python 3.7+',
+            'Flask',
+            'Kubernetes with Helm',
+        ],
+        'short': 'We are looking for people with a decent foundation in Computer Science and Web Development. A person that wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
+    },
+    {
+        'id': 'designer',
+        'title': 'UI/UX Designer',
+        'level': 'Senior/Mid',
+        'overview': "We are looking for a Graphic Designer to join our Product team to work with various stakeholders. The ideal candidate will have experience developing creative and end-to-end solutions in a fast paced environment. The candidate will be involved at every step of the product process from mockup creation to deliverable designs. Strong experience is required in rapid prototyping to illustrate key concepts on the product roadmap. This position will allow you to significantly expand your skill set by working with a group of experienced innovators.",  # noqa
+        'descriptions': [
+            'Create mockups and wireframes using design tools such as Adobe XD, Figma and InVision.',
+            'Develop high-fidelity final designs used by the development team to create web and mobile products.',
+        ],
+        'skills': [
+            'Knowledge of Adobe PhotoShop, Illustrator, Sketch, InDesign, XD, Figma,  and other graphic design software',
+            'Compelling portfolio of work over a wide range of creative projects',
+        ],
+        'tech_stack': [
+            'React Components',
+        ],
+        'short': 'We are looking for a Graphic Designer to join our Product team to work with various stakeholders. The ideal candidate will have experience developing creative and end-to-end solutions in a fast paced environment.',  # noqa
     },
 ]
 
