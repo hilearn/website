@@ -14,7 +14,7 @@ TEAM_MEMBERS = [
     },
     {
         'name': 'Arsen Mamikonyan',
-        'role': 'CEO/Senior Research Engineer',
+        'role': 'CEO/Head of Engineering',
         'bio': 'Arsen finished his studies at MIT, he leads the overall team, and wants to start a yacht sailing club in Sevan.',  # noqa
         'img': 'img/team/arsen.jpg',
         'email': 'arsen@hilearn.io',
@@ -30,56 +30,56 @@ TEAM_MEMBERS = [
     },
     {
         'name': 'Yeva Hunanyan',
-        'role': 'Research Engineer',
+        'role': 'Web Engineer',
         'bio': 'Yeva studies Physics at YSU. She participated in IPHO and IOAA and has won multiple medals.',  # noqa
         'email': 'yeva@hilearn.io',
         'img': 'img/team/yeva.jpg',
     },
     {
         'name': 'Sevak Abrahamyan',
-        'role': 'Research Engineer',
+        'role': 'Research & Quant Engineer',
         'bio': 'Sevak graduated from the Applied Mathematics department at YSU. He is eager to get apply his theoretical and practical skills to real life problems.',  # noqa
         'email': 'sevak@hilearn.io',
         'img': 'img/team/sevak.jpg',
     },
     {
         'name': 'Karen Muradyan',
-        'role': 'Web Engineer',
+        'role': 'Front-End Engineer',
         'bio': 'Karen has had a long experience in the banking industry, but now he has shifted gears and is helping us build Aqqru.',  # noqa
         'email': 'karen.m@hilearn.io',
         'img': 'img/team/karen.m.jpg',
     },
     {
         'name': 'Lilit Hovakimyan',
-        'role': 'Web Engineer',
+        'role': 'Front-End Engineer',
         'bio': 'Lilit has graduated from YSU Department of Mathematics, and after couple of years in banking is now helping us build Aqqru.',  # noqa
         'email': 'lilit.h@hilearn.io',
         'img': 'img/team/lilit.h.jpg',
     },
     {
         'name': 'Naira Babayan',
-        'role': 'Senior Research Engineer',
+        'role': 'Senior Quant Engineer',
         'bio': 'Naira has extensive experience in building production software, and has been shifting her expertise into more theoretical projects.',  # noqa
         'email': 'naira.b@hilearn.io',
         'img': 'img/team/naira.b.jpg',
     },
     {
         'name': 'Naira Mnatsakanyan',
-        'role': 'Research Engineer',
+        'role': 'Quant Engineer',
         'bio': 'Naira studies at YSU Applied Mathematics department. She is eager to start solving real time problems.',  # noqa
         'email': 'naira.m@hilearn.io',
         'img': 'img/team/naira.m.jpg',
     },
     {
         'name': 'David Hambardzumyan',
-        'role': 'Software Engineer',
+        'role': 'Web Engineer',
         'bio': 'David has graduated from YSU Department of Radio-Physics with Masters and Bachelors degrees, and has spent 2 years serving as a Software Engineer in Armenian Army',  # noqa
         'email': 'david.h@hilearn.io',
         'img': 'img/team/david.h.jpg',
     },
     {
         'name': 'Karine Avetisyan',
-        'role': 'Senior Research Engineer',
+        'role': 'Senior Quant Engineer',
         'bio': 'Karine has good experience in building production software, and has been shifting her expertise into more theoretical projects.',  # noqa
         'email': 'karine.a@hilearn.io',
         'img': 'img/team/karine.a.png',
@@ -99,9 +99,9 @@ OPENINGS = [
         'id': 'fe_eng_lead',
         'title': 'Front-End Engineer',
         'level': 'Lead',
-        'overview': "We're trying to expand our team of Senior Front end Developers to work on a familty of fiancial advise products housed under the <a href='https://www.aqqru.com'>Aqqru</a> brand and powered by Wealthtech's state of the art fGPS&trade; API.",  # noqa
+        'overview': "We are expanding our team of Senior Front-End Developers to work on a familty of fiancial advise products housed under the <a href='https://www.aqqru.com'>Aqqru</a> brand and powered by Wealthtech's state of the art fGPS&trade; API.",  # noqa
         'descriptions': [
-            'Understand the business needs and code them.',
+            'Understand the business needs and code them',
             'Add new features to the algorithm, e.g. consider taking a loan to buy a car',  # noqa
         ],
         'tech_stack': [
@@ -109,18 +109,19 @@ OPENINGS = [
             'webpack',
         ],
         'skills': [
-            'Very good coding skills with JS/CSS (5+ years of front-end developement)'
+            'Very good coding skills with JS/CSS (5+ years of front-end developement)',
             'Knowledge of version control software such as Git',
             'Understanding of development workflows',
             'Desire to learn and grow',
+            'Knowledge of English to communicate with team members abroad',
         ],
-        'short': "We are looking for a Senior Front End Developer (with an experience leading) to take a front seat on developing one of our customer facing products - <a href='https://www.aqqru.com'>Aqqru webapp</a>", # noqa
+        'short': "We are looking for a Senior Front-End Developer (with an experience leading) to take a front seat on developing one of our customer facing products - <a href='https://www.aqqru.com'>Aqqru webapp</a>", # noqa
     },
     {
         'id': 'fe_eng',
         'title': 'Front-End Engineer',
         'level': 'Senior/Mid',
-        'overview': "We're trying to expand our team of Senior Front end Developers to work on a familty of fiancial advise products housed under the <a href='https://www.aqqru.com'>Aqqru</a> brand and powered by Wealthtech's state of the art fGPS&trade; API.",  # noqa
+        'overview': "We are expanding our team of Senior Front-End Developers to work on a familty of fiancial advise products housed under the <a href='https://www.aqqru.com'>Aqqru</a> brand and powered by Wealthtech's state of the art fGPS&trade; API.",  # noqa
         'descriptions': [
             'Understand the business needs and code them.',
             'Add new features to the algorithm, e.g. consider taking a loan to buy a car',  # noqa
@@ -134,13 +135,13 @@ OPENINGS = [
             'Knowledge of version control software such as Git',
             'Understanding of development workflows',
         ],
-        'short': "We are looking for Front End Developers to join our current team and work on our familty of Financial Advise products: <a href='https://www.aqqru.com'>Aqqru webapp</a>, <a href='https://www.aqqru.com/calc/car'>Affordability Calculators</a>, etc.",  # noqa
+        'short': "We are looking for Front-End Developers to join our current team and work on our familty of Financial Advise products: <a href='https://www.aqqru.com'>Aqqru webapp</a>, <a href='https://www.aqqru.com/calc/car'>Affordability Calculators</a>, etc.",  # noqa
     },
     {
         'id': 'quant_eng',
         'title': 'Quant Engineer',
         'level': 'Senior/Mid/Junior/Intern',
-        'overview': 'We are looking for more people to join our team as Quant Engineers to work on fGPS&trade; Financial Advice Engine.',  # noqa
+        'overview': 'We are expanding our team of Quant Engineers that work on fGPS&trade; Financial Advice Engine.',  # noqa
         'descriptions': [
             'Write production code that will use the research results.',
         ],
@@ -159,7 +160,7 @@ OPENINGS = [
         'id': 'research_eng',
         'title': 'Research Engineer',
         'level': 'Senior/Mid',
-        'overview': 'We are looking for more people to join our team as Research Engineers and work on data related exciting projects.',  # noqa
+        'overview': 'We are expanding our team of Research Engineers that work on data related exiciting projects that form the Research foundation of the fGPS&trade; Financial Advice Engine.',  # noqa
         'descriptions': [
             'Develop models for predictions',
             'Write production code that will use the research results.',
@@ -178,9 +179,9 @@ OPENINGS = [
     },
     {
         'id': 'backend_eng',
-        'title': 'Backend Engineer',
+        'title': 'Back-End Engineer',
         'level': 'Senior/Mid/Intern',
-        'overview': 'We are looking for more people to join our team as Research Engineers and work on data related exciting projects.',  # noqa
+        'overview': 'We are expanding our team of Back-Eng Engineers that work on the systems behind the Aqqru products.',  # noqa
         'descriptions': [
             'Write APIs that power front facing web and mobile applications',
             'Write high performance production code',
