@@ -152,6 +152,7 @@ OPENINGS = [
         ],
         'tech_stack': [
             'C# - dotnet core 3.1',
+            'MongoDB',
             'kubernetes with Helm',
         ],
         'short': 'We are looking for people with a decent foundation in Computer Science, Mathematics, and an understanding of the Scientific Method. Who wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
@@ -173,6 +174,7 @@ OPENINGS = [
         'tech_stack': [
             'Python 3.7+',
             'Tensforflow',
+            'PostgreSQL',
             'Flask',
         ],
         'short': 'We are looking for people with a decent foundation in Computer Science, Mathematics, and an understanding of the Scientific Method. Who wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
@@ -193,7 +195,8 @@ OPENINGS = [
         ],
         'tech_stack': [
             'Python 3.7+',
-            'Flask',
+            'Flask with SQLAlchemy, marshmallow',
+            'PostgreSQL',
             'Kubernetes with Helm',
         ],
         'short': 'We are looking for people with a decent foundation in Computer Science and Web Development. A person that wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
@@ -213,6 +216,7 @@ OPENINGS = [
         ],
         'tech_stack': [
             'React Components',
+            'Figma (for wireframing)',
         ],
         'short': 'We are looking for a Graphic Designer to join our Product team to work with various stakeholders. The ideal candidate will have experience developing creative and end-to-end solutions in a fast paced environment.',  # noqa
     },
