@@ -40,6 +40,7 @@ TEAM_MEMBERS = [
         'role': 'Research & Quant Engineer',
         'bio': 'Sevak graduated from the Applied Mathematics department at YSU. He is eager to get apply his theoretical and practical skills to real life problems.',  # noqa
         'email': 'sevak@hilearn.io',
+        'linkedin': 'https://www.linkedin.com/in/sevak-abrahamyan-a13046171/',
         'img': 'img/team/sevak.jpg',
     },
     {
@@ -61,6 +62,7 @@ TEAM_MEMBERS = [
         'role': 'Senior Quant Engineer',
         'bio': 'Naira has extensive experience in building production software, and has been shifting her expertise into more theoretical projects.',  # noqa
         'email': 'naira.b@hilearn.io',
+        'linkedin': 'https://www.linkedin.com/in/naira-babayan-3074752b/',
         'img': 'img/team/naira.b.jpg',
     },
     {
@@ -82,6 +84,7 @@ TEAM_MEMBERS = [
         'role': 'Senior Quant Engineer',
         'bio': 'Karine has good experience in building production software, and has been shifting her expertise into more theoretical projects.',  # noqa
         'email': 'karine.a@hilearn.io',
+        'linkedin': 'https://www.linkedin.com/in/karine-avetisyan-21bbb5142/',
         'img': 'img/team/karine.a.png',
     },
     {
@@ -90,6 +93,35 @@ TEAM_MEMBERS = [
         'bio': 'Seda has graduated from American University of Armenia, and has honed her research skills doing research afterwords, now she is ready to build products with us.',  # noqa
         'email': 'seda.s@hilearn.io',
         'img': 'img/team/seda.s.jpg',
+    },
+    {
+        'name': 'Karen Baghdasaryan',
+        'role': 'Strategic Product Owner',
+        'bio': 'Karen',
+        'email': 'karen.b@hilearn.io',
+        'img': 'img/team/prospect.jpeg',
+    },
+    {
+        'name': 'Armen Vardanyan',
+        'role': 'Technical Product Manager',
+        'bio': 'Armen',
+        'email': 'armen.v@hilearn.io',
+        'linkedin': 'https://www.linkedin.com/in/vaarmen/',
+        'img': 'img/team/prospect.jpeg',
+    },
+    {
+        'name': 'Hayk Stepanyan',
+        'role': 'Research Engineer Intern',
+        'bio': 'Hayk',
+        'email': 'hayk.s@hilearn.io',
+        'img': 'img/team/prospect.jpeg',
+    },
+    {
+        'name': 'Aram Mkhoyan',
+        'role': 'Technical Product Manager',
+        'bio': 'Aram',
+        'email': 'aram.m@hilearn.io',
+        'img': 'img/team/prospect.jpeg',
     },
 ]
 
