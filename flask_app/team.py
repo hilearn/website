@@ -150,26 +150,6 @@ OPENINGS = [
         'short': "We are looking for a Senior Front-End Developer (with an experience leading) to take a front seat on developing one of our customer facing products - <a href='https://www.aqqru.com'>Aqqru webapp</a>", # noqa
     },
     {
-        'id': 'fe_eng',
-        'title': 'Front-End Engineer',
-        'level': 'Senior/Mid',
-        'overview': "We are expanding our team of Senior Front-End Developers to work on a familty of fiancial advise products housed under the <a href='https://www.aqqru.com'>Aqqru</a> brand and powered by Wealthtech's state of the art fGPS&trade; API.",  # noqa
-        'descriptions': [
-            'Understand the business needs and code them.',
-            'Add new features to the algorithm, e.g. consider taking a loan to buy a car',  # noqa
-        ],
-        'tech_stack': [
-            'React + Redux',
-            'webpack',
-        ],
-        'skills': [
-            'Intimate familiarity with django',
-            'Knowledge of version control software such as Git',
-            'Understanding of development workflows',
-        ],
-        'short': "We are looking for Front-End Developers to join our current team and work on our familty of Financial Advise products: <a href='https://www.aqqru.com'>Aqqru webapp</a>, <a href='https://www.aqqru.com/calc/car'>Affordability Calculators</a>, etc.",  # noqa
-    },
-    {
         'id': 'quant_eng',
         'title': 'Quant Engineer',
         'level': 'Senior/Mid/Junior/Intern',
@@ -232,25 +212,6 @@ OPENINGS = [
             'Kubernetes with Helm',
         ],
         'short': 'We are looking for people with a decent foundation in Computer Science and Web Development. A person that wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
-    },
-    {
-        'id': 'designer',
-        'title': 'UI/UX Designer',
-        'level': 'Senior/Mid',
-        'overview': "We are looking for a Graphic Designer to join our Product team to work with various stakeholders. The ideal candidate will have experience developing creative and end-to-end solutions in a fast paced environment. The candidate will be involved at every step of the product process from mockup creation to deliverable designs. Strong experience is required in rapid prototyping to illustrate key concepts on the product roadmap. This position will allow you to significantly expand your skill set by working with a group of experienced innovators.",  # noqa
-        'descriptions': [
-            'Create mockups and wireframes using design tools such as Adobe XD, Figma and InVision.',
-            'Develop high-fidelity final designs used by the development team to create web and mobile products.',
-        ],
-        'skills': [
-            'Knowledge of Adobe PhotoShop, Illustrator, Sketch, InDesign, XD, Figma,  and other graphic design software',
-            'Compelling portfolio of work over a wide range of creative projects',
-        ],
-        'tech_stack': [
-            'React Components',
-            'Figma (for wireframing)',
-        ],
-        'short': 'We are looking for a Graphic Designer to join our Product team to work with various stakeholders. The ideal candidate will have experience developing creative and end-to-end solutions in a fast paced environment.',  # noqa
     },
 ]
 
