@@ -6,6 +6,14 @@ blp_team = Blueprint('team', __name__,
 
 TEAM_MEMBERS = [
     {
+        'name': 'Arsen Mamikonyan',
+        'role': 'CEO/Head of Engineering',
+        'bio': 'Arsen finished his studies at MIT, he leads the overall team, and wants to start a yacht sailing club in Sevan.',  # noqa
+        'img': 'img/team/Arsen.jpg',
+        'email': 'arsen@hilearn.io',
+        'linkedin': 'https://www.linkedin.com/in/mamikonyana/',
+    },
+    {
         'name': 'Arsen Hambardzumyan',
         'role': 'Senior Research Engineer',
         'bio': 'Arsen graduated from Applied Mathematics department at YSU, he leads our efforts in Financial Analysis, and loves participating in Olympiads.',  # noqa
@@ -13,27 +21,19 @@ TEAM_MEMBERS = [
         'img': 'img/team/zidder.jpg',
     },
     {
-        'name': 'Arsen Mamikonyan',
-        'role': 'CEO/Head of Engineering',
-        'bio': 'Arsen finished his studies at MIT, he leads the overall team, and wants to start a yacht sailing club in Sevan.',  # noqa
-        'img': 'img/team/arsen.jpg',
-        'email': 'arsen@hilearn.io',
-        'linkedin': 'https://www.linkedin.com/in/mamikonyana/',
-    },
-    {
         'name': 'Vardges Mambreyan',
         'role': 'Senior Research Engineer',
         'linkedin': 'https://www.linkedin.com/in/vardges-mambreyan-418236159/',  # noqa
         'bio': 'Vardges has a Masters Degree in Physics from YSU, he leads our efforts in Long Term Market Simulation. On his spare time, he co-leads Armenian Astronomy Olympiad team.',  # noqa
         'email': 'vardges@hilearn.io',
-        'img': 'img/team/vardges.jpg',
+        'img': 'img/team/Vardges.jpg',
     },
     {
         'name': 'Yeva Hunanyan',
         'role': 'Web Engineer',
         'bio': 'Yeva studies Physics at YSU. She participated in IPHO and IOAA and has won multiple medals.',  # noqa
         'email': 'yeva@hilearn.io',
-        'img': 'img/team/yeva.jpg',
+        'img': 'img/team/Yeva.jpg',
     },
     {
         'name': 'Sevak Abrahamyan',
@@ -41,21 +41,21 @@ TEAM_MEMBERS = [
         'bio': 'Sevak graduated from the Applied Mathematics department at YSU. He is eager to get apply his theoretical and practical skills to real life problems.',  # noqa
         'email': 'sevak@hilearn.io',
         'linkedin': 'https://www.linkedin.com/in/sevak-abrahamyan-a13046171/',
-        'img': 'img/team/sevak.jpg',
+        'img': 'img/team/Sevak.jpg',
     },
     {
         'name': 'Karen Muradyan',
         'role': 'Front-End Engineer',
         'bio': 'Karen has had a long experience in the banking industry, but now he has shifted gears and is helping us build Aqqru.',  # noqa
         'email': 'karen.m@hilearn.io',
-        'img': 'img/team/karen.m.jpg',
+        'img': 'img/team/KarenM.jpg',
     },
     {
         'name': 'Lilit Hovakimyan',
         'role': 'Front-End Engineer',
         'bio': 'Lilit has graduated from YSU Department of Mathematics, and after couple of years in banking is now helping us build Aqqru.',  # noqa
         'email': 'lilit.h@hilearn.io',
-        'img': 'img/team/lilit.h.jpg',
+        'img': 'img/team/Lilit.jpg',
     },
     {
         'name': 'Naira Babayan',
@@ -63,21 +63,14 @@ TEAM_MEMBERS = [
         'bio': 'Naira has extensive experience in building production software, and has been shifting her expertise into more theoretical projects.',  # noqa
         'email': 'naira.b@hilearn.io',
         'linkedin': 'https://www.linkedin.com/in/naira-babayan-3074752b/',
-        'img': 'img/team/naira.b.jpg',
+        'img': 'img/team/NairaB.jpg',
     },
     {
         'name': 'Naira Mnatsakanyan',
         'role': 'Quant Engineer',
         'bio': 'Naira studies at YSU Applied Mathematics department. She is eager to start solving real time problems.',  # noqa
         'email': 'naira.m@hilearn.io',
-        'img': 'img/team/naira.m.jpg',
-    },
-    {
-        'name': 'David Hambardzumyan',
-        'role': 'Web Engineer',
-        'bio': 'David has graduated from YSU Department of Radio-Physics with Masters and Bachelors degrees, and has spent 2 years serving as a Software Engineer in Armenian Army',  # noqa
-        'email': 'david.h@hilearn.io',
-        'img': 'img/team/david.h.jpg',
+        'img': 'img/team/NairaM.jpg',
     },
     {
         'name': 'Karine Avetisyan',
@@ -85,21 +78,21 @@ TEAM_MEMBERS = [
         'bio': 'Karine has good experience in building production software, and has been shifting her expertise into more theoretical projects.',  # noqa
         'email': 'karine.a@hilearn.io',
         'linkedin': 'https://www.linkedin.com/in/karine-avetisyan-21bbb5142/',
-        'img': 'img/team/karine.a.png',
+        'img': 'img/team/Karine.jpg',
     },
     {
         'name': 'Seda Sedrakyan',
         'role': 'Research Engineer',
         'bio': 'Seda has graduated from American University of Armenia, and has honed her research skills doing research afterwords, now she is ready to build products with us.',  # noqa
         'email': 'seda.s@hilearn.io',
-        'img': 'img/team/seda.s.jpg',
+        'img': 'img/team/Seda.jpg',
     },
     {
         'name': 'Karen Baghdasaryan',
         'role': 'Strategic Product Owner',
         'bio': 'Karen',
         'email': 'karen.b@hilearn.io',
-        'img': 'img/team/prospect.jpeg',
+        'img': 'img/team/KarenB.jpg',
     },
     {
         'name': 'Armen Vardanyan',
@@ -107,21 +100,43 @@ TEAM_MEMBERS = [
         'bio': 'Armen',
         'email': 'armen.v@hilearn.io',
         'linkedin': 'https://www.linkedin.com/in/vaarmen/',
-        'img': 'img/team/prospect.jpeg',
+        'img': 'img/team/Armen.jpg',
     },
     {
         'name': 'Hayk Stepanyan',
         'role': 'Research Engineer Intern',
         'bio': 'Hayk',
         'email': 'hayk.s@hilearn.io',
-        'img': 'img/team/prospect.jpeg',
+        'img': 'img/team/Hayk.jpg',
     },
     {
         'name': 'Aram Mkhoyan',
         'role': 'Technical Product Manager',
         'bio': 'Aram',
         'email': 'aram.m@hilearn.io',
-        'img': 'img/team/prospect.jpeg',
+        'linkedin': 'http://linkedin.com/in/mkhoyan',
+        'img': 'img/team/Aram.jpg',
+    },
+    {
+        'name': 'Gogi Loloyan',
+        'role': 'Front-End Engineer',
+        'bio': 'Gogi',
+        'email': 'gogi.l@hilearn.io',
+        'img': 'img/team/Gogi.jpg',
+    },
+    {
+        'name': 'Artavazd Vardanyan',
+        'role': 'Quant Engineer',
+        'bio': 'Artavazd',
+        'email': 'artavazd.v@hilearn.io',
+        'img': 'img/team/Artavazd.jpg',
+    },
+    {
+        'name': 'Edmon Ghambaryan',
+        'role': 'UI/UX Designer',
+        'bio': 'Edmon',
+        'email': 'edmon.g@hilearn.io',
+        'img': 'img/team/Edmon.jpg',
     },
 ]
 
@@ -148,26 +163,6 @@ OPENINGS = [
             'Knowledge of English to communicate with team members abroad',
         ],
         'short': "We are looking for a Senior Front-End Developer (with an experience leading) to take a front seat on developing one of our customer facing products - <a href='https://www.aqqru.com'>Aqqru webapp</a>", # noqa
-    },
-    {
-        'id': 'fe_eng',
-        'title': 'Front-End Engineer',
-        'level': 'Senior/Mid',
-        'overview': "We are expanding our team of Senior Front-End Developers to work on a familty of fiancial advise products housed under the <a href='https://www.aqqru.com'>Aqqru</a> brand and powered by Wealthtech's state of the art fGPS&trade; API.",  # noqa
-        'descriptions': [
-            'Understand the business needs and code them.',
-            'Add new features to the algorithm, e.g. consider taking a loan to buy a car',  # noqa
-        ],
-        'tech_stack': [
-            'React + Redux',
-            'webpack',
-        ],
-        'skills': [
-            'Intimate familiarity with django',
-            'Knowledge of version control software such as Git',
-            'Understanding of development workflows',
-        ],
-        'short': "We are looking for Front-End Developers to join our current team and work on our familty of Financial Advise products: <a href='https://www.aqqru.com'>Aqqru webapp</a>, <a href='https://www.aqqru.com/calc/car'>Affordability Calculators</a>, etc.",  # noqa
     },
     {
         'id': 'quant_eng',
@@ -232,25 +227,6 @@ OPENINGS = [
             'Kubernetes with Helm',
         ],
         'short': 'We are looking for people with a decent foundation in Computer Science and Web Development. A person that wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
-    },
-    {
-        'id': 'designer',
-        'title': 'UI/UX Designer',
-        'level': 'Senior/Mid',
-        'overview': "We are looking for a Graphic Designer to join our Product team to work with various stakeholders. The ideal candidate will have experience developing creative and end-to-end solutions in a fast paced environment. The candidate will be involved at every step of the product process from mockup creation to deliverable designs. Strong experience is required in rapid prototyping to illustrate key concepts on the product roadmap. This position will allow you to significantly expand your skill set by working with a group of experienced innovators.",  # noqa
-        'descriptions': [
-            'Create mockups and wireframes using design tools such as Adobe XD, Figma and InVision.',
-            'Develop high-fidelity final designs used by the development team to create web and mobile products.',
-        ],
-        'skills': [
-            'Knowledge of Adobe PhotoShop, Illustrator, Sketch, InDesign, XD, Figma,  and other graphic design software',
-            'Compelling portfolio of work over a wide range of creative projects',
-        ],
-        'tech_stack': [
-            'React Components',
-            'Figma (for wireframing)',
-        ],
-        'short': 'We are looking for a Graphic Designer to join our Product team to work with various stakeholders. The ideal candidate will have experience developing creative and end-to-end solutions in a fast paced environment.',  # noqa
     },
 ]
 
