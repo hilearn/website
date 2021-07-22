@@ -24,13 +24,13 @@ TEAM_MEMBERS = [
         'name': 'Vardges Mambreyan',
         'role': 'Senior Research Engineer',
         'linkedin': 'https://www.linkedin.com/in/vardges-mambreyan-418236159/',  # noqa
-        'bio': 'Vardges has a Masters Degree in Physics from YSU, he leads our efforts in Long Term Market Simulation. On his spare time, he co-leads Armenian Astronomy Olympiad team.',  # noqa
+        'bio': 'Vardges has a Masters Degree in Physics from YSU and a white cat, he leads our efforts in Long Term Market Simulation. On his spare time, he co-leads Armenian Astronomy Olympiad team.',  # noqa
         'email': 'vardges@hilearn.io',
         'img': 'img/team/Vardges.jpg',
     },
     {
         'name': 'Yeva Hunanyan',
-        'role': 'Web Engineer',
+        'role': 'Research Engineer',
         'bio': 'Yeva studies Physics at YSU. She participated in IPHO and IOAA and has won multiple medals.',  # noqa
         'email': 'yeva@hilearn.io',
         'img': 'img/team/Yeva.jpg',
@@ -104,7 +104,7 @@ TEAM_MEMBERS = [
     },
     {
         'name': 'Hayk Stepanyan',
-        'role': 'Research Engineer Intern',
+        'role': 'Research Engineer',
         'bio': 'Hayk',
         'email': 'hayk.s@hilearn.io',
         'img': 'img/team/Hayk.jpg',
@@ -116,13 +116,6 @@ TEAM_MEMBERS = [
         'email': 'aram.m@hilearn.io',
         'linkedin': 'http://linkedin.com/in/mkhoyan',
         'img': 'img/team/Aram.jpg',
-    },
-    {
-        'name': 'Gogi Loloyan',
-        'role': 'Front-End Engineer',
-        'bio': 'Gogi',
-        'email': 'gogi.l@hilearn.io',
-        'img': 'img/team/Gogi.jpg',
     },
     {
         'name': 'Artavazd Vardanyan',
@@ -156,7 +149,7 @@ OPENINGS = [
             'webpack',
         ],
         'skills': [
-            'Very good coding skills with JS/CSS (5+ years of front-end developement)',
+            'Very good coding skills with JS/CSS (5+ years of front-end developement)',  # noqa
             'Knowledge of version control software such as Git',
             'Understanding of development workflows',
             'Desire to learn and grow',
