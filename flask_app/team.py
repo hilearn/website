@@ -136,6 +136,35 @@ TEAM_MEMBERS = [
 
 OPENINGS = [
     {
+        'id': 'mobile_eng',
+        'title': 'Mobile Engineer',
+        'level': 'Lead, Senior',
+        'overview': "HiLearn is looking for a well-rounded mobile developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions",
+        'descriptions': [
+            'Build responsive experiences that function on all major devices and OS versions.',
+            'Work alongside the product team to build out new product lines and iterate upon existing ones.',
+            'Contribute to developing best practices for observability, continuous integration, and deployment.',
+            'Consistently improve maintainability and stability of our codebase.',
+            'Be a critical voice in design and code review',
+        ],
+        'tech_stack': [
+            'React Native',
+            'Webpack, Nodejs, ES6',
+            'MongoDB, AWS.',
+        ],
+        'skills': [
+            '3+ years of mobile/front-end development experience.',
+            'Experience working with a design team and implementing from an agreed upon specification.',
+            'Has adequate knowledge of React Native and Typescript. Bonus: Objective-C/Swift, Java',
+            'Experience building and scaling large front-end applications with React Native or Angular',
+            'Experience working from wireframes from tools such as Figma or Adobe Photoshop',
+            'Experience publishing in Google Play Store and Apple App Store ecosystems',
+            'Top-down thinker, excellent communicator, relationship builder, and problem solver. Must be a strong team player.',
+            'Minimum BS degree in CS or related discipline, or a proven track record.',
+        ],
+        'short': "HiLearn is looking for a well-rounded mobile developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions",
+    },
+    {
         'id': 'fe_eng_lead',
         'title': 'Front-End Engineer',
         'level': 'Lead',
@@ -156,26 +185,6 @@ OPENINGS = [
             'Knowledge of English to communicate with team members abroad',
         ],
         'short': "We are looking for a Senior Front-End Developer (with an experience leading) to take a front seat on developing one of our customer facing products - <a href='https://www.aqqru.com'>Aqqru webapp</a>", # noqa
-    },
-    {
-        'id': 'quant_eng',
-        'title': 'Quant Engineer',
-        'level': 'Senior/Mid/Junior/Intern',
-        'overview': 'We are expanding our team of Quant Engineers that work on fGPS&trade; Financial Advice Engine.',  # noqa
-        'descriptions': [
-            'Write production code that will use the research results.',
-        ],
-        'skills': [
-            'Mathematical Modeling Capabilities',
-            'Knowledge of version control software such as Git',
-            'Proficiency with C#',
-        ],
-        'tech_stack': [
-            'C# - dotnet core 3.1',
-            'MongoDB',
-            'kubernetes with Helm',
-        ],
-        'short': 'We are looking for people with a decent foundation in Computer Science, Mathematics, and an understanding of the Scientific Method. Who wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
     },
     {
         'id': 'research_eng',

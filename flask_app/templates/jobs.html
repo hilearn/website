@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% block widebodycontent %}
 
+  <section class="bg-light" id="hilearn">
+      <div class="container">
+          <div class="row">
+               <p>HiLearn is a fast growing Technology company based in Yerevan, Armenia. We have been building different FinTech Products since 2017. Working together with <a href="https://www.linkedin.com/company/moneylion/">MoneyLion Inc.</a>, we are disrupting the Algorithmic Financial Advice industry with innovative products.</p>
+          </div>
+      </div>
+  </section>
+
   {% for job in openings %}
   <section class="bg-light" id="{{ job.id }}">
       <div class="container">
@@ -26,18 +34,18 @@
                   <p> As a {{ job.title }} you will {{ job.descriptions.0 }} </p>
                   {% endif %}
 
-                  <p> The technology stack is:</p>
-                  <ul>
-                  {% for paragraph in job.tech_stack %}
-                     <li>{{ paragraph }}</li>
-                  {% endfor %}
-                  </ul>
-
                   <p class="long-bio"> {{ job.pre_skills}}</p>
-                  <p> The following skills will be a plus:</p>
+                  <p> About you:</p>
                   <ul>
                   {% for paragraph in job.skills%}
                         <li>{{ paragraph }}</li>
+                  {% endfor %}
+                  </ul>
+
+                  <p> Our Tech Stack includes:</p>
+                  <ul>
+                  {% for paragraph in job.tech_stack %}
+                     <li>{{ paragraph }}</li>
                   {% endfor %}
                   </ul>
 
