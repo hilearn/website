@@ -103,13 +103,6 @@ TEAM_MEMBERS = [
         'img': 'img/team/Armen.jpg',
     },
     {
-        'name': 'Hayk Stepanyan',
-        'role': 'Research Engineer',
-        'bio': 'Hayk',
-        'email': 'hayk.s@hilearn.io',
-        'img': 'img/team/Hayk.jpg',
-    },
-    {
         'name': 'Aram Mkhoyan',
         'role': 'Technical Product Manager',
         'bio': 'Aram',
