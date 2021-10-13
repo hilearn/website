@@ -28,68 +28,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWRH4H4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <div>
+<div>
       <div>
-      {% block navbarcontent %}
           <nav id="mainNav">
               <div class="container">
-                  {% block logo %}
                   <a class="js-scroll-trigger" href="/">
-                      <img border="0" src="{{ url_for('static', filename='img/logo.svg') }}" width="100" height="inherit">
+                      <img border="0" src="{{ url_for('static', filename='img/logo.svg') }}">
                   </a>
-                  {% endblock logo %}
-
-                  <button class="navbar-toggler navbar-toggler-right" type="button"
-                          data-toggle="collapse" data-target="#navbarResponsive"
-                          aria-controls="navbarResponsive" aria-expanded="false"
-                          aria-label="Toggle navigation">
-                      Menu
-                      <i class="fa fa-bars"></i>
-                  </button>
-
-
-                  <div class="collapse navbar-collapse" id="navbarResponsive">
-                      {% block centralnavbar %}
-                      <ul class="navbar-nav text-uppercase ml-auto">
-                          <li class="nav-item">
-                              <a class="nav-link" href="/team/#team"
+                  <div id="navbarResponsive">
+                      <ul>
+                          <li>
+                              <a href="/team/#team"
                                  title="About Us">
                                   About Us
                               </a>
                           </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="/team/#careers"
-                                 title="About Us">
+                          <li>
+                              <a href="#"
+                                 title="What we do">
+                                  What we do
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#"
+                                 title="Meet our team">
+                                  Meet our team
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#"
+                                 title="Careers">
                                   Careers
                               </a>
                           </li>
                       </ul>
-                      {% endblock centralnavbar %}
-
-                      {% block rightnavbar %}
-                      <div></div>
-                      {% endblock rightnavbar %}
-
                   </div>
               </div>
           </nav>
-      {% endblock navbarcontent %}
       </div>
-
-        {% block widebodycontent %}
-        {% endblock %}
-
-        <div class="content container" style="display: grid; grid-row-gap:10px; grid-template-rows: auto 1fr auto;">
-            <div class="row">
-                <div class="col-12">
-                    {% block bodycontent %}
-                    {% endblock %}
-                </div>
-            </div>
-        </div>
     </div>
     {% include "components/footer.html" %}
-    <!-- Bootstrap core JavaScript -->
 
 </body>
 </html>
