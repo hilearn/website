@@ -1,4 +1,5 @@
-1. at first 
+1.for starting installation do
 make
-   
-2. make run 
+
+2.then , for compiling files 
+make run

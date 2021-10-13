@@ -23,15 +23,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {% endblock %}
 </head>
 
-<body style="height: 100%; margin:0; padding: 0">
+<body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWRH4H4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<div>
-      <div>
-          <nav id="mainNav">
-              <div class="container">
+         <header>
+             <nav id="mainNav">
                   <a class="js-scroll-trigger" href="/">
                       <img border="0" src="{{ url_for('static', filename='img/logo.svg') }}">
                   </a>
@@ -63,10 +61,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                           </li>
                       </ul>
                   </div>
-              </div>
           </nav>
-      </div>
-    </div>
+         </header>
+
+
     {% include "components/footer.html" %}
 
 </body>
