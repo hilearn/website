@@ -52,6 +52,6 @@ For updates files via gulp  <br>
 
 
 >For installing all packages that you need <br>
-`npm i <name>` 
+`npm i <name>`
 
 ####Do your style changes inside of scss file
