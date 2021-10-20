@@ -1,16 +1,17 @@
 //fonts
-$font-primary: "sans-serif";
-$font-secondary: "sans-serif";
+$font-primary: Inter-Regular, sans-serif;
+$font-secondary: Inter-Semi-Bold, sans-serif;
+
+//colors
+$color-primary:           #EEBD20;
+$color-gray:              #383A3E;
+$color-dark-gray:         #1C1C1C;
+$color-light-gray:        #F8F8F8;
+$color-extra-light-gray:   #F2F2F2;
 
 //base font size and color
 $color-text:         $color-dark-gray;
 $base-font-size:     16px;
-
-//colors
-$color-primary:      #EEBD20;
-$color-dark-gray:    #1C1C1C;
-$color-gray:         #383A3E;
-$color-light-gray:   #F8F8F8;
 
 //border radius
 $border-radius-sm:   10px;

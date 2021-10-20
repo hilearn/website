@@ -30,8 +30,58 @@ table {
   border-spacing: 0;
 }
 
+h1, .h1 {
+  font-family: Inter-Semi-Bold, sans-serif;
+}
+
+h2, .h2 {
+  font-family: Inter-Semi-Bold, sans-serif;
+  color: #1C1C1C;
+  line-height: 58px;
+  font-size: 48px;
+}
+
+h3, .h3 {
+  font-family: Inter-Semi-Bold, sans-serif;
+  color: #1C1C1C;
+  line-height: 30px;
+  font-size: 25px;
+}
+
+body {
+  background-color: #F8F8F8;
+  font-size: 16px;
+  font-family: Inter-Regular, sans-serif;
+  word-wrap: break-word;
+  color: #1C1C1C;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+main {
+  min-height: calc(100vh - 227px);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tag {
+  background-color: #F8F8F8;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 8px 24px;
+  text-transform: capitalize;
+}
+
+.card-grid {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
 .btn {
-  font-family: "sans-serif";
+  font-family: Inter-Regular, sans-serif;
   transition: all 0.4s ease;
   vertical-align: middle;
   background-image: none;
@@ -50,6 +100,8 @@ table {
 }
 .btn.btn-link {
   background-color: transparent;
+  color: #1C1C1C;
+  text-decoration: none;
   outline: none;
   border: none;
   padding: 0;
@@ -60,4 +112,60 @@ table {
   border-radius: 20px;
   color: #1C1C1C;
   font-size: 16px;
+}
+
+header {
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+header .header-content {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  display: inline-block;
+  width: 110px;
+}
+.logo img {
+  display: block;
+  width: 100%;
+}
+
+.menu-items {
+  display: flex;
+}
+.menu-items li {
+  margin-left: 40px;
+}
+.menu-items li:first-child {
+  margin-left: 0;
+}
+
+footer {
+  background-color: #F2F2F2;
+  padding-bottom: 16px;
+  padding-top: 24px;
+}
+footer .footer-content {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.social-links {
+  display: flex;
+}
+.social-links li {
+  margin-left: 25px;
+}
+.social-links li:first-child {
+  margin-left: 0;
+}
+
+.copyright {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
 }

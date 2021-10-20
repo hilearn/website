@@ -1,0 +1,32 @@
+header {
+  padding-bottom: 35px;
+  padding-top: 35px;
+
+  .header-content {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.logo {
+  display: inline-block;
+  width: 110px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.menu-items {
+  display: flex;
+
+  & li {
+    margin-left: 40px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
