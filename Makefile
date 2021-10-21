@@ -1,42 +1,38 @@
 PROJECT = website
-PYTHON=python3.8
-PYTHON_VERSION=$(shell ${PYTHON} --version 2>&1 | cut -c 8-10)
+ifeq ($(OS),Windows_NT)
+	PYTHON=py
+	PYTHON_VERSION=py
+else
+  PYTHON=python3.8
+  PYTHON_VERSION=$(shell ${PYTHON} --version 2>&1 | cut -c 8-10)
+endif
 venv_name = py${PYTHON_VERSION}-${PROJECT}
 venv = .venv/${venv_name}
 
-# Commands that activate and run virtual environment versions.
-_python = . ${venv}/bin/activate; python
-_pip = . ${venv}/bin/activate; pip
+ifeq ($(OS),Windows_NT)
+	_bin = Scripts
+	_python = ${venv}/${_bin}/python.exe
+	_pip = ${venv}/${_bin}/pip.exe
+else
+	_bin = bin
+	_python = ${venv}/${_bin}/python
+	_pip = ${venv}/${_bin}/pip
+endif
 
-default: update_venv submodules
+default: update_venv
 .PHONY: default
 
-
-
-pull:
-	git pull origin master
-	git submodule update
-.PHONY: pul
-
-submodules:
-	git submodule update --init --recursive
-.PHONY: submodules
-
-update_submodules:
-	git submodule update --remote
-.PHONY: update_submodules
-
-
-${venv}/bin/pip: requirements.txt
-	python${PYTHON_VERSION} -m venv ${venv}
+${_pip}: requirements.txt
+	${PYTHON} -m venv ${venv}
+	${_pip} install --upgrade pip --cache .tmp/
 	${_pip} install -r requirements.txt --cache .tmp/
 
-update_venv: requirements.txt ${venv}/bin/pip
+update_venv: requirements.txt ${_pip}
 	${_pip} install -r requirements.txt --cache .tmp/
-	@rm -f .venv/current
+	@rm -rf .venv/current
 	@ln -s ${venv_name} .venv/current
 	@echo Success, to activate the development environment, run:
-	@echo "\tsource .venv/current/bin/activate"
+	@echo ". .venv/current/${_bin}/activate"
 .PHONY: update_venv
 
 freeze:
@@ -44,7 +40,7 @@ freeze:
 .PHONY: freeze
 
 run:
-	. ${venv}/bin/activate; FLASK_ENV=development FLASK_APP=flask_app.app:app flask run --port 7000
+	. ${venv}/${_bin}/activate; FLASK_ENV=development FLASK_APP=flask_app.app:app flask run --port 7000
 .PHONY: freeze
 
 test:
