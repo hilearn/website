@@ -1,0 +1,31 @@
+body {
+  background-color: $color-light-gray;
+  font-size: $base-font-size;
+  font-family: $font-primary;
+  word-wrap: break-word;
+  color: $color-text;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+main {
+  min-height: calc(100vh - 227px);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tag {
+  background-color: $color-light-gray;
+  border-radius: $border-radius-md;
+  display: inline-block;
+  padding: 8px 24px;
+  text-transform: capitalize;
+}
+
+.card-grid {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: $border-radius-sm;
+}

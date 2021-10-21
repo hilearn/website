@@ -1,0 +1,29 @@
+footer {
+  background-color: $color-extra-light-gray;
+  padding-bottom: 16px;
+  padding-top: 24px;
+
+  .footer-content {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    display: flex;
+  }
+}
+
+.social-links {
+  display: flex;
+
+  li {
+    margin-left: 25px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.copyright {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+}
