@@ -549,6 +549,19 @@ header .header-content {
   margin-left: 0;
 }
 
+.banner-block {
+  margin-bottom: 100px;
+}
+.banner-block .banner-bg {
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 45px;
+  padding-top: 43%;
+  background-image: url("../img/banner.jpg");
+}
+
 .partners-list li {
   margin-bottom: 32px;
   display: flex;
