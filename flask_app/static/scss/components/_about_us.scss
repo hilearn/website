@@ -1,0 +1,17 @@
+.partners-list {
+  li {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 185px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
+}
