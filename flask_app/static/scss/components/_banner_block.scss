@@ -1,0 +1,11 @@
+.banner-block {
+  .banner-bg {
+    background-image: url("../img/banner.jpg");
+    border-radius: $border-radius-sm;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 45px;
+    padding-top: 43%;
+  }
+}
