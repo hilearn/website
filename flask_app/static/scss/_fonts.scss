@@ -1,0 +1,17 @@
+/*Inter-Regular*/
+@font-face {
+    font-family: 'Inter-Regular';
+    src: local('Inter-Regular'), url(../fonts/Inter/Inter-Regular/Inter-Regular.woff2) format('woff2'),
+    url(../fonts/Inter/Inter-Regular/Inter-Regular.woff2) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Inter-Semi-Bold*/
+@font-face {
+    font-family: 'Inter-Semi-Bold';
+    src: local('Inter-Semi-Bold'), url(../fonts/Inter/Inter-SemiBold/Inter-SemiBold.woff2) format('woff2'),
+    url(../fonts/Inter/Inter-SemiBold/Inter-SemiBold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
