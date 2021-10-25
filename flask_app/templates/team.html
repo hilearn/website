@@ -1,38 +1,43 @@
-{% extends 'base.html' %}
 {% block widebodycontent %}
 
     <!-- Team -->
     <section id="team">
+        <div class="container">
+            <div class="row d-flex align-items-center two-element">
+                <p class="col-10 title-after">Meet our team</p>
+                <div class="col-2">
+                <button class="btn btn-primary">Join our team</button>
+            </div>
+        </div>
             {% for row in team %}
-            <div>
+            <div class="row">
                 {% for member in row %}
-                <div>
-                    <div>
-                        <img
-                             src="{{ url_for('static', filename=member.img) }}" alt="">
-                        <h5>{{ member.name }}</h5>
-                            <p>{{ member.role }}</p>
+                <div class="col-4 member-personal">
+                    <img
+                            src="{{ url_for('static', filename=member.img) }}" alt="" class="team-member-img">
+                            <p class="team-member-name">{{ member.name }}</p>
+                            <p class="team-member-position">{{ member.role }}</p>
                             <p>{{ member.bio }}</p>
-                        <ul>
+                        <ul class="social-img">
                             <li>
                                 <a href="mailto:{{ member.email }}">
-                                    email
+                                    <img src="../static/img/Social/Facebook.png" alt="">
                                 </a>
                             </li>
 
                             {% if member.linkedin %}
                             <li>
                                 <a href="{{member.linkedin}}">
-                                    linkedin
+                                    <img src="../static/img/Social/Linkedin.png" alt="">
                                 </a>
                             </li>
                             {% endif %}
                         </ul>
                     </div>
-                </div>
                 {% endfor %}
             </div>
             {% endfor %}
+        </div>
     </section>
 
     <!-- Team -->
