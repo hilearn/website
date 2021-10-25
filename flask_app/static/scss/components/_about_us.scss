@@ -1,17 +1,37 @@
-.partners-list {
+.list-with-white-frame {
   li {
+    justify-content: space-between;
+    background-color: #ffffff;
+    align-items: center;
     margin-bottom: 32px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    img {
+    .money-lion-logo {
       width: 185px;
     }
 
     &:last-child {
       margin-bottom: 0;
       background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    }
+  }
+
+  .arrow-right {
+    width: 20px;
+  }
+
+  .icon-gray-bg {
+    background-color: $color-whisper;
+    border-radius: $border-radius-xs;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    line-height: 47px;
+    height: 40px;
+    width: 40px;
+
+    img{
+      width: 20px;
     }
   }
 }

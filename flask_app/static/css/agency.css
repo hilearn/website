@@ -617,18 +617,32 @@ header .header-content {
   padding-top: 43%;
 }
 
-.partners-list li {
+.list-with-white-frame li {
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
   margin-bottom: 32px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.partners-list li img {
+.list-with-white-frame li .money-lion-logo {
   width: 185px;
 }
-.partners-list li:last-child {
+.list-with-white-frame li:last-child {
   margin-bottom: 0;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.list-with-white-frame .icon-gray-bg {
+  background-color: #ECECEC;
+  border-radius: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  line-height: 47px;
+  height: 40px;
+  width: 40px;
+}
+.list-with-white-frame .icon-gray-bg img {
+  width: 20px;
 }
 
 .benefits .title {
