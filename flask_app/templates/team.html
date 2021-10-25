@@ -3,8 +3,8 @@
     <!-- Team -->
     <section id="team">
         <div class="container">
-            <div class="row d-flex align-items-center two-element">
-                <p class="col-10 title-after">Meet our team</p>
+            <div class="row d-flex align-items-center mt-8">
+                <h2 class="col-10">Meet our team</h2>
                 <div class="col-2">
                 <button class="btn btn-primary">Join our team</button>
             </div>
@@ -12,12 +12,12 @@
             {% for row in team %}
             <div class="row">
                 {% for member in row %}
-                <div class="col-4 member-personal">
+                <div class="col-4 mt-10">
                     <img
                             src="{{ url_for('static', filename=member.img) }}" alt="" class="team-member-img">
-                            <p class="team-member-name">{{ member.name }}</p>
-                            <p class="team-member-position">{{ member.role }}</p>
-                            <p>{{ member.bio }}</p>
+                            <h4 class="mb-2">{{ member.name }}</h4>
+                            <p class="mb-2">{{ member.role }}</p>
+                            <p class="mb-2">{{ member.bio }}</p>
                         <ul class="social-img">
                             <li>
                                 <a href="mailto:{{ member.email }}">

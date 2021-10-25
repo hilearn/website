@@ -1,34 +1,14 @@
-.member-personal{
-    margin-top: 50px;
-    p{
-        margin-bottom: 10px;
-    }
-.team-member-img{
-    width: 365px;
-    height: 365px;
-    margin-bottom: 20px;
+.team-member-img {
+  margin-bottom: 20px;
+  height: 365px;
+  width: 365px;
 }
-.team-member-name{
-    font-size: 20px;
-    font-family: $font-secondary;
-}
-.team-member-position{
-    font-size: 16px;
-    font-family: $font-primary;
-}
-.social-img{
-    display: flex;
-    li{
-        height: 24px;
-        width: 24px;
-        margin-right: 15px;
-    }
- }
-}
-.two-element{
-    margin-top: 40px;
-    .title-after{
-        font-size: 48px;
-        font-family: $font-secondary;
-    }
+
+.social-img {
+  display: flex;
+  li {
+    margin-right: 15px;
+    height: 24px;
+    width: 24px;
+  }
 }
