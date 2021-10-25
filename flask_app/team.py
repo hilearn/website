@@ -8,7 +8,7 @@ TEAM_MEMBERS = [
     {
         'name': 'Arsen Mamikonyan',
         'role': 'CEO/Head of Engineering',
-        'bio': 'Arsen finished his studies at MIT, he leads the overall team, and wants to start a yacht sailing club in Sevan.',  # noqa
+        'bio': '',
         'img': 'img/team/Arsen.jpg',
         'email': 'arsen@hilearn.io',
         'linkedin': 'https://www.linkedin.com/in/mamikonyana/',
@@ -16,7 +16,7 @@ TEAM_MEMBERS = [
     {
         'name': 'Arsen Hambardzumyan',
         'role': 'Senior Research Engineer',
-        'bio': 'Arsen graduated from Applied Mathematics department at YSU, he leads our efforts in Financial Analysis, and loves participating in Olympiads.',  # noqa
+        'bio': '',
         'email': 'zidder@hilearn.io',
         'img': 'img/team/zidder.jpg',
     },
@@ -24,21 +24,21 @@ TEAM_MEMBERS = [
         'name': 'Vardges Mambreyan',
         'role': 'Senior Research Engineer',
         'linkedin': 'https://www.linkedin.com/in/vardges-mambreyan-418236159/',  # noqa
-        'bio': 'Vardges has a Masters Degree in Physics from YSU and a white cat, he leads our efforts in Long Term Market Simulation. On his spare time, he co-leads Armenian Astronomy Olympiad team.',  # noqa
+        'bio': '',
         'email': 'vardges@hilearn.io',
         'img': 'img/team/Vardges.jpg',
     },
     {
         'name': 'Yeva Hunanyan',
         'role': 'Research Engineer',
-        'bio': 'Yeva studies Physics at YSU. She participated in IPHO and IOAA and has won multiple medals.',  # noqa
+        'bio': '',
         'email': 'yeva@hilearn.io',
         'img': 'img/team/Yeva.jpg',
     },
     {
         'name': 'Sevak Abrahamyan',
         'role': 'Research & Quant Engineer',
-        'bio': 'Sevak graduated from the Applied Mathematics department at YSU. He is eager to get apply his theoretical and practical skills to real life problems.',  # noqa
+        'bio': '',
         'email': 'sevak@hilearn.io',
         'linkedin': 'https://www.linkedin.com/in/sevak-abrahamyan-a13046171/',
         'img': 'img/team/Sevak.jpg',
@@ -46,21 +46,21 @@ TEAM_MEMBERS = [
     {
         'name': 'Karen Muradyan',
         'role': 'Front-End Engineer',
-        'bio': 'Karen has had a long experience in the banking industry, but now he has shifted gears and is helping us build Aqqru.',  # noqa
+        'bio': '',
         'email': 'karen.m@hilearn.io',
         'img': 'img/team/KarenM.jpg',
     },
     {
         'name': 'Lilit Hovakimyan',
         'role': 'Front-End Engineer',
-        'bio': 'Lilit has graduated from YSU Department of Mathematics, and after couple of years in banking is now helping us build Aqqru.',  # noqa
+        'bio': '',
         'email': 'lilit.h@hilearn.io',
         'img': 'img/team/Lilit.jpg',
     },
     {
         'name': 'Naira Babayan',
         'role': 'Senior Quant Engineer',
-        'bio': 'Naira has extensive experience in building production software, and has been shifting her expertise into more theoretical projects.',  # noqa
+        'bio': '',
         'email': 'naira.b@hilearn.io',
         'linkedin': 'https://www.linkedin.com/in/naira-babayan-3074752b/',
         'img': 'img/team/NairaB.jpg',
@@ -68,14 +68,14 @@ TEAM_MEMBERS = [
     {
         'name': 'Naira Mnatsakanyan',
         'role': 'Quant Engineer',
-        'bio': 'Naira studies at YSU Applied Mathematics department. She is eager to start solving real time problems.',  # noqa
+        'bio': '',
         'email': 'naira.m@hilearn.io',
         'img': 'img/team/NairaM.jpg',
     },
     {
         'name': 'Karine Avetisyan',
         'role': 'Senior Quant Engineer',
-        'bio': 'Karine has good experience in building production software, and has been shifting her expertise into more theoretical projects.',  # noqa
+        'bio': '',
         'email': 'karine.a@hilearn.io',
         'linkedin': 'https://www.linkedin.com/in/karine-avetisyan-21bbb5142/',
         'img': 'img/team/Karine.jpg',
@@ -83,21 +83,21 @@ TEAM_MEMBERS = [
     {
         'name': 'Seda Sedrakyan',
         'role': 'Research Engineer',
-        'bio': 'Seda has graduated from American University of Armenia, and has honed her research skills doing research afterwords, now she is ready to build products with us.',  # noqa
+        'bio': '',
         'email': 'seda.s@hilearn.io',
         'img': 'img/team/Seda.jpg',
     },
     {
         'name': 'Karen Baghdasaryan',
         'role': 'Strategic Product Owner',
-        'bio': 'Karen',
+        'bio': '',
         'email': 'karen.b@hilearn.io',
         'img': 'img/team/KarenB.jpg',
     },
     {
         'name': 'Armen Vardanyan',
         'role': 'Technical Product Manager',
-        'bio': 'Armen',
+        'bio': '',
         'email': 'armen.v@hilearn.io',
         'linkedin': 'https://www.linkedin.com/in/vaarmen/',
         'img': 'img/team/Armen.jpg',
@@ -105,7 +105,7 @@ TEAM_MEMBERS = [
     {
         'name': 'Aram Mkhoyan',
         'role': 'Technical Product Manager',
-        'bio': 'Aram',
+        'bio': '',
         'email': 'aram.m@hilearn.io',
         'linkedin': 'http://linkedin.com/in/mkhoyan',
         'img': 'img/team/Aram.jpg',
@@ -113,14 +113,14 @@ TEAM_MEMBERS = [
     {
         'name': 'Artavazd Vardanyan',
         'role': 'Quant Engineer',
-        'bio': 'Artavazd',
+        'bio': '',
         'email': 'artavazd.v@hilearn.io',
         'img': 'img/team/Artavazd.jpg',
     },
     {
         'name': 'Edmon Ghambaryan',
         'role': 'UI/UX Designer',
-        'bio': 'Edmon',
+        'bio': '',
         'email': 'edmon.g@hilearn.io',
         'img': 'img/team/Edmon.jpg',
     },
@@ -228,16 +228,15 @@ OPENINGS = [
 
 @blp_team.route("/team/")
 def team():
-    members = []
-    for i in range((len(TEAM_MEMBERS) + 3) // 4):
-        members.append(TEAM_MEMBERS[4 * i: 4 * (i + 1)])
+    members = [TEAM_MEMBERS]
     return render_template('team.html', team=members,
                            openings=OPENINGS, static="static")
 
 
 @blp_team.route("/")
 def index():
-    return render_template('index.html', static="static")
+    members = [TEAM_MEMBERS]
+    return render_template('index.html', static="static", team=members)
 
 
 @blp_team.route("/jobs/")

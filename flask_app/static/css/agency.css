@@ -693,6 +693,21 @@ header .header-content {
   background-image: url("../img/benefit-2.jpg");
 }
 
+.team-member-img {
+  margin-bottom: 20px;
+  height: 365px;
+  width: 365px;
+}
+
+.social-img {
+  display: flex;
+}
+.social-img li {
+  margin-right: 15px;
+  height: 24px;
+  width: 24px;
+}
+
 footer {
   background-color: #F2F2F2;
   padding-bottom: 16px;
