@@ -540,6 +540,20 @@ main {
   font-size: 16px;
 }
 
+/*Inter-Regular*/
+@font-face {
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular"), url(../fonts/Inter/Inter-Regular/Inter-Regular.woff2) format("woff2"), url(../fonts/Inter/Inter-Regular/Inter-Regular.woff2) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Inter-Semi-Bold*/
+@font-face {
+  font-family: "Inter-Semi-Bold";
+  src: local("Inter-Semi-Bold"), url(../fonts/Inter/Inter-SemiBold/Inter-SemiBold.woff2) format("woff2"), url(../fonts/Inter/Inter-SemiBold/Inter-SemiBold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 header {
   padding-bottom: 35px;
   padding-top: 35px;
@@ -618,6 +632,21 @@ header .header-content {
 }
 .benefit-bg.benefit-2 {
   background-image: url("../img/benefit-2.jpg");
+}
+
+.team-member-img {
+  margin-bottom: 20px;
+  height: 365px;
+  width: 365px;
+}
+
+.social-img {
+  display: flex;
+}
+.social-img li {
+  margin-right: 15px;
+  height: 24px;
+  width: 24px;
 }
 
 footer {
