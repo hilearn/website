@@ -554,6 +554,10 @@ main {
   margin-bottom: 100px;
 }
 
+.max-w-780 {
+  max-width: 780px;
+}
+
 .d-flex {
   display: flex;
 }
@@ -630,6 +634,9 @@ header .header-content {
 .list-with-white-frame li:last-child {
   margin-bottom: 0;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.list-with-white-frame .arrow-right {
+  width: 20px;
 }
 .list-with-white-frame .icon-gray-bg {
   background-color: #ECECEC;
