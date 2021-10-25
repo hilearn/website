@@ -55,6 +55,54 @@ h4, .h4 {
   font-size: 20px;
 }
 
+.btn {
+  font-family: Inter-Regular, sans-serif;
+  transition: all 0.4s ease;
+  vertical-align: middle;
+  background-image: none;
+  display: inline-block;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  text-align: center;
+  font-style: normal;
+  padding: 9px 24px;
+  box-shadow: none;
+  cursor: pointer;
+}
+.btn:active, .btn:focus, .btn.active {
+  background-image: none;
+  outline: 0;
+}
+.btn.btn-link {
+  background-color: transparent;
+  color: #1C1C1C;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+.btn.btn-primary {
+  border: 1.5px solid #1C1C1C;
+  background-color: #EEBD20;
+  border-radius: 20px;
+  color: #1C1C1C;
+  font-size: 16px;
+}
+
+/*Inter-Regular*/
+@font-face {
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular"), url(../fonts/Inter/Inter-Regular/Inter-Regular.woff2) format("woff2"), url(../fonts/Inter/Inter-Regular/Inter-Regular.woff2) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Inter-Semi-Bold*/
+@font-face {
+  font-family: "Inter-Semi-Bold";
+  src: local("Inter-Semi-Bold"), url(../fonts/Inter/Inter-SemiBold/Inter-SemiBold.woff2) format("woff2"), url(../fonts/Inter/Inter-SemiBold/Inter-SemiBold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .m-1 {
   margin: 5px;
 }
@@ -506,54 +554,30 @@ main {
   margin-bottom: 100px;
 }
 
-.btn {
-  font-family: Inter-Regular, sans-serif;
-  transition: all 0.4s ease;
-  vertical-align: middle;
-  background-image: none;
-  display: inline-block;
-  white-space: nowrap;
-  letter-spacing: 1px;
-  text-align: center;
-  font-style: normal;
-  padding: 9px 24px;
-  box-shadow: none;
-  cursor: pointer;
-}
-.btn:active, .btn:focus, .btn.active {
-  background-image: none;
-  outline: 0;
-}
-.btn.btn-link {
-  background-color: transparent;
-  color: #1C1C1C;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  padding: 0;
-}
-.btn.btn-primary {
-  border: 1.5px solid #1C1C1C;
-  background-color: #EEBD20;
-  border-radius: 20px;
-  color: #1C1C1C;
-  font-size: 16px;
+.d-flex {
+  display: flex;
 }
 
-/*Inter-Regular*/
-@font-face {
-  font-family: "Inter-Regular";
-  src: local("Inter-Regular"), url(../fonts/Inter/Inter-Regular/Inter-Regular.woff2) format("woff2"), url(../fonts/Inter/Inter-Regular/Inter-Regular.woff2) format("woff");
-  font-weight: normal;
-  font-style: normal;
+.flex-wrap {
+  flex-wrap: wrap;
 }
-/*Inter-Semi-Bold*/
-@font-face {
-  font-family: "Inter-Semi-Bold";
-  src: local("Inter-Semi-Bold"), url(../fonts/Inter/Inter-SemiBold/Inter-SemiBold.woff2) format("woff2"), url(../fonts/Inter/Inter-SemiBold/Inter-SemiBold.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
+
+.justify-center {
+  justify-content: center;
 }
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.dir-col {
+  flex-direction: column;
+}
+
 header {
   padding-bottom: 35px;
   padding-top: 35px;
@@ -617,6 +641,20 @@ header .header-content {
   .benefits .item {
     margin-top: 25px;
   }
+}
+.benefits .benefits-tag {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: rgba(236, 236, 236, 0.3);
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 64px;
+  height: 64px;
+  width: 64px;
+}
+.benefits .benefits-tag img {
+  width: 32px;
+  transform: translateY(40%);
 }
 
 .benefit-bg {

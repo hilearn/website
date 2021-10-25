@@ -1,0 +1,27 @@
+//flexbox
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+//justify-content
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+//align items
+.align-center {
+ align-items: center;
+}
+
+//direction
+.dir-col {
+ flex-direction: column;
+}
