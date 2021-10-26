@@ -89,6 +89,31 @@ h4, .h4 {
   font-size: 16px;
 }
 
+.minus-icon {
+  display: none;
+}
+
+/* hide text */
+.question-text {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+
 /*Inter-Regular*/
 @font-face {
   font-family: "Inter-Regular";
@@ -638,7 +663,8 @@ header .header-content {
 .list-with-white-frame .arrow-right {
   width: 20px;
 }
-.list-with-white-frame .icon-gray-bg {
+
+.icon-gray-bg {
   background-color: #ECECEC;
   border-radius: 5px;
   vertical-align: middle;
@@ -648,7 +674,7 @@ header .header-content {
   height: 40px;
   width: 40px;
 }
-.list-with-white-frame .icon-gray-bg img {
+.icon-gray-bg img {
   width: 20px;
 }
 
@@ -693,19 +719,9 @@ header .header-content {
   background-image: url("../img/benefit-2.jpg");
 }
 
-.team-member-img {
-  margin-bottom: 20px;
-  height: 365px;
-  width: 365px;
-}
-
-.social-img {
+.job-item .position-title {
   display: flex;
-}
-.social-img li {
-  margin-right: 15px;
-  height: 24px;
-  width: 24px;
+  justify-content: space-between;
 }
 
 footer {

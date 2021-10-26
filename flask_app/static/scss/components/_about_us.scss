@@ -19,19 +19,19 @@
   .arrow-right {
     width: 20px;
   }
+}
 
-  .icon-gray-bg {
-    background-color: $color-whisper;
-    border-radius: $border-radius-xs;
-    vertical-align: middle;
-    display: inline-block;
-    text-align: center;
-    line-height: 47px;
-    height: 40px;
-    width: 40px;
+.icon-gray-bg {
+  background-color: $color-whisper;
+  border-radius: $border-radius-xs;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  line-height: 47px;
+  height: 40px;
+  width: 40px;
 
-    img{
-      width: 20px;
-    }
+  img{
+    width: 20px;
   }
 }
