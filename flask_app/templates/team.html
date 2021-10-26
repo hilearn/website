@@ -1,83 +1,54 @@
 {% block widebodycontent %}
 
-    <!-- Team -->
-    <section id="team">
-        <div class="container">
-            <div class="row d-flex align-items-center mt-8">
-                <h2 class="col-10">Meet our team</h2>
-                <div class="col-2">
-                <button class="btn btn-primary">Join our team</button>
+<!-- Team -->
+<section id="team">
+    <div class="container">
+        <div class="row align-items-center mt-8">
+            <h2 class="col-10">Meet our team</h2>
+            <div class="col-2">
+                <button href="#" class="d-flex align-center btn btn-primary">
+                    Join our team
+                    <img src="../../static/img/icons/long_right.svg" class="ml-3">
+                </button>
             </div>
         </div>
-            {% for row in team %}
-            <div class="row">
-                {% for member in row %}
-                <div class="col-4 mt-10">
-                    <img
-                            src="{{ url_for('static', filename=member.img) }}" alt="" class="team-member-img">
-                            <h4 class="mb-2">{{ member.name }}</h4>
-                            <p class="mb-2">{{ member.role }}</p>
-                            <p class="mb-2">{{ member.bio }}</p>
-                        <ul class="social-img">
-                            <li>
-                                <a href="mailto:{{ member.email }}">
-                                    <img src="../static/img/Social/Facebook.png" alt="">
-                                </a>
-                            </li>
+        {% for row in team %}
+        <div class="row">
+            {% for member in row %}
+            <div class="col-4 mt-10">
+                <img
+                        src="{{ url_for('static', filename=member.img) }}" alt="" class="team-member-img">
+                <h4 class="mb-2">{{ member.name }}</h4>
+                <p class="mb-2">{{ member.role }}</p>
+                <p class="mb-2">{{ member.bio }}</p>
+                <ul class="social-img">
+                    <li>
+                        <a href="mailto:{{ member.email }}">
+                            <img src="../static/img/Social/Facebook.png" alt="">
+                        </a>
+                    </li>
 
-                            {% if member.linkedin %}
-                            <li>
-                                <a href="{{member.linkedin}}">
-                                    <img src="../static/img/Social/Linkedin.png" alt="">
-                                </a>
-                            </li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                {% endfor %}
+                    {% if member.linkedin %}
+                    <li>
+                        <a href="{{member.linkedin}}">
+                            <img src="../static/img/Social/Linkedin.png" alt="">
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
             </div>
             {% endfor %}
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section id="careers">
-                <div>
-                    <h2>We are Hiring (in Yerevan)</h2>
-                    <h3>
-                        We are currently growing in multiple directions, and are in
-                        the process of welcoming new team members in our office in
-                        Yerevan (near YSU).
-                        Last updated February 2021.
-                    </h3>
-                </div>
-            <div>
-                {% for job in openings %}
-                <div id="{{job.id}}">
-                    <div>
-                        <img
-                             src="{{ url_for('static', filename='img/team/prospect.jpeg') }}" alt="">
-                        <h5>{{ job.title }}</h5>
-                        <div>
-                            <p>{{ job.level }}</p>
-                            <p> {{ job.short | safe }}</p>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="mailto:jobs@hilearn.io">
-                                    mail
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="/jobs/#{{ job.id }}">
-                                    job
-                                    </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                {% endfor %}
+            <div class="col-4 mt-10">
+                <button href="#" class="d-flex align-center btn btn-primary">
+                    Join our team
+                    <img src="../../static/img/icons/long_right.svg" class="ml-3">
+                </button>
             </div>
-    </section>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Team -->
 {% endblock %}
 
