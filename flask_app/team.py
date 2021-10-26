@@ -239,9 +239,9 @@ def index():
     return render_template('index.html', static="static", team=members)
 
 
-@blp_team.route("/jobs/")
+@blp_team.route("/careers/")
 def jobs():
-    return render_template('jobs.html', openings=OPENINGS, static="static")
+    return render_template('careers.html', openings=OPENINGS, static="static")
 
 
 @blp_team.route("/interview/")
