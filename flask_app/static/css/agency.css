@@ -89,27 +89,16 @@ h4, .h4 {
   font-size: 16px;
 }
 
-.close-icon {
-  display: none;
-}
-
-/* hide text */
-.question-text {
+.close-icon, .question-text {
   display: none;
 }
 
 .show-text .question-text {
   display: block;
 }
-
-.close-icon {
-  display: none;
-}
-
 .show-text .close-icon {
   display: inline;
 }
-
 .show-text .plus-icon {
   display: none;
 }

@@ -1,23 +1,17 @@
-.close-icon {
+.close-icon , .question-text{
   display: none;
 }
 
-/* hide text */
-.question-text {
-  display: none;
-}
+.show-text {
+  .question-text{
+    display: block;
+  }
 
-.show-text .question-text {
-  display: block;
-}
+  .close-icon {
+    display: inline;
+  }
 
-.close-icon {
-  display: none;
-}
-
-.show-text .close-icon {
-  display: inline;
-}
-.show-text .plus-icon {
-  display: none;
+  .plus-icon {
+    display: none;
+  }
 }
