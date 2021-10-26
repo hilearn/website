@@ -89,7 +89,7 @@ h4, .h4 {
   font-size: 16px;
 }
 
-.minus-icon {
+.close-icon {
   display: none;
 }
 
@@ -102,11 +102,11 @@ h4, .h4 {
   display: block;
 }
 
-.minus-icon {
+.close-icon {
   display: none;
 }
 
-.show-text .minus-icon {
+.show-text .close-icon {
   display: inline;
 }
 
@@ -719,6 +719,9 @@ header .header-content {
   background-image: url("../img/benefit-2.jpg");
 }
 
+.job-item {
+  margin-bottom: 20px;
+}
 .job-item .position-title {
   display: flex;
   justify-content: space-between;
