@@ -95,14 +95,6 @@ TEAM_MEMBERS = [
         'img': 'img/team/KarenB.jpg',
     },
     {
-        'name': 'Armen Vardanyan',
-        'role': 'Technical Product Manager',
-        'bio': 'Armen',
-        'email': 'armen.v@hilearn.io',
-        'linkedin': 'https://www.linkedin.com/in/vaarmen/',
-        'img': 'img/team/Armen.jpg',
-    },
-    {
         'name': 'Aram Mkhoyan',
         'role': 'Technical Product Manager',
         'bio': 'Aram',
