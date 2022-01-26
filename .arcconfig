@@ -1,6 +1,0 @@
-{
-  "phabricator.uri" : "https://phabricator.hilearn.io/",
-  "load": [
-    "arclib"
-  ]
-}

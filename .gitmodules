@@ -1,3 +1,0 @@
-[submodule "arclib"]
-	path = arclib
-	url = git@github.com:hilearn/arclib.git
