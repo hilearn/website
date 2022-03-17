@@ -121,10 +121,37 @@ TEAM_MEMBERS = [
 
 OPENINGS = [
     {
+        'id': 'fe_eng_lead',
+        'title': 'Front-End Engineer',
+        'level': 'Lead, Senior',
+        'overview': "HiLearn is looking for a well-rounded frontend developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions. Our tech stack includes React JS, Webpack, Nodejs, ES6, Java/Spring, MongoDB, AWS.",  # noqa
+        'descriptions': [
+            'Build responsive experiences that function on all major browsers.',
+            'Work alongside the product team to build out new product lines and iterate upon existing ones.',  # noqa
+            'Contribute to developing best practices for observability, continuous integration, and deployment.',  # noqa
+            'Consistently improve maintainability and stability of our codebase.',   # noqa,
+            'Be a critical voice in design and code review.',
+        ],
+        'tech_stack': [
+            'React JS',
+            'Webpack, Nodejs, ES6',
+            'MongoDB, AWS.',
+        ],
+        'skills': [
+            '4+ years of web/front-end development experience.',  # noqa
+            'Experience working with a design team and implementing from an agreed upon specification.',  # noqa
+            'Has adequate knowledge of React JS, CSS3, and HTML5.',  # noqa
+            'Experience building and scaling large front-end applications with React JS or Angular․',  # noqa
+            'Experience working from wireframes from tools such as Figma or Adobe Photoshop․',  # noqa
+            'Top-down thinker, excellent communicator, relationship builder, and problem solver. Must be a strong team player.',  # noqa
+        ],
+        'short': "HiLearn is looking for a well-rounded frontend developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions. Our tech stack includes React JS, Webpack, Nodejs, ES6, Java/Spring, MongoDB, AWS.", # noqa
+    },
+    {
         'id': 'mobile_eng',
         'title': 'Mobile Engineer',
         'level': 'Lead, Senior',
-        'overview': "HiLearn is looking for a well-rounded mobile developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions",
+        'overview': "HiLearn is looking for a well-rounded mobile developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions.",
         'descriptions': [
             'Build responsive experiences that function on all major devices and OS versions.',
             'Work alongside the product team to build out new product lines and iterate upon existing ones.',
@@ -147,73 +174,7 @@ OPENINGS = [
             'Top-down thinker, excellent communicator, relationship builder, and problem solver. Must be a strong team player.',
             'Minimum BS degree in CS or related discipline, or a proven track record.',
         ],
-        'short': "HiLearn is looking for a well-rounded mobile developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions",
-    },
-    {
-        'id': 'fe_eng_lead',
-        'title': 'Front-End Engineer',
-        'level': 'Lead',
-        'overview': "We are expanding our team of Senior Front-End Developers to work on a familty of fiancial advise products housed under the <a href='https://www.aqqru.com'>Aqqru</a> brand and powered by Wealthtech's state of the art fGPS&trade; API.",  # noqa
-        'descriptions': [
-            'Understand the business needs and code them',
-            'Add new features to the algorithm, e.g. consider taking a loan to buy a car',  # noqa
-        ],
-        'tech_stack': [
-            'React + Redux',
-            'webpack',
-        ],
-        'skills': [
-            'Very good coding skills with JS/CSS (5+ years of front-end developement)',  # noqa
-            'Knowledge of version control software such as Git',
-            'Understanding of development workflows',
-            'Desire to learn and grow',
-            'Knowledge of English to communicate with team members abroad',
-        ],
-        'short': "We are looking for a Senior Front-End Developer (with an experience leading) to take a front seat on developing one of our customer facing products - <a href='https://www.aqqru.com'>Aqqru webapp</a>", # noqa
-    },
-    {
-        'id': 'research_eng',
-        'title': 'Research Engineer',
-        'level': 'Senior/Mid',
-        'overview': 'We are expanding our team of Research Engineers that work on data related exiciting projects that form the Research foundation of the fGPS&trade; Financial Advice Engine.',  # noqa
-        'descriptions': [
-            'Develop models for predictions',
-            'Write production code that will use the research results.',
-        ],
-        'skills': [
-            'Mathematical Modeling Capabilities / Machine Learning',
-            'Knowledge of version control software such as Git',
-            'Proficiency with python',
-        ],
-        'tech_stack': [
-            'Python 3.7+',
-            'Tensforflow',
-            'PostgreSQL',
-            'Flask',
-        ],
-        'short': 'We are looking for people with a decent foundation in Computer Science, Mathematics, and an understanding of the Scientific Method. Who wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
-    },
-    {
-        'id': 'backend_eng',
-        'title': 'Back-End Engineer',
-        'level': 'Senior/Mid/Intern',
-        'overview': 'We are expanding our team of Back-Eng Engineers that work on the systems behind the Aqqru products.',  # noqa
-        'descriptions': [
-            'Write APIs that power front facing web and mobile applications',
-            'Write high performance production code',
-        ],
-        'skills': [
-            'Knowledge of version control software such as Git',
-            'Proficiency with python',
-            'Understanding of Service Architecture',
-        ],
-        'tech_stack': [
-            'Python 3.7+',
-            'Flask with SQLAlchemy, marshmallow',
-            'PostgreSQL',
-            'Kubernetes with Helm',
-        ],
-        'short': 'We are looking for people with a decent foundation in Computer Science and Web Development. A person that wants to learn and grow, and don’t mind getting their hands dirty learning a new toolset to do their job if required.',  # noqa
+        'short': "HiLearn is looking for a well-rounded mobile developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions.",
     },
 ]
 
