@@ -51,13 +51,6 @@ TEAM_MEMBERS = [
         'img': 'img/team/KarenM.jpg',
     },
     {
-        'name': 'Lilit Hovakimyan',
-        'role': 'Front-End Engineer',
-        'bio': 'Lilit has graduated from YSU Department of Mathematics, and after couple of years in banking is now helping us build Aqqru.',  # noqa
-        'email': 'lilit.h@hilearn.io',
-        'img': 'img/team/Lilit.jpg',
-    },
-    {
         'name': 'Naira Babayan',
         'role': 'Senior Quant Engineer',
         'bio': 'Naira has extensive experience in building production software, and has been shifting her expertise into more theoretical projects.',  # noqa
@@ -116,6 +109,13 @@ TEAM_MEMBERS = [
         'email': 'edmon.g@hilearn.io',
         'img': 'img/team/Edmon.jpg',
     },
+    {
+        'name': 'Ashot Arzumanyan',
+        'role': 'Front-End Engineer',
+        'bio': 'Enjoys finding bugs.',
+        'img': 'img/team/Ashot.jpg',
+        'email': 'ashot.a@hilearn.io',
+    },
 ]
 
 
@@ -146,6 +146,15 @@ OPENINGS = [
             'Top-down thinker, excellent communicator, relationship builder, and problem solver. Must be a strong team player.',  # noqa
         ],
         'short': "HiLearn is looking for a well-rounded frontend developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions. Our tech stack includes React JS, Webpack, Nodejs, ES6, Java/Spring, MongoDB, AWS.", # noqa
+        'benefits': [
+            'Competitive salary.',
+            'Working closely with some of the brightest professionals in the US.',
+            'English lessons with native speakers.',
+            'Corporate parties, company-wide trips to beautiful regions of Armenia, cool team events.',
+            'Flexible working schedule.',
+            'Office in the center of the city (YSU).',
+            'The best environment for autonomy, professional growth, and development.',
+        ],
     },
     {
         'id': 'mobile_eng',
@@ -175,7 +184,54 @@ OPENINGS = [
             'Minimum BS degree in CS or related discipline, or a proven track record.',
         ],
         'short': "HiLearn is looking for a well-rounded mobile developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars' worth of financial transactions.",
+        'benefits': [
+            'Competitive salary.',
+            'Working closely with some of the brightest professionals in the US.',
+            'English lessons with native speakers.',
+            'Corporate parties, company-wide trips to beautiful regions of Armenia, cool team events.',
+            'Flexible working schedule.',
+            'Office in the center of the city (YSU).',
+            'The best environment for autonomy, professional growth, and development.',
+        ],
     },
+    {
+        'id': 'fe_eng_mid',
+        'title': 'Front-End Engineer',
+        'level': 'Mid',
+        'overview': 'HiLearn is a hot and fast growing Technology company based in Yerevan, Armenia. We have been mastering the world’s FinTech Industry since 2017. With members of international achievements, education, and experience and working together with NewYork based MoneyLion Inc., we are disrupting the Algorithmic Financial Advice industry with innovative products. <br/><br/>'
+                    'MoneyLion is America’s most powerful and rewarding financial membership, empowering people to take control of their finances to achieve their overall life goals. Since its launch in 2013, MoneyLion has engaged with 7.5 million hard-working Americans and has earned its members’ trust by building a full-service digital platform to deliver mobile banking, lending, and investment solutions. MoneyLion is also America’s most innovative post-startup giant in FinTech. From a single app, members can get a 360-degree snapshot of their financial lives and have access to personalized tips and tools to build and improve their credit and achieve everyday savings. <br/><br/>'
+                    'HiLearn is looking for a well-rounded frontend developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars’ worth of financial transactions.',
+        'descriptions': [
+            'Build responsive experiences that function on all major browsers.',
+            'Work alongside the product team to build out new product lines and iterate upon existing ones.',
+            'Contribute to developing best practices for observability, continuous integration, and deployment.',
+            'Consistently improve maintainability and stability of our codebase.',
+            'Be a critical voice in design and code review.',
+        ],
+        'tech_stack': [
+            'React JS, Webpack, Typescript, Nodejs, AWS.'
+        ],
+        'skills': [
+            'At least a year of web/front-end development experience.',
+            'Experience working with a design team and implementing from an agreed upon specification.',
+            'Strong knowledge of CSS3, HTML5, and JavaScript.',
+            'Adequate knowledge of React JS, Typescript, and Nodejs.',
+            'Experience building and scaling front-end applications with React JS.',
+            'Experience working from wireframes from tools such as Figma․',
+            'Top-down thinker, excellent communicator, relationship builder, and problem solver. Must be a strong team player.',
+            'Minimum BS degree in CS or related discipline, or a proven track record.',
+        ],
+        'short': 'HiLearn is looking for a well-rounded frontend developer that is proficient in creating engaging experiences and is familiar with all aspects of product development from ideation to implementation. You will play a critical part in the design, implementation, testing, and deployment of MoneyLion’s consumer facing products, you will be instrumental in the architecture and implementation of products handling millions of dollars’ worth of financial transactions.',  # noqa
+        'benefits': [
+            'Competitive salary.',
+            'Working closely with some of the brightest professionals in the US.',
+            'English lessons with native speakers.',
+            'Corporate parties, company-wide trips to beautiful regions of Armenia, cool team events.',
+            'Flexible working schedule.',
+            'Office in the center of the city (YSU).',
+            'The best environment for autonomy, professional growth, and development.',
+        ],
+    }
 ]
 
 
