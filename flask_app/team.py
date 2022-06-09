@@ -109,6 +109,13 @@ TEAM_MEMBERS = [
         'email': 'edmon.g@hilearn.io',
         'img': 'img/team/Edmon.jpg',
     },
+    {
+        'name': 'Ashot Arzumanyan',
+        'role': 'Front-End Engineer',
+        'bio': 'Enjoys finding bugs.',
+        'img': 'img/team/Ashot.jpg',
+        'email': 'ashot.a@hilearn.io',
+    },
 ]
 
 
