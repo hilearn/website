@@ -1,6 +1,7 @@
 .idea/
 .tmp/
 .venv/
+.vscode/
 
 node_modules
 
