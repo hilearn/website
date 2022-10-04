@@ -1,7 +1,10 @@
 .idea/
 .tmp/
 .venv/
+.vscode/
 
-__pycache__/
-*.pyc
-.DS_Store
+node_modules
+
+/.next/
+/out/
+next-env.d.ts
