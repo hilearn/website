@@ -9,7 +9,12 @@ declare module 'styled-components' {
       text: {
         primary: string;
         secondary: string;
-      }
+      };
     };
+    breakpoints: {
+      s: string,
+      m: string,
+      l: string,
+    }
   }
 }

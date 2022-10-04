@@ -8,8 +8,13 @@ const theme: DefaultTheme = {
     text: {
       primary: '#1C1C1C',
       secondary: 'rgba(0, 0, 0, 0.6);',
-    }
+    },
   },
+  breakpoints: {
+    s: '375px',
+    m: '768px',
+    l: '1600px',
+  }
 };
 
 export default theme;
