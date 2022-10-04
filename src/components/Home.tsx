@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import RoundedImage from './common/RoundedImage';
+
+import person from '../../public/images/team/zidder.jpg';
 
 const Container = styled.div`
   display: flex;
@@ -10,7 +13,7 @@ const Container = styled.div`
 const Home = () => {
   return (
     <Container>
-      Home
+      <RoundedImage src={person} />
     </Container>
   );
 };
