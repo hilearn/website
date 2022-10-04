@@ -1,0 +1,142 @@
+import { StaticImageData } from 'next/image';
+
+import Aram from '../../../public/images/team/Aram.jpg';
+import Arsen from '../../../public/images/team/Arsen.jpg';
+import Artavazd from '../../../public/images/team/Artavazd.jpg';
+import Ashot from '../../../public/images/team/Ashot.jpg';
+import Edmon from '../../../public/images/team/Edmon.jpg';
+import KarenB from '../../../public/images/team/KarenB.jpg';
+import KarenM from '../../../public/images/team/KarenM.jpg';
+import Karine from '../../../public/images/team/Karine.jpg';
+import NairaB from '../../../public/images/team/NairaB.jpg';
+import NairaM from '../../../public/images/team/NairaM.jpg';
+import Seda from '../../../public/images/team/Seda.jpg';
+import Sevak from '../../../public/images/team/Sevak.jpg';
+import Vardges from '../../../public/images/team/Vardges.jpg';
+import Yeva from '../../../public/images/team/Yeva.jpg';
+import zidder from '../../../public/images/team/zidder.jpg';
+
+export interface Member {
+  'name': string,
+  'role': string,
+  'bio': string,
+  'img': StaticImageData,
+  'email': string,
+  'linkedin'?: string,
+}
+
+const members: Member[] = [
+  {
+    'name': 'Arsen Mamikonyan',
+    'role': 'CEO/Head of Engineering',
+    'bio': 'Arsen finished his studies at MIT, he leads the overall team, and wants to start a yacht sailing club in Sevan.',
+    'img': Arsen,
+    'email': 'arsen@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/mamikonyana/',
+  },
+  {
+    'name': 'Arsen Hambardzumyan',
+    'role': 'Senior Research Engineer',
+    'bio': 'Arsen graduated from Applied Mathematics department at YSU, he leads our efforts in Financial Analysis, and loves participating in Olympiads.',
+    'email': 'zidder@hilearn.io',
+    'img': zidder,
+  },
+  {
+    'name': 'Vardges Mambreyan',
+    'role': 'Senior Research Engineer',
+    'linkedin': 'https://www.linkedin.com/in/vardges-mambreyan-418236159/',
+    'bio': 'Vardges has a Masters Degree in Physics from YSU and a white cat, he leads our efforts in Long Term Market Simulation. On his spare time, he co-leads Armenian Astronomy Olympiad team.',
+    'email': 'vardges@hilearn.io',
+    'img': Vardges,
+  },
+  {
+    'name': 'Yeva Hunanyan',
+    'role': 'Research Engineer',
+    'bio': 'Yeva studies Physics at YSU. She participated in IPHO and IOAA and has won multiple medals.',
+    'email': 'yeva@hilearn.io',
+    'img': Yeva,
+  },
+  {
+    'name': 'Sevak Abrahamyan',
+    'role': 'Research & Quant Engineer',
+    'bio': 'Sevak graduated from the Applied Mathematics department at YSU. He is eager to get apply his theoretical and practical skills to real life problems.',
+    'email': 'sevak@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/sevak-abrahamyan-a13046171/',
+    'img': Sevak,
+  },
+  {
+    'name': 'Karen Muradyan',
+    'role': 'Front-End Engineer',
+    'bio': 'Karen has had a long experience in the banking industry, but now he has shifted gears and is helping us build Aqqru.',
+    'email': 'karen.m@hilearn.io',
+    'img': KarenM,
+  },
+  {
+      'name': 'Naira Babayan',
+      'role': 'Senior Quant Engineer',
+      'bio': 'Naira has extensive experience in building production software, and has been shifting her expertise into more theoretical projects.',
+      'email': 'naira.b@hilearn.io',
+      'linkedin': 'https://www.linkedin.com/in/naira-babayan-3074752b/',
+      'img': NairaB,
+  },
+  {
+    'name': 'Naira Mnatsakanyan',
+    'role': 'Quant Engineer',
+    'bio': 'Naira studies at YSU Applied Mathematics department. She is eager to start solving real time problems.',
+    'email': 'naira.m@hilearn.io',
+    'img': NairaM,
+  },
+  {
+    'name': 'Karine Avetisyan',
+    'role': 'Senior Quant Engineer',
+    'bio': 'Karine has good experience in building production software, and has been shifting her expertise into more theoretical projects.',
+    'email': 'karine.a@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/karine-avetisyan-21bbb5142/',
+    'img': Karine,
+  },
+  {
+    'name': 'Seda Sedrakyan',
+    'role': 'Research Engineer',
+    'bio': 'Seda has graduated from American University of Armenia, and has honed her research skills doing research afterwords, now she is ready to build products with us.',
+    'email': 'seda.s@hilearn.io',
+    'img': Seda,
+  },
+  {
+    'name': 'Karen Baghdasaryan',
+    'role': 'Strategic Product Owner',
+    'bio': 'Karen',
+    'email': 'karen.b@hilearn.io',
+    'img': KarenB,
+  },
+  {
+    'name': 'Aram Mkhoyan',
+    'role': 'Technical Product Manager',
+    'bio': 'Aram',
+    'email': 'aram.m@hilearn.io',
+    'linkedin': 'http://linkedin.com/in/mkhoyan',
+    'img': Aram,
+  },
+  {
+    'name': 'Artavazd Vardanyan',
+    'role': 'Quant Engineer',
+    'bio': 'Artavazd',
+    'email': 'artavazd.v@hilearn.io',
+    'img': Artavazd,
+  },
+  {
+    'name': 'Edmon Ghambaryan',
+    'role': 'UI/UX Designer',
+    'bio': 'Edmon',
+    'email': 'edmon.g@hilearn.io',
+    'img': Edmon,
+  },
+  {
+    'name': 'Ashot Arzumanyan',
+    'role': 'Front-End Engineer',
+    'bio': 'Ashot',
+    'email': 'ashot.a@hilearn.io',
+    'img': Ashot,
+  },
+];
+
+export default members;
