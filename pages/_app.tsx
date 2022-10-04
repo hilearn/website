@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
+import Layout from '../src/components/Layout/Layout';
 import GlobalStyle from '../src/globalStyles';
 
 const theme: DefaultTheme = {
@@ -14,7 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </>
   );
