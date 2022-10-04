@@ -12,7 +12,7 @@ const Container = styled.nav`
 const Links = styled.div`
   display: grid;
   grid-gap: 32px;
-  grid-template: 1fr / repeat(5);
+  grid-template: 1fr / repeat(5, 1fr);
 `;
 
 const Header = () => {
