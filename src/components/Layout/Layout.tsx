@@ -11,6 +11,13 @@ const Container = styled.div`
   grid-template: auto 1fr auto / 1fr;
   min-height: 100%;
   background-color: ${({ theme }) => theme.colors.background};
+  padding: 16px;
+  @media (min-width: 375px) {
+    padding: 40px;
+  }
+  @media (min-width: 768px) {
+    padding: 60px;
+  }
 `;
 
 const Layout = ({ children }: ComponentProps) => {
