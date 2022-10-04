@@ -10,6 +10,7 @@ const Container = styled.div`
   display: grid;
   grid-template: auto 1fr auto / 1fr;
   min-height: 100%;
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 const Layout = ({ children }: ComponentProps) => {
