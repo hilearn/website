@@ -15,6 +15,7 @@ const StyledButton = styled.button`
   padding: 8px 24px;
   border: 1px solid #000000;
   display: flex;
+  align-items: center;
 `;
 
 const StyledTypography = styled(Typography)`
