@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import members, { Member } from "../../utils/constants/members";
 import BlockTitle from "../common/BlockTitle";
+import Button from "../common/Button";
 import RoundedImage from "../common/RoundedImage";
 import Typography from "../common/Typography";
 
@@ -15,6 +16,7 @@ const ImagesContainer = styled.div`
   display: grid;
   justify-content: center;
   grid-gap: 32px;
+  margin-top: 48px;
 `;
 
 const Section = styled.div`
@@ -23,15 +25,25 @@ const Section = styled.div`
   grid-gap: 24px;
 `;
 
+const StyledTypography = styled(Typography)`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 32px;
+`;
+
 const Team = () => {
   return (
     <>
       <BlockTitle text="The team" />
-      <Typography>
+      <StyledTypography>
         We have one of the most innovative and highly-skilled teams in Armenia. Many of them are with international achievements at olympiads.
         The team consists of Data scientists, Backend and Frontend developers, Product and Project Managers and Product Designers.
         We work according to Agile methodology. Team tech stack includes: React JS, Webpack, Typescript, Nodejs, AWS.
-      </Typography>
+      </StyledTypography>
+      <Button>
+        Meet the team
+      </Button>
       <ImagesContainer>
         {getMembersArray(members).map((section, i) => (
           <Section key={i}>
