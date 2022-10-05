@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import Advantages from './Advantages';
+import Careers from './Careers';
 import Team from './Team';
 
 const Container = styled.div`
@@ -16,6 +17,7 @@ const Home = () => {
     <Container>
       <Advantages />
       <Team />
+      <Careers />
     </Container>
   );
 };
