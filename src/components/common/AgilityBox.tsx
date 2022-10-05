@@ -14,8 +14,8 @@ const Box = styled.div`
 
 const AgilityBox = ({ agility }) => (
   <Box>
-    <Image src={Doc} alt="Doc" />
-    <Typography>{agility}</Typography>
+    <Image src={Doc} alt="Doc" width={60} height={60} />
+    <Typography margin="16px 0 24px">{agility}</Typography>
   </Box>
 );
 
