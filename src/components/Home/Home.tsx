@@ -4,6 +4,7 @@ import WhatWeDo from './WhatWeDo';
 import Advantages from './Advantages';
 import Careers from './Careers';
 import Team from './Team';
+import Contacts from './Contacts';
 
 const Container = styled.div`
   display: flex;
@@ -20,6 +21,7 @@ const Home = () => {
       <Advantages />
       <Team />
       <Careers />
+      <Contacts />
     </Container>
   );
 };
