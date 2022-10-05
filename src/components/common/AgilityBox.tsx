@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Typography from "./Typography";
 import Doc from "../../../public/images/doc.png";
+import RoundedImage from "./RoundedImage";
+import Image from "next/image";
 
 const Box = styled.div`
   height: 137px;
@@ -10,9 +12,9 @@ const Box = styled.div`
   background-color: #F3F1EA;
 `;
 
-const AgilityBox = (agility) => (
+const AgilityBox = ({ agility }) => (
   <Box>
-    <img src={Doc} alt="doc" />
+    <Image src={Doc} alt="Doc" />
     <Typography>{agility}</Typography>
   </Box>
 );

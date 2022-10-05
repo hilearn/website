@@ -26,8 +26,8 @@ const WhatWeDo = () => (
       online banking services.
     </Subtitle>
   {
-    Agilities.forEach((agility) => (
-      <div>{agility}</div>
+    Agilities.map((agility) => (
+     <AgilityBox key={agility} agility={agility} />
     ))
   }
   </>
