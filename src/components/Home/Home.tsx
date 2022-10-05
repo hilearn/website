@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import WhatWeDo from './WhatWeDo';
 
 import Advantages from './Advantages';
 import Careers from './Careers';
@@ -15,6 +16,7 @@ const Container = styled.div`
 const Home = () => {
   return (
     <Container>
+      <WhatWeDo />
       <Advantages />
       <Team />
       <Careers />
