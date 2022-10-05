@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import AgilityBox from "./common/AgilityBox";
-import Typography from "./common/Typography";
-import { Agilities } from "./constants";
+import AgilityBox from "../common/AgilityBox";
+import Typography from "../common/Typography";
+import { Agilities } from "../constants";
 
 const Subtitle = styled(Typography)`
   max-width: 784px;
@@ -28,12 +28,12 @@ const WhatWeDo = () => (
       online banking services.
     </Subtitle>
     <AgilitiesBlock>
-  {
-    Agilities.map((agility) => (
-     <AgilityBox key={agility} agility={agility} />
-    ))
-  }
-  </AgilitiesBlock>
+    {
+      Agilities.map((agility) => (
+      <AgilityBox key={agility} agility={agility} />
+      ))
+    }
+    </AgilitiesBlock>
   </>
 );
 

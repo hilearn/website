@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import Advantage from './common/Advantage';
-import WhatWeDo from './WhatWeDo';
+import WhatWeDo from './Home/WhatWeDo';
 
 const Container = styled.div`
   
