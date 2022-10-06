@@ -6,16 +6,27 @@ import email from '../../../public/images/mail.svg';
 
 const Container = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   border-radius: 16px;
   background-color: #fff;
   padding: 16px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  };
 `;
 
 const Texts = styled.div`
   padding: 8px;
+  margin-bottom: 0;
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    padding: 0;
+    margin-bottom: 24px;
+  };
 `;
 
 const Email = styled.div`
@@ -24,6 +35,14 @@ const Email = styled.div`
   padding: 32px 64px;
   background-color: ${({ theme }) => theme.colors.secondary};
   border-radius: 16px;
+  width: auto;
+  box-sizing: border-box;
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    width: 100%;
+  };
+  @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
+    padding: 32px;
+  };
 `;
 
 const StyledTitle = styled(Typography)`
