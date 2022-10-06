@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { homePageResponsivePadding } from "../../sharedStyles";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -8,25 +9,26 @@ interface ComponentProps {
 
 const Container = styled.div`
   display: grid;
-  grid-template: auto 1fr auto / 1fr;
+  grid-template: 1fr auto / 1fr;
   min-height: 100%;
   background-color: ${({ theme }) => theme.colors.background};
-  padding: 16px;
-  @media (min-width: 375px) {
-    padding: 40px;
-  }
-  @media (min-width: 768px) {
-    padding: 60px;
-  }
+`;
+
+const HeaderAndMainContainer = styled.div`
+  ${homePageResponsivePadding}
+  display: grid;
+  grid-template: auto 1fr / 1fr;
 `;
 
 const Layout = ({ children }: ComponentProps) => {
   return (
     <Container>
-      <Header />
-      <div>
-        {children}
-      </div>
+      <HeaderAndMainContainer>
+        <Header />
+        <div>
+          {children}
+        </div>
+      </HeaderAndMainContainer>
       <Footer />
     </Container>
   );
