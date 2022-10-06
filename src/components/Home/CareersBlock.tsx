@@ -12,6 +12,7 @@ import careers from '../../../public/images/careers.svg';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 120px;
 `;
 
 const StyledTypography = styled(Typography)`

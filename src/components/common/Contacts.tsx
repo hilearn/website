@@ -13,6 +13,7 @@ const Container = styled.div`
   border-radius: 16px;
   background-color: #fff;
   padding: 16px;
+  margin-top: 120px;
   @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
     flex-direction: column;
     align-items: flex-start;

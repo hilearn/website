@@ -9,13 +9,15 @@ import { Larger, Smaller } from '../common/Togglers';
 
 const Container = styled.nav`
   position: relative;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 `;
 
 const Content = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 30px;
 `;
 
 const Menu = styled.button`
