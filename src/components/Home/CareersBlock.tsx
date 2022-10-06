@@ -11,8 +11,19 @@ import careers from '../../../public/images/careers.svg';
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 120px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const Content = styled.div`
+  margin-right: 40px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    margin-right: 0;
+  }
 `;
 
 const StyledTypography = styled(Typography)`
@@ -28,27 +39,29 @@ const ButtonContainer = styled.div`
 const CareersBlock = () => {
   return (
     <Container>
-      <BlockTitle text="Careers" />
-      <StyledTypography margin="0 0 24px 0">
-        HiLearn is always looking for well-rounded specialists that are proficient in creating engaging experiences and are
-        familiar with all aspects of product development from ideation to implementation.
-      </StyledTypography>
-      <HugeButton
-        iconSrc={website}
-        title="Front-end engineer"
-        caption="Lead"
-        withBottomGutter
-      />
-      <HugeButton
-        iconSrc={settings}
-        title="Quant Engineer"
-        caption="Senior/Mid/Junior/Intern"
-      />
-      <ButtonContainer>
-        <Button>
-          See all vacancies
-        </Button>
-      </ButtonContainer>
+      <Content>
+        <BlockTitle text="Careers" />
+        <StyledTypography margin="0 0 24px 0">
+          HiLearn is always looking for well-rounded specialists that are proficient in creating engaging experiences and are
+          familiar with all aspects of product development from ideation to implementation.
+        </StyledTypography>
+        <HugeButton
+          iconSrc={website}
+          title="Front-end engineer"
+          caption="Lead"
+          withBottomGutter
+        />
+        <HugeButton
+          iconSrc={settings}
+          title="Quant Engineer"
+          caption="Senior/Mid/Junior/Intern"
+        />
+        <ButtonContainer>
+          <Button>
+            See all vacancies
+          </Button>
+        </ButtonContainer>
+      </Content>
       <Image
         src={careers}
         alt="Careers"
