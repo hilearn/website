@@ -12,6 +12,10 @@ const getMembersArray = (members: Member[]) => {
   return [section1, section2, section3];
 }
 
+const Container = styled.div`
+  margin-top: 120px;
+`;
+
 const ImagesContainer = styled.div`
   display: grid;
   justify-content: center;
@@ -34,7 +38,7 @@ const StyledTypography = styled(Typography)`
 
 const TeamImages = () => {
   return (
-    <>
+    <Container>
       <BlockTitle text="The team" />
       <StyledTypography>
         We have one of the most innovative and highly-skilled teams in Armenia. Many of them are with international achievements at olympiads.
@@ -53,7 +57,7 @@ const TeamImages = () => {
           </Section>
         ))}
       </ImagesContainer>
-    </>
+    </Container>
   );
 };
 
