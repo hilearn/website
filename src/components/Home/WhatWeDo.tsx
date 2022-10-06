@@ -3,10 +3,23 @@ import AgilityBox from "../common/AgilityBox";
 import Typography from "../common/Typography";
 import { Agilities } from "../constants";
 
+const StyledTypography = styled(Typography)`
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+`;
+
 const Subtitle = styled(Typography)`
   max-width: 784px;
   margin-top: 24px;
   margin-bottom: 40px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
 `;
 
 const AgilitiesBlock = styled.div`
@@ -18,7 +31,7 @@ const AgilitiesBlock = styled.div`
 
 const WhatWeDo = () => (
   <>
-    <Typography>What we do</Typography>
+    <StyledTypography>What we do</StyledTypography>
     <Subtitle>
       HiLearn is a Technology company based in Yerevan,
       Armenia. HiLearn started as an algorithmic trading

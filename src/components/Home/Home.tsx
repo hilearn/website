@@ -4,19 +4,21 @@ import WhatWeDo from './WhatWeDo';
 import Advantages from './Advantages';
 import CareersBlock from './CareersBlock';
 import TeamImages from './TeamImages';
+import Team from '../Team/Team';
+import GroupedPartnersBlock from '../GroupedPartnersBlock';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  width: 100%;
 `;
 
 const Home = () => {
   return (
     <Container>
       <WhatWeDo />
+      <GroupedPartnersBlock />
       <Advantages />
       <TeamImages />
       <CareersBlock />

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import Advantage from './common/Advantage';
+import PartnersBox from './common/PartnerBox';
 import WhatWeDo from './Home/WhatWeDo';
 
 const Container = styled.div`
