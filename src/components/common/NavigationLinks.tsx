@@ -3,10 +3,20 @@ import { ReactNode } from "react";
 import styled from "styled-components";
 import Typography from "./Typography";
 
-const Container = styled.div`
+type ComponentProps = ContainerProps;
+
+interface ContainerProps {
+  vertical?: boolean;
+}
+
+const Container = styled.div<ContainerProps>`
   display: grid;
   grid-gap: 32px;
-  grid-template: 1fr / repeat(5, 1fr);
+  ${({ vertical }) => vertical ? (`
+    grid-template: repeat(5, 1fr) / 1fr;
+  `) : (`
+    grid-template: 1fr / repeat(5, 1fr);
+  `)}
 `;
 
 const StyledTypography = styled(Typography)`
@@ -29,9 +39,9 @@ const CustomLink = (props: CustomLinkProps) => (
   </Link>
 )
 
-const NavigationLinks = () => {
+const NavigationLinks = ({ vertical }: ComponentProps) => {
   return (
-    <Container>
+    <Container vertical={vertical}>
       <CustomLink href="/w">
         What we do
       </CustomLink>
