@@ -22,6 +22,7 @@ const Content = styled.div`
   width: 100%;
   background-color: #fff;
   padding: 27px 16px 16px 16px;
+  position: relative;
 `;
 
 const LinksAndCopyrightContainer = styled.div`
@@ -29,6 +30,13 @@ const LinksAndCopyrightContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    position: absolute;
+    left: 0;
+    top: 83px;
+    padding-bottom: 16px;
+  }
 `;
 
 const Copyright = styled(Typography)`
