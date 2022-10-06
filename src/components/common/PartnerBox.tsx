@@ -19,7 +19,6 @@ interface BgColorProps {
 const Banner = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 200px;
 `;
 
 const PartnersBlock = styled.div`

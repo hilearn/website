@@ -6,6 +6,7 @@ import CareersBlock from './CareersBlock';
 import TeamImages from './TeamImages';
 import Team from '../Team/Team';
 import GroupedPartnersBlock from '../GroupedPartnersBlock';
+import HeadingPart from '../HeadingPart';
 
 const Container = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ const Container = styled.div`
 const Home = () => {
   return (
     <Container>
+      <HeadingPart />
       <WhatWeDo />
       <GroupedPartnersBlock />
       <Advantages />
