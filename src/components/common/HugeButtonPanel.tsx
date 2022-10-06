@@ -63,6 +63,7 @@ const HugeButtonPanel = (props: ComponentProps) => {
           title={title}
           caption={caption}
           additional={additional}
+          open={isOpen}
         />
       </StyledButton>
       {isOpen && (

@@ -2,6 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 
 import arrow from '../../../public/images/long_right.svg'
+import close from '../../../public/images/close.svg'
 import Typography from "./Typography";
 
 interface ComponentProps {
@@ -9,6 +10,7 @@ interface ComponentProps {
   title: string;
   caption: string;
   additional?: string;
+  open?: boolean;
 }
 
 const Info = styled.div`
@@ -69,7 +71,10 @@ const HugeButtonContent = (props: ComponentProps) => {
     title,
     caption,
     additional,
+    open,
   } = props;
+
+  const icon = open ? close : arrow;
   return (
     <>
       <Info>
@@ -93,7 +98,7 @@ const HugeButtonContent = (props: ComponentProps) => {
             {additional}
           </AdditionalInfo>
         )}
-        <Image src={arrow} alt="" />
+        <Image src={icon} alt="" />
       </AdditionalAndIconContainer>
     </>
   );
