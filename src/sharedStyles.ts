@@ -12,3 +12,14 @@ export const homePageResponsivePadding = css`
     padding-right: 60px;
   }
 `;
+
+export const hugeButtonContainer = css`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-radius: 16px;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+`;

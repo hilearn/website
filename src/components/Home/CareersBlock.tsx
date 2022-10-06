@@ -24,7 +24,7 @@ const ButtonContainer = styled.div`
   margin: 32px 0;
 `;
 
-const Careers = () => {
+const CareersBlock = () => {
   return (
     <Container>
       <BlockTitle text="Careers" />
@@ -56,4 +56,4 @@ const Careers = () => {
   );
 };
 
-export default Careers;
+export default CareersBlock;

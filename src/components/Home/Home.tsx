@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import WhatWeDo from './WhatWeDo';
 
 import Advantages from './Advantages';
-import Careers from './Careers';
+import CareersBlock from './CareersBlock';
 import Team from './Team';
 import Contacts from './Contacts';
 
@@ -20,7 +20,7 @@ const Home = () => {
       <WhatWeDo />
       <Advantages />
       <Team />
-      <Careers />
+      <CareersBlock />
       <Contacts />
     </Container>
   );
