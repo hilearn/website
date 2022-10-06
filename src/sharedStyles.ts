@@ -13,6 +13,13 @@ export const homePageResponsivePadding = css`
   }
 `;
 
+export const homePageBlocksSpacing = css`
+  margin-top: 200px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
+    margin-top: 120px;
+  }
+`
+
 export const hugeButtonContainer = css`
   display: flex;
   justify-content: space-between;

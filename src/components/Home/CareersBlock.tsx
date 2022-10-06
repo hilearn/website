@@ -8,11 +8,12 @@ import BlockTitle from "../common/BlockTitle";
 import Typography from "../common/Typography";
 import Button from "../common/Button";
 import careers from '../../../public/images/careers.svg';
+import { homePageBlocksSpacing } from '../../sharedStyles';
 
 const Container = styled.div`
+  ${homePageBlocksSpacing}
   display: flex;
   flex-direction: row;
-  margin-top: 120px;
   @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
     display: flex;
     flex-direction: column;

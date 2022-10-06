@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { homePageBlocksSpacing } from "../../sharedStyles";
 import members, { Member } from "../../utils/constants/members";
 import BlockTitle from "../common/BlockTitle";
 import Button from "../common/Button";
@@ -13,7 +14,7 @@ const getMembersArray = (members: Member[]) => {
 }
 
 const Container = styled.div`
-  margin-top: 120px;
+  ${homePageBlocksSpacing}
   display: flex;
   flex-direction: row-reverse;
   @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
