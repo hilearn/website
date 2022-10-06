@@ -22,7 +22,7 @@ const Container = styled.div`
 const Content = styled.div`
   margin-right: 40px;
   @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
-    margin-left: 0;
+    margin-right: 0;
   }
 `;
 
