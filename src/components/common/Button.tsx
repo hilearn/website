@@ -7,6 +7,7 @@ import Typography from "./Typography";
 
 interface ComponentProps {
   children: ReactNode;
+  withoutIcon?: boolean;
 }
 
 const StyledButton = styled.button`
@@ -15,6 +16,7 @@ const StyledButton = styled.button`
   padding: 8px 24px;
   border: 1px solid #000000;
   display: flex;
+  align-items: center;
 `;
 
 const StyledTypography = styled(Typography)`
@@ -24,13 +26,15 @@ const StyledTypography = styled(Typography)`
   margin-right: 18px;
 `;
 
-const Button = ({ children }: ComponentProps) => {
+const Button = ({ children, withoutIcon }: ComponentProps) => {
   return (
     <StyledButton>
       <StyledTypography>
         {children}
       </StyledTypography>
-      <Image src={arrow} alt="" />
+      {!withoutIcon && (
+        <Image src={arrow} alt="" />
+      )}
     </StyledButton>
   );
 };

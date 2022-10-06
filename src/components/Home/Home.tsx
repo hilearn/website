@@ -2,13 +2,14 @@ import styled from 'styled-components';
 import WhatWeDo from './WhatWeDo';
 
 import Advantages from './Advantages';
-import Team from './Team';
 import PartnersBox from '../common/PartnearBox';
 
 import WealthTech from "../../../public/images/wealthTech.png";
 import MoneyLionImg from "../../../public/images/moneyLionImg.png";
 import MoneyLionLogo from "../../../public/images/moneyLionLogo.png";
 import Typography from '../common/Typography';
+import CareersBlock from './CareersBlock';
+import TeamImages from './TeamImages';
 
 const Container = styled.div`
   display: flex;
@@ -62,7 +63,8 @@ const Home = () => {
         />
       </StyledPartnersBlock>
       <Advantages />
-      <Team />
+      <TeamImages />
+      <CareersBlock />
     </Container>
   );
 };
