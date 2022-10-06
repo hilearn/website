@@ -13,6 +13,7 @@ const Container = styled.footer`
   width: 100%;
   background-color: #fff;
   box-sizing: border-box;
+  margin-top: 64px;
 `;
 
 const Content = styled.div`
