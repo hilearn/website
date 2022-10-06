@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-import Typography from "../common/Typography";
+import Typography from "./Typography";
 import email from '../../../public/images/mail.svg';
 
 const Container = styled.div`

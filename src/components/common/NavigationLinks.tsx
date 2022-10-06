@@ -35,7 +35,7 @@ const NavigationLinks = () => {
       <CustomLink href="/w">
         What we do
       </CustomLink>
-      <CustomLink href="/w">
+      <CustomLink href="/team">
         The Team
       </CustomLink>
       <CustomLink href="/w">
