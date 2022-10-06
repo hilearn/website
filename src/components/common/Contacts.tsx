@@ -3,8 +3,10 @@ import styled from "styled-components";
 
 import Typography from "./Typography";
 import email from '../../../public/images/mail.svg';
+import { homePageBlocksSpacing } from "../../sharedStyles";
 
 const Container = styled.div`
+  ${homePageBlocksSpacing}
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,7 +15,6 @@ const Container = styled.div`
   border-radius: 16px;
   background-color: #fff;
   padding: 16px;
-  margin-top: 120px;
   @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
     flex-direction: column;
     align-items: flex-start;
