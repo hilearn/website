@@ -19,7 +19,6 @@ const StyledTypography = styled(Typography)`
   font-size: 32px;
   line-height: 39px;
   margin-bottom: 40px;
-  margin-top: 200px;
 `;
 
 const GroupedPartnersBlock = () => (
