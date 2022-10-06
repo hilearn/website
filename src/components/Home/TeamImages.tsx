@@ -32,7 +32,7 @@ const StyledTypography = styled(Typography)`
   margin-bottom: 32px;
 `;
 
-const Team = () => {
+const TeamImages = () => {
   return (
     <>
       <BlockTitle text="The team" />
@@ -57,4 +57,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default TeamImages;

@@ -3,8 +3,7 @@ import WhatWeDo from './WhatWeDo';
 
 import Advantages from './Advantages';
 import Careers from './Careers';
-import Team from './Team';
-import Contacts from './Contacts';
+import TeamImages from './TeamImages';
 
 const Container = styled.div`
   display: flex;
@@ -19,9 +18,8 @@ const Home = () => {
     <Container>
       <WhatWeDo />
       <Advantages />
-      <Team />
+      <TeamImages />
       <Careers />
-      <Contacts />
     </Container>
   );
 };
