@@ -10,6 +10,7 @@ import MoneyLionLogo from "../../../public/images/moneyLionLogo.png";
 import Typography from '../common/Typography';
 import CareersBlock from './CareersBlock';
 import TeamImages from './TeamImages';
+import Team from '../Team/Team';
 
 const Container = styled.div`
   display: flex;
