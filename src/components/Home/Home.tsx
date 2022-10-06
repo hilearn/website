@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import WhatWeDo from './WhatWeDo';
 
 import Advantages from './Advantages';
-import Careers from './Careers';
+import CareersBlock from './CareersBlock';
 import TeamImages from './TeamImages';
 
 const Container = styled.div`
@@ -19,7 +19,7 @@ const Home = () => {
       <WhatWeDo />
       <Advantages />
       <TeamImages />
-      <Careers />
+      <CareersBlock />
     </Container>
   );
 };

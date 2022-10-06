@@ -38,7 +38,7 @@ const NavigationLinks = () => {
       <CustomLink href="/team">
         The Team
       </CustomLink>
-      <CustomLink href="/w">
+      <CustomLink href="/careers">
         Careers
       </CustomLink>
       <CustomLink href="/w">
