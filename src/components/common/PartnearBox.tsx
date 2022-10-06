@@ -92,7 +92,7 @@ const PartnersBox = ({
           )}
           <Typography>{companyName}</Typography>
         </PartnerLogoNameBlock>
-      <StyledPartnerDescription>{title}</StyledPartnerDescription>
+        <StyledPartnerDescription>{title}</StyledPartnerDescription>
       </PartnersBlock>
       <PartnerLogo bgColor={bgColor}>
         <StyledImage src={image} alt="Partner logo" height={height} width={width} />
