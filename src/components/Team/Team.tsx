@@ -6,6 +6,7 @@ import TeamMember from "./TeamMember";
 
 const MembersContainer = styled.div`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   row-gap: 40px;
   column-gap: 24px;
