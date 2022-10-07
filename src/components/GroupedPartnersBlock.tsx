@@ -5,6 +5,7 @@ import MoneyLionLogo from "../../public/images/moneyLionLogo.png";
 import PartnersBox from "./common/PartnerBox";
 import Typography from "./common/Typography";
 import styled from "styled-components";
+import { homePageBlocksSpacing } from "../sharedStyles";
 
 const StyledPartnersBlock = styled.div`
   display: grid;
@@ -16,6 +17,7 @@ const StyledPartnersBlock = styled.div`
 `;
 
 const StyledTypography = styled(Typography)`
+  ${homePageBlocksSpacing}
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -34,7 +36,7 @@ const GroupedPartnersBlock = () => (
         companyName="MoneyLion"
         title="With MoneyLion we are developing personalized
         financial calculators, financial loans marketplace and
-        recommendation engine for the Feed.  MoneyLion is a
+        recommendation engine for the Feed. MoneyLion is a
         financial technology company, not a bank."
       />
       <PartnersBox
@@ -45,9 +47,6 @@ const GroupedPartnersBlock = () => (
         We used different data sources to build a unified demographics
         database, that allowed us to understand consumer needs, and
         helped with user clustering."
-        width={200}
-        height={200}
-        bgColor
       />
   </StyledPartnersBlock>
 </>

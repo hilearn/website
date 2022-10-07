@@ -18,6 +18,14 @@ const Box = styled.div`
   }
 `;
 
+const StyledTypography = styled(Typography)`
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+`;
+
 const AgilityBox = ({ agility }) => (
   <Box>
     <Image src={Doc} alt="Doc" width={60} height={60} />
