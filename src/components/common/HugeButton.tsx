@@ -9,6 +9,7 @@ interface ComponentProps {
   caption: string;
   additional?: string;
   withBottomGutter?: boolean;
+  onClick?: VoidFunction;
 }
 
 interface StyledButtonProps {
@@ -27,11 +28,12 @@ const HugeButton = (props: ComponentProps) => {
     iconSrc,
     title,
     caption,
+    onClick,
     additional,
     withBottomGutter,
   } = props;
   return (
-    <StyledButton withBottomGutter={withBottomGutter}>
+    <StyledButton withBottomGutter={withBottomGutter} onClick={onClick}>
       <HugeButtonContent
         iconSrc={iconSrc}
         title={title}

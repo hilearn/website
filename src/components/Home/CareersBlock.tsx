@@ -57,12 +57,14 @@ const CareersBlock = () => {
           iconSrc={website}
           title="Front-end engineer"
           caption="Lead"
+          onClick={handleGoToCareers}
           withBottomGutter
         />
         <HugeButton
           iconSrc={settings}
           title="Quant Engineer"
           caption="Senior/Mid/Junior/Intern"
+          onClick={handleGoToCareers}
         />
         <ButtonContainer>
           <Button onClick={handleGoToCareers}>
