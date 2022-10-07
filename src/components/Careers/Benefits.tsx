@@ -20,7 +20,6 @@ const Content = styled.div`
 `;
 
 const StyledTypography = styled(Typography)`
-  font-size: 32px;
   font-weight: 600;
   line-height: 39px;
 `;
@@ -28,7 +27,7 @@ const StyledTypography = styled(Typography)`
 const Benefits = () => {
   return (
     <Container>
-      <StyledTypography>
+      <StyledTypography size="xl">
         Our benefits
       </StyledTypography>
       <Content>

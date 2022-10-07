@@ -14,7 +14,6 @@ const Container = styled.div`
 `;
 
 const StyledTitle = styled(Typography)`
-  font-size: 24px;
   font-weight: 500;
   line-height: 29px;
 `;
@@ -26,7 +25,6 @@ const StyledQueue = styled(StyledTitle)`
 `;
 
 const StyledDescription = styled(Typography)`
-  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   margin-top: 8px;
@@ -44,10 +42,10 @@ const Advantage = (props: ComponentProps) => {
       <StyledQueue customColor={theme.colors.primary}>
         {queue}
       </StyledQueue>
-      <StyledTitle>
+      <StyledTitle size="lg">
         {title}
       </StyledTitle>
-      <StyledDescription color="secondary">
+      <StyledDescription size="sm" color="secondary">
         {description}
       </StyledDescription>
     </Container>

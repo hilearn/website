@@ -16,17 +16,13 @@ const StyledPartnersBlock = styled.div`
 `;
 
 const StyledTypography = styled(Typography)`
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
   line-height: 39px;
   margin-bottom: 40px;
 `;
 
 const GroupedPartnersBlock = () => (
   <>
-    <StyledTypography>Partners</StyledTypography>
+    <StyledTypography size="xl">Partners</StyledTypography>
     <StyledPartnersBlock>
       <PartnersBox
         logo={MoneyLionLogo}
@@ -34,7 +30,7 @@ const GroupedPartnersBlock = () => (
         companyName="MoneyLion"
         title="With MoneyLion we are developing personalized
         financial calculators, financial loans marketplace and
-        recommendation engine for the Feed.  MoneyLion is a
+        recommendation engine for the Feed. MoneyLion is a
         financial technology company, not a bank."
       />
       <PartnersBox

@@ -29,7 +29,6 @@ const Content = styled.div`
 `;
 
 const StyledTypography = styled(Typography)`
-  font-size: 16px;
   font-weight: 400;
   line-height: 21px;
 `;

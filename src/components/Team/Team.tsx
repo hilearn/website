@@ -13,7 +13,6 @@ const MembersContainer = styled.div`
 `;
 
 const StyledTitle = styled(Typography)`
-  font-size: 24px;
   font-weight: 800;
   line-height: 29px;
 `;
@@ -21,7 +20,7 @@ const StyledTitle = styled(Typography)`
 const Team = () => {
   return (
     <div>
-      <StyledTitle margin="0 0 24px 0">
+      <StyledTitle size="lg" margin="0 0 24px 0">
         Meet our team
       </StyledTitle>
       <MembersContainer>

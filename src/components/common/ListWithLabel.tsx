@@ -7,13 +7,11 @@ interface ComponentProps {
 }
 
 const StyledLabel = styled(Typography)`
-  font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 `;
 
 const StyledListItem = styled(Typography)`
-  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: ${({ theme }) => theme.colors.text.primary};
