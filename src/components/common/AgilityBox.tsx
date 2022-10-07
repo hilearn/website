@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Typography from "./Typography";
 import Doc from "../../../public/images/doc.png";
-import RoundedImage from "./RoundedImage";
 import Image from "next/image";
 
 const Box = styled.div`

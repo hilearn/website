@@ -21,7 +21,6 @@ const StyledButton = styled.button`
 `;
 
 const StyledTypography = styled(Typography)`
-  font-size: 16px;
   font-weight: 600;
   line-height: 21px;
   margin-right: 18px;

@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import styled from "styled-components";
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import members, { Member } from "../../utils/constants/members";
+import PagePaths from "../../utils/constants/pagePaths";
 import BlockTitle from "../common/BlockTitle";
 import Button from "../common/Button";
 import RoundedImage from "../common/RoundedImage";
@@ -57,7 +58,6 @@ const Section = styled.div`
 `;
 
 const StyledTypography = styled(Typography)`
-  font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   margin-bottom: 32px;
@@ -67,7 +67,7 @@ const TeamImages = () => {
   const router = useRouter();
 
   const handleGoToTeam = () => {
-    router.push('/team');
+    router.push(PagePaths.team);
   };
 
   return (

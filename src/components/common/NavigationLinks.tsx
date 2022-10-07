@@ -1,6 +1,7 @@
 import Link, { LinkProps } from "next/link";
 import { ReactNode } from "react";
 import styled from "styled-components";
+import PagePaths from "../../utils/constants/pagePaths";
 import Typography from "./Typography";
 
 type ComponentProps = ContainerProps & {
@@ -22,7 +23,6 @@ const Container = styled.div<ContainerProps>`
 `;
 
 const StyledTypography = styled(Typography)`
-  font-size: 16px;
   font-weight: 500;
   line-height: 19px;
 `;
@@ -48,10 +48,10 @@ const NavigationLinks = ({ vertical, onClick }: ComponentProps) => {
       <CustomLink href="/w" onClick={onClick}>
         What we do
       </CustomLink>
-      <CustomLink href="/team" onClick={onClick}>
+      <CustomLink href={PagePaths.team} onClick={onClick}>
         The Team
       </CustomLink>
-      <CustomLink href="/careers" onClick={onClick}>
+      <CustomLink href={PagePaths.careers} onClick={onClick}>
         Careers
       </CustomLink>
       <CustomLink href="/w" onClick={onClick}>

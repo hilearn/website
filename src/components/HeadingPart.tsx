@@ -9,18 +9,19 @@ const HeadingBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media(max-width: 768px) {
+  @media(max-width: 1320px) {
     flex-direction: column;
   }
 `;
 
 const Description = styled.div`
   max-width: 614px;
-  @media(max-width: 768px) {
+  @media(max-width: 1320px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 614px;
+    text-align: center;
   }
 `;
 
@@ -54,13 +55,10 @@ const StyledSubTitle = styled(Typography)`
   max-width: 484px;
   margin-top: 24px;
   margin-bottom: 32px;
-  @media(max-width: 768px) {
-    text-align: center;
-  }
 `;
 
 const StyledImage = styled(Image)`
-  @media(max-width: 768px) {
+  @media(max-width: 1320px) {
     margin-top: 40px !important;
     padding-bottom: 40px !important;
   };

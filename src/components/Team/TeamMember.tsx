@@ -20,13 +20,11 @@ const StyledImage = styled(Image)`
 `;
 
 const FullName = styled(Typography)`
-  font-size: 16px;
   font-weight: 600;
   line-height: 19px;
 `;
 
 const JobPosition = styled(Typography)`
-  font-size: 14px;
   font-weight: 400;
   line-height: 17px;
 `;
@@ -54,7 +52,7 @@ const TeamMember = (props: ComponentProps) => {
       <FullName margin="16px 0 8px 0">
         {fullName}
       </FullName>
-      <JobPosition>
+      <JobPosition size="sm">
         {jobPosition}
       </JobPosition>
       <IconsContainer>

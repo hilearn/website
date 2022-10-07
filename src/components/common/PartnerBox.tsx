@@ -71,7 +71,7 @@ const PartnersBox = ({
       <PartnersBlock>
         <PartnerLogoNameBlock>
           {logo && (
-          <Image src={logo} height={37} width={37} alt="Logo" />
+            <Image src={logo} height={37} width={37} alt="Logo" />
           )}
           <Typography>{companyName}</Typography>
         </PartnerLogoNameBlock>
