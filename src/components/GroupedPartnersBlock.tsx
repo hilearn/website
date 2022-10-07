@@ -7,9 +7,12 @@ import Typography from "./common/Typography";
 import styled from "styled-components";
 
 const StyledPartnersBlock = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  display: grid;
+  gap: 40px;
+  grid-template: 1fr / 1fr 1fr;
+  @media(max-width: 768px) {
+    grid-template: 1fr  1fr/ 1fr;
+  }
 `;
 
 const StyledTypography = styled(Typography)`
@@ -33,8 +36,6 @@ const GroupedPartnersBlock = () => (
         financial calculators, financial loans marketplace and
         recommendation engine for the Feed.  MoneyLion is a
         financial technology company, not a bank."
-        height="329px"
-        width="580px"
       />
       <PartnersBox
         image={WealthTech}
@@ -44,8 +45,8 @@ const GroupedPartnersBlock = () => (
         We used different data sources to build a unified demographics
         database, that allowed us to understand consumer needs, and
         helped with user clustering."
-        height="152px"
-        width="152px"
+        width={200}
+        height={200}
         bgColor
       />
   </StyledPartnersBlock>

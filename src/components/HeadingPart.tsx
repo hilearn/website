@@ -7,6 +7,18 @@ const HeadingBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const Description = styled.div`
+  @media(max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 614px;
+  }
 `;
 
 const StyledTitle = styled(Typography)`
@@ -16,7 +28,14 @@ const StyledTitle = styled(Typography)`
   font-size: 64px;
   line-height: 77px;
   color: #1C1C1C;
-  width: 555px;
+  max-width: 555px;
+  @media(max-width: 768px) {
+    max-width: 614px;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 24px;
+  };
 `;
 
 const StyledSubTitle = styled(Typography)`
@@ -27,11 +46,15 @@ const StyledSubTitle = styled(Typography)`
   line-height: 130%;
   color: #1C1C1C;
   width: 484px;
+  @media(max-width: 768px) {
+    text-align: center;
+    margin-bottom: 32px;
+  }
 `;
 
 const HeadingPart = () => (
   <HeadingBlock>
-    <div>
+    <Description>
       <StyledTitle>
         Innovating solutions for the FinTech industry
       </StyledTitle>
@@ -40,8 +63,8 @@ const HeadingPart = () => (
         companies in the fields of data science,
         AI and ML, software development.
       </StyledSubTitle>
-    </div>
-    <Image src={HeadingBgImage} alt="" height="496px" max-width="808px" />
+    </Description>
+    <Image src={HeadingBgImage} alt="" />
   </HeadingBlock>
 );
 

@@ -27,6 +27,10 @@ const AgilitiesBlock = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 40px;
+  @media(max-width: 768px) {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+  }
 `;
 
 const WhatWeDo = () => (
