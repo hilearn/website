@@ -58,6 +58,9 @@ const AdditionalInfo = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   border-radius: 20px;
   margin-right: 24px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    display: none;
+  }
 `;
 
 const AdditionalAndIconContainer = styled.div`
