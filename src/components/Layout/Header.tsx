@@ -4,8 +4,9 @@ import logo from '../../../public/images/logo.svg';
 import NavigationLinks from '../common/NavigationLinks';
 import menu from '../../../public/images/menu.svg';
 import menuClose from '../../../public/images/menuClose.svg';
-import { useState } from 'react';
+import { startTransition, useState } from 'react';
 import { Larger, Smaller } from '../common/Togglers';
+import Link from 'next/link';
 
 const Container = styled.nav`
   position: relative;
@@ -20,9 +21,14 @@ const Content = styled.div`
   justify-content: space-between;
 `;
 
+const StyledImage = styled(Image)`
+  cursor: pointer;
+`;
+
 const Menu = styled.button`
   border: none;
   background: none;
+  cursor: pointer;
 `;
 
 const MobileNavigationContainer = styled.div`
@@ -41,15 +47,23 @@ const Header = () => {
     setOpen(!open);
   };
 
+  const handleCloseMenu = () => {
+    startTransition(() => {
+      setOpen(false);
+    })
+  };
+
   const icon = open ? menuClose : menu;
 
   return (
     <Container>
       <Content>
-        <Image
-          src={logo}
-          alt="Logo"
-        />
+        <Link href="/">
+          <StyledImage
+            src={logo}
+            alt="Logo"
+          />
+        </Link>
         <Smaller>
           <Menu onClick={handleToggleMenu}>
             <Image src={icon} alt="Menu" />
@@ -63,7 +77,7 @@ const Header = () => {
       </Content>
       {open && (
           <MobileNavigationContainer>
-            <NavigationLinks vertical />
+            <NavigationLinks vertical onClick={handleCloseMenu} />
           </MobileNavigationContainer>
         )}
     </Container>
