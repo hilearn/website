@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Button from "../common/Button";
 import question_sign from '../../../public/images/question_sign.svg';
 import Image from "next/image";
+import PagePaths from "../../utils/constants/pagePaths";
 
 const Container = styled.div`
   display: flex;
@@ -35,7 +36,7 @@ const NewMember = () => {
   const router = useRouter();
 
   const handleGoToCareers = () => {
-    router.push('/careers');
+    router.push(PagePaths.careers);
   };
 
   return (
