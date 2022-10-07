@@ -28,9 +28,8 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-          <link href="http://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet" />
         </Head>
         <body>
           <Main />
