@@ -3,7 +3,9 @@ import { ReactNode } from "react";
 import styled from "styled-components";
 import Typography from "./Typography";
 
-type ComponentProps = ContainerProps;
+type ComponentProps = ContainerProps & {
+  onClick?: VoidFunction;
+};
 
 interface ContainerProps {
   vertical?: boolean;
@@ -27,11 +29,12 @@ const StyledTypography = styled(Typography)`
 
 type CustomLinkProps = LinkProps & {
   children: ReactNode;
+  onClick: VoidFunction;
 }
 
 const CustomLink = (props: CustomLinkProps) => (
   <Link {...props} passHref>
-    <a>
+    <a onClick={props.onClick}>
       <StyledTypography>
         {props.children}
       </StyledTypography>
@@ -39,22 +42,22 @@ const CustomLink = (props: CustomLinkProps) => (
   </Link>
 )
 
-const NavigationLinks = ({ vertical }: ComponentProps) => {
+const NavigationLinks = ({ vertical, onClick }: ComponentProps) => {
   return (
     <Container vertical={vertical}>
-      <CustomLink href="/w">
+      <CustomLink href="/w" onClick={onClick}>
         What we do
       </CustomLink>
-      <CustomLink href="/team">
+      <CustomLink href="/team" onClick={onClick}>
         The Team
       </CustomLink>
-      <CustomLink href="/careers">
+      <CustomLink href="/careers" onClick={onClick}>
         Careers
       </CustomLink>
-      <CustomLink href="/w">
+      <CustomLink href="/w" onClick={onClick}>
         Partners
       </CustomLink>
-      <CustomLink href="/w">
+      <CustomLink href="/w" onClick={onClick}>
         Contacts
       </CustomLink>
     </Container>
