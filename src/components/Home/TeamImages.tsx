@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import styled from "styled-components";
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import members, { Member } from "../../utils/constants/members";
@@ -63,6 +64,12 @@ const StyledTypography = styled(Typography)`
 `;
 
 const TeamImages = () => {
+  const router = useRouter();
+
+  const handleGoToTeam = () => {
+    router.push('/team');
+  };
+
   return (
     <Container>
       <Content>
@@ -72,7 +79,7 @@ const TeamImages = () => {
           The team consists of Data scientists, Backend and Frontend developers, Product and Project Managers and Product Designers.
           We work according to Agile methodology. Team tech stack includes: React JS, Webpack, Typescript, Nodejs, AWS.
         </StyledTypography>
-        <Button>
+        <Button onClick={handleGoToTeam}>
           Meet the team
         </Button>
       </Content>

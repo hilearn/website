@@ -67,7 +67,7 @@ const StyledHiLearnEmail = styled(Typography)`
 
 const Contacts = () => {
   return (
-    <Container>
+    <Container id="contacts">
       <Texts>
         <StyledTitle margin="0 0 16px 0">
           Contacts
