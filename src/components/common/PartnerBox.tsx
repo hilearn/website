@@ -7,8 +7,8 @@ interface ComponentProps {
   bgColor?: boolean;
   companyName: string;
   title: string;
-  height: string;
-  width: string;
+  height?: number;
+  width?: number;
   image: StaticImageData;
 }
 
@@ -55,13 +55,12 @@ const StyledPartnerDescription = styled.div`
 `;
 
 const PartnerLogo = styled.div<BgColorProps>`
-  height: 329px;
-  width: 580px;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   ${({ bgColor }) => bgColor && `
     background-color: #D7E6EF;
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
   `}
@@ -93,7 +92,7 @@ const PartnersBox = ({
         <StyledPartnerDescription>{title}</StyledPartnerDescription>
       </PartnersBlock>
       <PartnerLogo bgColor={bgColor}>
-        <StyledImage src={image} alt="Partner logo" height={height} width={width} />
+        <StyledImage src={image} alt="Partner logo" width={width} height={height} />
       </PartnerLogo>
     </Banner>
   )
