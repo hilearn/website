@@ -30,6 +30,7 @@ export default class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+          <link href="http://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
         </Head>
         <body>
           <Main />
