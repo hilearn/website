@@ -14,13 +14,38 @@ const getMembersArray = (members: Member[]) => {
 
 const Container = styled.div`
   margin-top: 120px;
+  display: flex;
+  flex-direction: row-reverse;
+  @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
+    flex-direction: column;
+  }
+`;
+
+const Content = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
+    width: auto;
+  }
 `;
 
 const ImagesContainer = styled.div`
   display: grid;
   justify-content: center;
   grid-gap: 32px;
-  margin-top: 48px;
+  margin-top: 0;
+  margin-right: 40px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
+    margin-right: 0;
+    margin-top: 48px;
+    grid-gap: 32px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    grid-gap: 24px;
+  }
 `;
 
 const Section = styled.div`
@@ -39,15 +64,17 @@ const StyledTypography = styled(Typography)`
 const TeamImages = () => {
   return (
     <Container>
-      <BlockTitle text="The team" />
-      <StyledTypography>
-        We have one of the most innovative and highly-skilled teams in Armenia. Many of them are with international achievements at olympiads.
-        The team consists of Data scientists, Backend and Frontend developers, Product and Project Managers and Product Designers.
-        We work according to Agile methodology. Team tech stack includes: React JS, Webpack, Typescript, Nodejs, AWS.
-      </StyledTypography>
-      <Button>
-        Meet the team
-      </Button>
+      <Content>
+        <BlockTitle text="The team" />
+        <StyledTypography>
+          We have one of the most innovative and highly-skilled teams in Armenia. Many of them are with international achievements at olympiads.
+          The team consists of Data scientists, Backend and Frontend developers, Product and Project Managers and Product Designers.
+          We work according to Agile methodology. Team tech stack includes: React JS, Webpack, Typescript, Nodejs, AWS.
+        </StyledTypography>
+        <Button>
+          Meet the team
+        </Button>
+      </Content>
       <ImagesContainer>
         {getMembersArray(members).map((section, i) => (
           <Section key={i}>
