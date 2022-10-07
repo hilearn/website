@@ -48,19 +48,16 @@ const Email = styled.div`
 `;
 
 const StyledTitle = styled(Typography)`
-  font-size: 32px;
   font-weight: 600;
   line-height: 39px;
 `;
 
 const StyledCaption = styled(Typography)`
-  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 `;
 
 const StyledHiLearnEmail = styled(Typography)`
-  font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 `;
@@ -69,7 +66,7 @@ const Contacts = () => {
   return (
     <Container id="contacts">
       <Texts>
-        <StyledTitle margin="0 0 16px 0">
+        <StyledTitle size="xl" margin="0 0 16px 0">
           Contacts
         </StyledTitle>
         <StyledCaption>

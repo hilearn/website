@@ -6,7 +6,6 @@ interface ComponentProps {
 }
 
 const StyledTitle = styled(Typography)`
-  font-size: 32px;
   font-weight: 600;
   line-height: 39px;
   margin-bottom: 24px;
@@ -14,7 +13,7 @@ const StyledTitle = styled(Typography)`
 
 const BlockTitle = ({ text }: ComponentProps) => {
   return (
-    <StyledTitle>
+    <StyledTitle size="xl">
       {text}
     </StyledTitle>
   );

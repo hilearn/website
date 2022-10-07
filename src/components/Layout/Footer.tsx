@@ -41,7 +41,6 @@ const LinksAndCopyrightContainer = styled.div`
 `;
 
 const Copyright = styled(Typography)`
-  font-size: 13px;
   font-weight: 400;
   line-height: 16px;
 `;
@@ -62,7 +61,7 @@ const Footer = () => {
           <Larger>
             <NavigationLinks />
           </Larger>    
-          <Copyright margin="27px 0 0 0" color="secondary">
+          <Copyright size="xs" margin="27px 0 0 0" color="secondary">
             Copyright © Hilearn 2022
           </Copyright>
         </LinksAndCopyrightContainer>

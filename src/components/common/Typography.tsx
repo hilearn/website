@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
+type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
+
 interface ComponentProps {
   children: React.ReactNode;
+  size?: Size;
   as?: keyof HTMLElementTagNameMap;
   color?: 'primary' | 'secondary';
   customColor?: string;
@@ -15,6 +18,7 @@ interface StyledTypographyProps {
   customColor: string | undefined;
   padding: string | undefined;
   margin: string | undefined;
+  size: Size;
 }
 
 const StyledTypography = styled.p<StyledTypographyProps>`
@@ -23,6 +27,37 @@ const StyledTypography = styled.p<StyledTypographyProps>`
   color: ${({ theme, $color, customColor }) => customColor || theme.colors.text[$color]};
   padding: ${({ padding }) => padding || 0};
   margin: ${({ margin }) => margin || 0};
+  ${({ size }) => {
+    if (size === 'xs') {
+      return `
+        font-size: 13px;
+      `;
+    } else if (size === 'sm') {
+      return `
+        font-size: 14px;
+      `;
+    } else if (size === 'lg') {
+      return `
+        font-size: 24px;
+      `;
+    } else if (size === 'xl') {
+      return `
+        font-size: 32px;
+      `;
+    } else if (size === 'xxl') {
+      return `
+        font-size: 48px;
+      `;
+    } else if (size === 'xxxl') {
+      return `
+        font-size: 64px;
+      `;
+    } else {
+      return `
+        font-size: 16px;
+      `;
+    }
+  }}
 `;
 
 const Typography = (props: ComponentProps) => {
@@ -34,6 +69,7 @@ const Typography = (props: ComponentProps) => {
     padding,
     margin,
     className,
+    size = 'md',
   } = props;
 
   return (
@@ -44,6 +80,7 @@ const Typography = (props: ComponentProps) => {
       padding={padding}
       margin={margin}
       className={className}
+      size={size}
     >
       {children}
     </StyledTypography>

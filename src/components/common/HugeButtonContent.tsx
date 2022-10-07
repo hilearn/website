@@ -47,7 +47,6 @@ const StyledTitle = styled(Typography)`
 `;
 
 const StyledCaption = styled(Typography)`
-  font-size: 16px;
   font-weight: 400;
   line-height: 19px;
 `;
