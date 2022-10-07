@@ -57,7 +57,7 @@ const NavigationLinks = ({ vertical, onClick }: ComponentProps) => {
       <CustomLink href="/w" onClick={onClick}>
         Partners
       </CustomLink>
-      <CustomLink href="/w" onClick={onClick}>
+      <CustomLink href="#contacts" onClick={onClick}>
         Contacts
       </CustomLink>
     </Container>

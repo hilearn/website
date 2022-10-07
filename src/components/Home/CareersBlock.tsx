@@ -9,6 +9,7 @@ import Typography from "../common/Typography";
 import Button from "../common/Button";
 import careers from '../../../public/images/careers.svg';
 import { homePageBlocksSpacing } from '../../sharedStyles';
+import { useRouter } from 'next/router';
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
@@ -38,6 +39,12 @@ const ButtonContainer = styled.div`
 `;
 
 const CareersBlock = () => {
+  const router = useRouter();
+
+  const handleGoToCareers = () => {
+    router.push('/careers');
+  };
+
   return (
     <Container>
       <Content>
@@ -58,7 +65,7 @@ const CareersBlock = () => {
           caption="Senior/Mid/Junior/Intern"
         />
         <ButtonContainer>
-          <Button>
+          <Button onClick={handleGoToCareers}>
             See all vacancies
           </Button>
         </ButtonContainer>

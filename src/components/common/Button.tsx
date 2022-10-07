@@ -8,6 +8,7 @@ import Typography from "./Typography";
 interface ComponentProps {
   children: ReactNode;
   withoutIcon?: boolean;
+  onClick?: VoidFunction;
 }
 
 const StyledButton = styled.button`
@@ -26,9 +27,9 @@ const StyledTypography = styled(Typography)`
   margin-right: 18px;
 `;
 
-const Button = ({ children, withoutIcon }: ComponentProps) => {
+const Button = ({ children, withoutIcon, onClick }: ComponentProps) => {
   return (
-    <StyledButton>
+    <StyledButton onClick={onClick}>
       <StyledTypography>
         {children}
       </StyledTypography>
