@@ -15,6 +15,10 @@ const getMembersArray = (members: Member[]) => {
   return [section1, section2, section3];
 }
 
+interface SectionProps {
+  withRightLeftSpaces?: boolean; 
+}
+
 const Container = styled.div`
   ${homePageBlocksSpacing}
   display: flex;
@@ -51,10 +55,13 @@ const ImagesContainer = styled.div`
   }
 `;
 
-const Section = styled.div`
+const Section = styled.div<SectionProps>`
   display: flex;
   justify-content: center;
   grid-gap: 24px;
+  ${({ withRightLeftSpaces }) => withRightLeftSpaces && `
+    margin: 0 60px;
+  `}
 `;
 
 const StyledTypography = styled(Typography)`
@@ -68,6 +75,7 @@ const TeamImages = () => {
 
   const handleGoToTeam = () => {
     router.push(PagePaths.team);
+
   };
 
   return (
@@ -85,7 +93,7 @@ const TeamImages = () => {
       </Content>
       <ImagesContainer>
         {getMembersArray(members).map((section, i) => (
-          <Section key={i}>
+          <Section key={i} withRightLeftSpaces={i === 0 || i === 2}>
             {section.map((m) => (
               <RoundedImage key={m.name} src={m.img} />
             ))}
