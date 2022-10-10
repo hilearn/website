@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 
 import HugeButton from "../common/HugeButton";
 import website from '../../../public/images/website.svg';
-import settings from '../../../public/images/settings.svg';
 import BlockTitle from "../common/BlockTitle";
 import Typography from "../common/Typography";
 import Button from "../common/Button";

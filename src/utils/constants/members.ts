@@ -22,7 +22,7 @@ export interface Member {
   'bio': string,
   'img': StaticImageData,
   'email': string,
-  'linkedin'?: string,
+  'linkedin': string,
 }
 
 const members: Member[] = [
@@ -39,6 +39,7 @@ const members: Member[] = [
     'role': 'Senior Research Engineer',
     'bio': 'Arsen graduated from Applied Mathematics department at YSU, he leads our efforts in Financial Analysis, and loves participating in Olympiads.',
     'email': 'zidder@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/arsen-hambardzumyan-812571239/',
     'img': zidder,
   },
   {
@@ -54,6 +55,7 @@ const members: Member[] = [
     'role': 'Research Engineer',
     'bio': 'Yeva studies Physics at YSU. She participated in IPHO and IOAA and has won multiple medals.',
     'email': 'yeva@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/yeva-hunanyan-9849bb24a/',
     'img': Yeva,
   },
   {
@@ -69,21 +71,23 @@ const members: Member[] = [
     'role': 'Front-End Engineer',
     'bio': 'Karen has had a long experience in the banking industry, but now he has shifted gears and is helping us build Aqqru.',
     'email': 'karen.m@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/karen-muradyan-b725021ab/',
     'img': KarenM,
   },
   {
-      'name': 'Naira Babayan',
-      'role': 'Senior Quant Engineer',
-      'bio': 'Naira has extensive experience in building production software, and has been shifting her expertise into more theoretical projects.',
-      'email': 'naira.b@hilearn.io',
-      'linkedin': 'https://www.linkedin.com/in/naira-babayan-3074752b/',
-      'img': NairaB,
+    'name': 'Naira Babayan',
+    'role': 'Senior Quant Engineer',
+    'bio': 'Naira has extensive experience in building production software, and has been shifting her expertise into more theoretical projects.',
+    'email': 'naira.b@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/naira-babayan-3074752b/',
+    'img': NairaB,
   },
   {
     'name': 'Naira Mnatsakanyan',
     'role': 'Quant Engineer',
     'bio': 'Naira studies at YSU Applied Mathematics department. She is eager to start solving real time problems.',
     'email': 'naira.m@hilearn.io',
+    'linkedin': '',
     'img': NairaM,
   },
   {
@@ -99,6 +103,7 @@ const members: Member[] = [
     'role': 'Research Engineer',
     'bio': 'Seda has graduated from American University of Armenia, and has honed her research skills doing research afterwords, now she is ready to build products with us.',
     'email': 'seda.s@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/seda-sedrakyan-2314a014b/',
     'img': Seda,
   },
   {
@@ -106,6 +111,7 @@ const members: Member[] = [
     'role': 'Strategic Product Owner',
     'bio': 'Karen',
     'email': 'karen.b@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/baghdasaryankaren/',
     'img': KarenB,
   },
   {
@@ -121,6 +127,7 @@ const members: Member[] = [
     'role': 'Quant Engineer',
     'bio': 'Artavazd',
     'email': 'artavazd.v@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/artavazd-vardanyan/',
     'img': Artavazd,
   },
   {
@@ -128,6 +135,7 @@ const members: Member[] = [
     'role': 'UI/UX Designer',
     'bio': 'Edmon',
     'email': 'edmon.g@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/edmon-ghambaryan-40b560171/',
     'img': Edmon,
   },
   {
@@ -135,6 +143,7 @@ const members: Member[] = [
     'role': 'Front-End Engineer',
     'bio': 'Ashot',
     'email': 'ashot.a@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/ashot1arzumanyan',
     'img': Ashot,
   },
 ];

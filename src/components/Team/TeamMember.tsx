@@ -2,18 +2,14 @@ import Image, { StaticImageData } from "next/image";
 import styled from "styled-components";
 
 import Typography from "../common/Typography";
-import facebook from '../../../public/images/facebook.svg';
-import linkedin from '../../../public/images/linkedin.svg';
+import Linkedin from "../common/Linkedin";
 
 interface ComponentProps {
   imageSrc: StaticImageData;
   fullName: string;
   jobPosition: string;
+  linkedinUrl: string;
 }
-
-const Container = styled.div`
-
-`;
 
 const StyledImage = styled(Image)`
   border-radius: 16px;
@@ -40,9 +36,10 @@ const TeamMember = (props: ComponentProps) => {
     imageSrc,
     fullName,
     jobPosition,
+    linkedinUrl,
   } = props;
   return (
-    <Container>
+    <div>
       <StyledImage
         src={imageSrc}
         alt={fullName}
@@ -56,10 +53,11 @@ const TeamMember = (props: ComponentProps) => {
         {jobPosition}
       </JobPosition>
       <IconsContainer>
-        <Image src={facebook} alt="Facebook" />
-        <Image src={linkedin} alt="Linkedin" />
+        {linkedinUrl && (
+          <Linkedin href={linkedinUrl} />
+        )}
       </IconsContainer>
-    </Container>
+    </div>
   );
 };
 
