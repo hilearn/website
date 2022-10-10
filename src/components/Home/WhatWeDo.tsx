@@ -12,7 +12,6 @@ const StyledTypography = styled(Typography)`
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
   line-height: 39px;
   @media(max-width: 768px) {
     text-align: center;
@@ -26,7 +25,6 @@ const Subtitle = styled(Typography)`
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 130%;
   @media(max-width: 768px) {
     text-align: center;
@@ -50,7 +48,7 @@ const AgilitiesBlock = styled.div`
 
 const WhatWeDo = () => (
   <Container id="what-we-do">
-    <StyledTypography>What we do</StyledTypography>
+    <StyledTypography size="xl">What we do</StyledTypography>
     <Subtitle>
       HiLearn is a Technology company based in Yerevan,
       Armenia. HiLearn started as an algorithmic trading
