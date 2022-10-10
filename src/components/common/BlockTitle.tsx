@@ -10,6 +10,10 @@ const StyledTitle = styled(Typography)`
   font-weight: 600;
   line-height: 39px;
   margin-bottom: 24px;
+  width: 100%;
+  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
+    text-align: center;
+  }
 `;
 
 const BlockTitle = ({ text }: ComponentProps) => {

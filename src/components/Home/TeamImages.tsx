@@ -57,11 +57,13 @@ const ImagesContainer = styled.div`
 `;
 
 const Section = styled.div<SectionProps>`
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template: 1fr / repeat(5, 1fr);
   grid-gap: 24px;
+  margin: 0 auto;
   ${({ withRightLeftSpaces }) => withRightLeftSpaces && `
-    margin: 0 60px;
+    grid-template: 1fr / 1fr repeat(4, 2fr) 1fr;
   `}
 `;
 
@@ -95,9 +97,28 @@ const TeamImages = () => {
       <ImagesContainer>
         {getMembersArray(members).map((section, i) => (
           <Section key={i} withRightLeftSpaces={i === 0 || i === 2}>
-            {section.map((m) => (
-              <RoundedImage key={m.name} src={m.img} />
-            ))}
+            {section.map((m, ii) => {
+              if ((i === 0 || i === 2) && ii === 0) {
+                return (
+                  <>
+                    <span />
+                    <RoundedImage key={m.name} src={m.img} />
+                  </>
+                );
+              } else if ((i === 0 || i === 2) && ii === section.length - 1) {
+                return (
+                  <>
+                    <RoundedImage key={m.name} src={m.img} />
+                    <span />
+                  </>
+                );
+              }
+               else {
+                return (
+                  <RoundedImage key={m.name} src={m.img} />
+                );
+              }
+          })}
           </Section>
         ))}
       </ImagesContainer>
