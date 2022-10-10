@@ -31,7 +31,9 @@ const Texts = styled.div`
   };
 `;
 
-const Email = styled.div`
+const Email = styled.button`
+  cursor: pointer;
+  border: none;
   display: flex;
   align-items: center;
   padding: 32px 64px;
@@ -45,6 +47,10 @@ const Email = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
     padding: 32px;
   };
+  transition: background-color 300ms;
+  :hover {
+    background-color: ${({ theme }) => theme.colors.hover.onSecondary};
+  }
 `;
 
 const StyledTitle = styled(Typography)`
@@ -63,6 +69,10 @@ const StyledHiLearnEmail = styled(Typography)`
 `;
 
 const Contacts = () => {
+  const handleOpenDefaultMail = () => {
+    window.location.href = 'mailto:info@hilearn.io';
+  };
+
   return (
     <Container id="contacts">
       <Texts>
@@ -73,7 +83,7 @@ const Contacts = () => {
           Write to us if you are interested in partnership with us.
         </StyledCaption>
       </Texts>
-      <Email>
+      <Email onClick={handleOpenDefaultMail}>
         <Image src={email} alt="Email" />
         <StyledHiLearnEmail margin="0 0 0 16px">
           info@hilearn.io
