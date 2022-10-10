@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import styled from "styled-components";
 
+import DotImage from "../../../public/images/Dots.svg";
 import HeadingBgImage from "../../../public/images/headingBgImage.svg";
 import Button from "../common/Button";
 import Typography from "../common/Typography";
@@ -11,9 +12,26 @@ const HeadingBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 150px;
   @media(max-width: 1320px) {
     flex-direction: column;
+    margin-left: 0;
   }
+`;
+
+const ImageContainer = styled.div`
+  position: absolute;
+  left: 0;
+  top: 275px;
+  @media(max-width: 1320px) {
+    top: 500px;
+  };
+  @media(max-width: 768px) {
+    top: 400px;
+  };
+  @media(max-width: 540px) {
+    display: none;
+  };
 `;
 
 const Description = styled.div`
@@ -72,6 +90,9 @@ const HeadingPart = () => {
 
   return(
     <HeadingBlock>
+      <ImageContainer>
+        <Image src={DotImage} alt="Dots" />
+      </ImageContainer>
       <Description>
         <StyledTitle size="xxxl">
           Innovating solutions for the FinTech industry
