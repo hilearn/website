@@ -38,7 +38,7 @@ const AgilitiesBlock = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 40px;
-  @media(max-width: 768px) {
+  @media(max-width: 920px) {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
   };

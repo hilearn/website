@@ -8,10 +8,7 @@ const Box = styled.div`
   padding: 16px 16px 24px 16px;
   border-radius: 16px;
   background-color: #F3F1EA;
-  @media(max-width: 884px) {
-    width: 20%;
-  }
-  @media(max-width: 768px) {
+  @media(max-width: 920px) {
     width: 100%;
   }
 `;
