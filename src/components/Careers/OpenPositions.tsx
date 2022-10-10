@@ -9,6 +9,7 @@ const Paragraph = styled(Typography)`
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 20px;
 `;
 
 const ColouredSpan = styled(Paragraph)`
@@ -21,37 +22,47 @@ const OpenPositions = () => {
       <HugeButtonPanel
         iconSrc={settings}
         title="Front-end engineer"
-        caption="Lead"
+        caption="Mid"
         additional="Yerevan, Armenia"
         withBottomGutter
       >
         <div>
           <Paragraph>
-            We are expanding our team of Senior Front-End Developers to work on a familty of fiancial advise
-            products housed under the Aqqru brand and powered by Wealthtech&apos;s state of the art fGPS™ API.
+          HiLearn is looking for a well-rounded frontend developer that is proficient in creating engaging experiences
+           and is familiar with all aspects of product development from ideation to implementation.
+           You will play a critical part in the design, implementation, testing, and deployment of HiLearn's
+           consumer facing products, you will be instrumental in the architecture and implementation of products
+           handling millions of dollars' worth of financial transactions.
           </Paragraph>
           <ListWithLabel
             label="As a Front-End Engineer you will:"
             list={[
-              'Understand the business needs and code them',
-              'Add new features to the algorithm, e.g. consider taking a loan to buy a car'
+              'Build responsive experiences that function on all major browsers.',
+              'Work alongside the product team to build out new product lines and iterate upon existing ones.',
+              'Contribute to developing best practices for observability, continuous integration, and deployment.',
+              'Consistently improve maintainability and stability of our codebase.',
+              'Be a critical voice in design and code review.'
             ]}
           />
           <ListWithLabel
             label="The technology stack is:"
             list={[
-              'React + Redux',
-              'webpack'
+              'React JS + Redux',
+              'Typescript',
+              'Webpack',
+              'Nodejs'
             ]}
           />
           <ListWithLabel
             label="The following skills will be a plus:"
             list={[
-              'Very good coding skills with JS/CSS (5+ years of front-end developement)',
-              'Knowledge of version control software such as Git',
-              'Understanding of development workflows',
-              'Desire to learn and grow',
-              'Knowledge of English to communicate with team members abroad'
+              'Experience working with a design team and implementing from an agreed upon specification.',
+              'Knowledge of version control software such as Git.',
+              'Understanding of development workflows.',
+              'Desire to learn and grow.',
+              'Knowledge of English to communicate with team members abroad.',
+              'Experience working from wireframes from tools such as Figma․',
+              'Minimum BS degree in CS or related discipline, or a proven track record.'
             ]}
           />
           <Paragraph>
@@ -59,169 +70,6 @@ const OpenPositions = () => {
             {' '}
             <ColouredSpan as="span">
               jobs@hilearn.io
-            </ColouredSpan>
-          </Paragraph>
-          <Paragraph>
-            Feel free to get acquainted with our interviewing style
-            {' '}
-            <ColouredSpan as="span">
-              interviewing style
-            </ColouredSpan>
-          </Paragraph>
-        </div>
-      </HugeButtonPanel>
-      <HugeButtonPanel
-        iconSrc={settings}
-        title="Front-end engineer"
-        caption="Lead"
-        additional="Yerevan, Armenia"
-        withBottomGutter
-      >
-        <div>
-          <Paragraph>
-            We are expanding our team of Senior Front-End Developers to work on a familty of fiancial advise
-            products housed under the Aqqru brand and powered by Wealthtech&apos;s state of the art fGPS™ API.
-          </Paragraph>
-          <ListWithLabel
-            label="As a Front-End Engineer you will:"
-            list={[
-              'Understand the business needs and code them',
-              'Add new features to the algorithm, e.g. consider taking a loan to buy a car'
-            ]}
-          />
-          <ListWithLabel
-            label="The technology stack is:"
-            list={[
-              'React + Redux',
-              'webpack'
-            ]}
-          />
-          <ListWithLabel
-            label="The following skills will be a plus:"
-            list={[
-              'Very good coding skills with JS/CSS (5+ years of front-end developement)',
-              'Knowledge of version control software such as Git',
-              'Understanding of development workflows',
-              'Desire to learn and grow',
-              'Knowledge of English to communicate with team members abroad'
-            ]}
-          />
-          <Paragraph>
-            For application please send your cv to
-            {' '}
-            <ColouredSpan as="span">
-              jobs@hilearn.io
-            </ColouredSpan>
-          </Paragraph>
-          <Paragraph>
-            Feel free to get acquainted with our interviewing style
-            {' '}
-            <ColouredSpan as="span">
-              interviewing style
-            </ColouredSpan>
-          </Paragraph>
-        </div>
-      </HugeButtonPanel>
-      <HugeButtonPanel
-        iconSrc={settings}
-        title="Front-end engineer"
-        caption="Lead"
-        additional="Yerevan, Armenia"
-        withBottomGutter
-      >
-        <div>
-          <Paragraph>
-            We are expanding our team of Senior Front-End Developers to work on a familty of fiancial advise
-            products housed under the Aqqru brand and powered by Wealthtech&apos;s state of the art fGPS™ API.
-          </Paragraph>
-          <ListWithLabel
-            label="As a Front-End Engineer you will:"
-            list={[
-              'Understand the business needs and code them',
-              'Add new features to the algorithm, e.g. consider taking a loan to buy a car'
-            ]}
-          />
-          <ListWithLabel
-            label="The technology stack is:"
-            list={[
-              'React + Redux',
-              'webpack'
-            ]}
-          />
-          <ListWithLabel
-            label="The following skills will be a plus:"
-            list={[
-              'Very good coding skills with JS/CSS (5+ years of front-end developement)',
-              'Knowledge of version control software such as Git',
-              'Understanding of development workflows',
-              'Desire to learn and grow',
-              'Knowledge of English to communicate with team members abroad'
-            ]}
-          />
-          <Paragraph>
-            For application please send your cv to
-            {' '}
-            <ColouredSpan as="span">
-              jobs@hilearn.io
-            </ColouredSpan>
-          </Paragraph>
-          <Paragraph>
-            Feel free to get acquainted with our interviewing style
-            {' '}
-            <ColouredSpan as="span">
-              interviewing style
-            </ColouredSpan>
-          </Paragraph>
-        </div>
-      </HugeButtonPanel>
-      <HugeButtonPanel
-        iconSrc={settings}
-        title="Front-end engineer"
-        caption="Lead"
-        additional="Yerevan, Armenia"
-        withBottomGutter
-      >
-        <div>
-          <Paragraph>
-            We are expanding our team of Senior Front-End Developers to work on a familty of fiancial advise
-            products housed under the Aqqru brand and powered by Wealthtech&apos;s state of the art fGPS™ API.
-          </Paragraph>
-          <ListWithLabel
-            label="As a Front-End Engineer you will:"
-            list={[
-              'Understand the business needs and code them',
-              'Add new features to the algorithm, e.g. consider taking a loan to buy a car'
-            ]}
-          />
-          <ListWithLabel
-            label="The technology stack is:"
-            list={[
-              'React + Redux',
-              'webpack'
-            ]}
-          />
-          <ListWithLabel
-            label="The following skills will be a plus:"
-            list={[
-              'Very good coding skills with JS/CSS (5+ years of front-end developement)',
-              'Knowledge of version control software such as Git',
-              'Understanding of development workflows',
-              'Desire to learn and grow',
-              'Knowledge of English to communicate with team members abroad'
-            ]}
-          />
-          <Paragraph>
-            For application please send your cv to
-            {' '}
-            <ColouredSpan as="span">
-              jobs@hilearn.io
-            </ColouredSpan>
-          </Paragraph>
-          <Paragraph>
-            Feel free to get acquainted with our interviewing style
-            {' '}
-            <ColouredSpan as="span">
-              interviewing style
             </ColouredSpan>
           </Paragraph>
         </div>
