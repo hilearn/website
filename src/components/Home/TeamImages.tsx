@@ -67,10 +67,6 @@ const Section = styled.div<SectionProps>`
   `}
 `;
 
-const StyledTypography = styled(BlockSubtitle)`
-  margin-bottom: 32px;
-`;
-
 const TeamImages = () => {
   const router = useRouter();
 
@@ -83,11 +79,11 @@ const TeamImages = () => {
     <Container>
       <Content>
         <BlockTitle text="The team" />
-        <StyledTypography>
+        <BlockSubtitle margin="0 0 32px 0">
           We have one of the most innovative and highly-skilled teams in Armenia. Many of them are with international achievements at olympiads.
           The team consists of Data scientists, Backend and Frontend developers, Product and Project Managers and Product Designers.
           We work according to Agile methodology. Team tech stack includes: React JS, Webpack, Typescript, Nodejs, AWS.
-        </StyledTypography>
+        </BlockSubtitle>
         <Button onClick={handleGoToTeam}>
           Meet the team
         </Button>
