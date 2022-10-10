@@ -22,7 +22,7 @@ const Linkedin = ({ href }: ComponentProps) => {
         <LinkedinIcon />
       </IconContainer>
     </Link>
-  )
-}
+  );
+};
 
 export default Linkedin;

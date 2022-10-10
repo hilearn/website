@@ -49,7 +49,7 @@ const Header = () => {
   const handleCloseMenu = () => {
     startTransition(() => {
       setOpen(false);
-    })
+    });
   };
 
   const icon = open ? menuClose : menu;

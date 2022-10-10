@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import AgilityBox from "../common/AgilityBox";
 import Typography from "../common/Typography";
-import { Agilities } from "../constants";
+import agilities from "../../utils/constants/agilities";
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
@@ -59,7 +59,7 @@ const WhatWeDo = () => (
     </Subtitle>
     <AgilitiesBlock>
     {
-      Agilities.map((agility) => (
+      agilities.map((agility) => (
       <AgilityBox key={agility} agility={agility} />
       ))
     }

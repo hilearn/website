@@ -11,7 +11,7 @@ interface ComponentProps {
 
 interface BgColorProps {
   bgColor?: boolean;
-};
+}
 
 const Banner = styled.div`
   display: grid;
@@ -76,7 +76,7 @@ const PartnersBox = ({
         <StyledImage src={image} alt="Partner logo" />
       </PartnerLogo>
     </Banner>
-  )
+  );
 };
 
 export default PartnersBox;

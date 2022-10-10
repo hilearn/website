@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-import arrow from '../../../public/images/long_right.svg'
-import close from '../../../public/images/close.svg'
+import arrow from '../../../public/images/long_right.svg';
+import close from '../../../public/images/close.svg';
 import Typography from "./Typography";
 
 interface ComponentProps {

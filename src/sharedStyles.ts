@@ -18,7 +18,7 @@ export const homePageBlocksSpacing = css`
   @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
     margin-top: 120px;
   }
-`
+`;
 
 export const hugeButtonContainer = css`
   display: flex;

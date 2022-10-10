@@ -13,7 +13,7 @@ const getMembersArray = (members: Member[]) => {
   const section2 = members.slice(4, 9);
   const section3 = members.slice(10, 14);
   return [section1, section2, section3];
-}
+};
 
 interface SectionProps {
   withRightLeftSpaces?: boolean; 

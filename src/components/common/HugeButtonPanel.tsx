@@ -54,7 +54,7 @@ const HugeButtonPanel = (props: ComponentProps) => {
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-  }
+  };
 
   return (
     <Container withBottomGutter={withBottomGutter}>
