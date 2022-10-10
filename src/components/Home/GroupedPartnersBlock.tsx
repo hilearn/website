@@ -3,10 +3,10 @@ import styled from "styled-components";
 import MoneyLionLogo from "../../../public/images/moneyLion.svg";
 import WealthTechLogo from "../../../public/images/wealthtech.svg";
 import PartnersBox from "../common/PartnerBox";
-import Typography from "../common/Typography";
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import TradingLogo from "../../../public/images/trading.svg";
 import GranatusLogo from "../../../public/images/granatus.svg";
+import BlockTitle from "../common/BlockTypography";
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
@@ -21,14 +21,9 @@ const StyledPartnersBlock = styled.div`
   }
 `;
 
-const StyledTypography = styled(Typography)`
-  font-weight: 600;
-  margin-bottom: 40px;
-`;
-
 const GroupedPartnersBlock = () => (
   <Container id="partners">
-    <StyledTypography size="xl">Partners</StyledTypography>
+    <BlockTitle text="Partners" />
     <StyledPartnersBlock>
       <PartnersBox
         logo={MoneyLionLogo}

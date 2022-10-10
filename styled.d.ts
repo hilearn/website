@@ -19,9 +19,12 @@ declare module 'styled-components' {
       }
     };
     breakpoints: {
-      s: string,
-      m: string,
-      l: string,
+      s: string;
+      m: string;
+      l: string;
+      footer: string;
+      withImageBlock: string;
+      blockAlignCenter: string;
     }
   }
 }

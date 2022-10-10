@@ -18,8 +18,7 @@ const PartnersBlock = styled.div`
   flex-direction: column;
   padding: 24px;
   background-color: #FFFFFF;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  border-radius: 16px;
   gap: 32px;
 `;
 
