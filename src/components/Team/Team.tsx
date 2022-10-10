@@ -32,6 +32,7 @@ const Team = () => {
             imageSrc={m.img}
             fullName={m.name}
             jobPosition={m.role}
+            linkedinUrl={m.linkedin}
           />
         ))}
         <NewMember />
