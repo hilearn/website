@@ -2,11 +2,11 @@ import styled from "styled-components";
 import Image from 'next/image';
 
 import logo from '../../../public/images/logo.svg';
-import linkedin from '../../../public/images/linkedin.svg';
 import NavigationLinks from "../common/NavigationLinks";
 import Typography from "../common/Typography";
 import { homePageResponsivePadding } from "../../sharedStyles";
 import { Larger, Smaller } from "../common/Togglers";
+import Linkedin from "../common/Linkedin";
 
 const Container = styled.footer`
   ${homePageResponsivePadding}
@@ -65,7 +65,7 @@ const Footer = () => {
             Copyright © Hilearn 2022
           </Copyright>
         </LinksAndCopyrightContainer>
-        <Image src={linkedin} alt="Linkedin" />
+        <Linkedin href="https://www.linkedin.com/company/hilearn/" />
       </Content>
     </Container>
   );

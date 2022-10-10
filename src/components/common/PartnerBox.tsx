@@ -1,6 +1,7 @@
-import Typography from "./Typography";
 import Image, { StaticImageData } from "next/image";
 import styled from "styled-components";
+
+import Typography from "./Typography";
 
 interface ComponentProps {
   logo?: StaticImageData;
@@ -11,7 +12,7 @@ interface ComponentProps {
 
 interface BgColorProps {
   bgColor?: boolean;
-};
+}
 
 const Banner = styled.div`
   display: grid;
@@ -31,22 +32,18 @@ const PartnersBlock = styled.div`
 const PartnerLogoNameBlock = styled.div`
   display: flex;
   align-items: center;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 30px;
-  color: #1C1C1C;
   gap: 14px;
+`;
+
+const StyledCompanyName = styled(Typography)`
+  font-weight: 600;
+  line-height: 30px;
 `;
 
 const StyledPartnerDescription = styled(Typography)`
   max-width: 532px;
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  color: #1C1C1C;
 `;
 
 const PartnerLogo = styled.div<BgColorProps>`
@@ -72,7 +69,7 @@ const PartnersBox = ({
           {logo && (
             <Image src={logo} height={37} width={37} alt="Logo" />
           )}
-          <Typography>{companyName}</Typography>
+          <StyledCompanyName size="lg">{companyName}</StyledCompanyName>
         </PartnerLogoNameBlock>
         <StyledPartnerDescription>{title}</StyledPartnerDescription>
       </PartnersBlock>
@@ -80,7 +77,7 @@ const PartnersBox = ({
         <StyledImage src={image} alt="Partner logo" />
       </PartnerLogo>
     </Banner>
-  )
+  );
 };
 
 export default PartnersBox;

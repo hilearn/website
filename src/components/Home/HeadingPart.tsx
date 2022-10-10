@@ -1,10 +1,12 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
 import styled from "styled-components";
-import HeadingBgImage from "../../public/images/headingBgImage.svg";
-import DotImage from "../../public/images/Dots.svg";
-import Button from "./common/Button";
-import Typography from "./common/Typography";
+
+import DotImage from "../../../public/images/Dots.svg";
+import HeadingBgImage from "../../../public/images/headingBgImage.svg";
+import Button from "../common/Button";
+import Typography from "../common/Typography";
+import PagePaths from "../../utils/constants/pagePaths";
 
 const HeadingBlock = styled.div`
   display: flex;
@@ -44,11 +46,8 @@ const Description = styled.div`
 `;
 
 const StyledTitle = styled(Typography)`
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 800;
   line-height: 77px;
-  color: #1C1C1C;
   width: 555px;
   @media(max-width: 768px) {
     width: 100%;
@@ -65,11 +64,8 @@ const StyledTitle = styled(Typography)`
 `;
 
 const StyledSubTitle = styled(Typography)`
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  color: #1C1C1C;
   max-width: 484px;
   margin-top: 24px;
   margin-bottom: 32px;
@@ -89,30 +85,28 @@ const HeadingPart = () => {
   const router = useRouter();
 
   const handelGoToTeam = () => (
-    router.push('/team')
+    router.push(PagePaths.team)
   );
 
   return(
-    <>
-      <HeadingBlock>
-        <ImageContainer>
-          <Image src={DotImage} alt="Dots" />
-        </ImageContainer>
-        <Description>
-          <StyledTitle size="xxxl">
-            Innovating solutions for the FinTech industry
-          </StyledTitle>
-          <StyledSubTitle>
-            Key partner for the several US fintech
-            companies in the fields of data science,
-            AI and ML, software development.
-          </StyledSubTitle>
-          <Button onClick={handelGoToTeam}>Join our team</Button>
-        </Description>
-        <StyledImage src={HeadingBgImage} alt="" />
-      </HeadingBlock>
-    </>
-  )
+    <HeadingBlock>
+      <ImageContainer>
+        <Image src={DotImage} alt="Dots" />
+      </ImageContainer>
+      <Description>
+        <StyledTitle size="xxxl">
+          Innovating solutions for the FinTech industry
+        </StyledTitle>
+        <StyledSubTitle>
+          Key partner for the several US fintech
+          companies in the fields of data science,
+          AI and ML, software development.
+        </StyledSubTitle>
+        <Button onClick={handelGoToTeam}>Join our team</Button>
+      </Description>
+      <StyledImage src={HeadingBgImage} alt="" />
+    </HeadingBlock>
+  );
 };
 
 export default HeadingPart;

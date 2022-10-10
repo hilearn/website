@@ -15,7 +15,7 @@ const Content = styled.div`
   grid-template: repeat(5, 1fr) / 1fr;
   grid-gap: 40px;
   ${({ theme }) => (`    
-    @media (min-width: ${theme.breakpoints.s}) {
+    @media (min-width: 545px) {
       grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     }
 

@@ -5,6 +5,7 @@ const theme: DefaultTheme = {
     primary: '#EEBD20',
     secondary: 'rgba(238, 189, 32, 0.1)',
     background: '#F8F8F8',
+    socialIcon: '#1C1C1C',
     text: {
       primary: '#1C1C1C',
       secondary: 'rgba(0, 0, 0, 0.6);',
