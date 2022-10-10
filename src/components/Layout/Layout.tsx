@@ -1,6 +1,8 @@
 import styled from "styled-components";
+
 import { homePageResponsivePadding } from "../../sharedStyles";
 import Contacts from "../common/Contacts";
+
 import Footer from "./Footer";
 import Header from "./Header";
 

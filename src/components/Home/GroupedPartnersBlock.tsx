@@ -1,10 +1,10 @@
+import styled from "styled-components";
+
 import WealthTech from "../../../public/images/wealthTech.png";
 import MoneyLionImg from "../../../public/images/moneyLionImg.png";
 import MoneyLionLogo from "../../../public/images/moneyLionLogo.png";
-
 import PartnersBox from "../common/PartnerBox";
 import Typography from "../common/Typography";
-import styled from "styled-components";
 import { homePageBlocksSpacing } from "../../sharedStyles";
 
 const Container = styled.div`

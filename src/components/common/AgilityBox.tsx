@@ -1,7 +1,9 @@
 import styled from "styled-components";
-import Typography from "./Typography";
-import Doc from "../../../public/images/doc.png";
 import Image from "next/image";
+
+import Doc from "../../../public/images/doc.png";
+
+import Typography from "./Typography";
 
 const Box = styled.div`
   width: 21%;

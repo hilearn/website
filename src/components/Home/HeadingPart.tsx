@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
 import styled from "styled-components";
+
 import HeadingBgImage from "../../../public/images/headingBgImage.svg";
 import Button from "../common/Button";
 import Typography from "../common/Typography";

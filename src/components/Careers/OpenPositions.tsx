@@ -1,7 +1,8 @@
+import styled from "styled-components";
+
 import HugeButtonPanel from "../common/HugeButtonPanel";
 import ListWithLabel from "../common/ListWithLabel";
 import settings from '../../../public/images/settings.svg';
-import styled from "styled-components";
 import Typography from "../common/Typography";
 
 const Paragraph = styled(Typography)`

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
+
 import LinkedinIcon from "../icons/LinkedinIcon";
 
 interface ComponentProps {

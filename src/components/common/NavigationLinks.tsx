@@ -2,7 +2,9 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
 import styled from "styled-components";
+
 import PagePaths from "../../utils/constants/pagePaths";
+
 import Typography from "./Typography";
 
 type ComponentProps = ContainerProps & {

@@ -1,6 +1,8 @@
 import styled from "styled-components";
+
 import members from "../../utils/constants/members";
 import Typography from "../common/Typography";
+
 import NewMember from "./NewMember";
 import TeamMember from "./TeamMember";
 

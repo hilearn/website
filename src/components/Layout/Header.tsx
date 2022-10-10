@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import { startTransition, useState } from 'react';
+import Link from 'next/link';
+
 import logo from '../../../public/images/logo.svg';
 import NavigationLinks from '../common/NavigationLinks';
 import menu from '../../../public/images/menu.svg';
 import menuClose from '../../../public/images/menuClose.svg';
-import { startTransition, useState } from 'react';
 import { Larger, Smaller } from '../common/Togglers';
-import Link from 'next/link';
 import { clearDefaultButtonStyles } from '../../sharedStyles';
 
 const Container = styled.nav`

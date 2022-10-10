@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import styled from "styled-components";
+
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import members, { Member } from "../../utils/constants/members";
 import PagePaths from "../../utils/constants/pagePaths";

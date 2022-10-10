@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import arrow from '../../../public/images/long_right.svg';
 import { clearDefaultButtonStyles } from "../../sharedStyles";
+
 import Typography from "./Typography";
 
 interface ComponentProps {

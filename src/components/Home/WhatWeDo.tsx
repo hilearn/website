@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import AgilityBox from "../common/AgilityBox";
 import Typography from "../common/Typography";

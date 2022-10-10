@@ -1,6 +1,7 @@
-import Typography from "./Typography";
 import Image, { StaticImageData } from "next/image";
 import styled from "styled-components";
+
+import Typography from "./Typography";
 
 interface ComponentProps {
   logo?: StaticImageData;

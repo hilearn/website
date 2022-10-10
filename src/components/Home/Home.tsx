@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import WhatWeDo from './WhatWeDo';
 
+import WhatWeDo from './WhatWeDo';
 import Advantages from './Advantages';
 import CareersBlock from './CareersBlock';
 import TeamImages from './TeamImages';

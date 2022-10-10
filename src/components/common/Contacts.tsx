@@ -1,9 +1,10 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-import Typography from "./Typography";
 import email from '../../../public/images/mail.svg';
 import { clearDefaultButtonStyles, homePageBlocksSpacing } from "../../sharedStyles";
+
+import Typography from "./Typography";
 
 const Container = styled.div`
   ${homePageBlocksSpacing}

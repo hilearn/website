@@ -9,6 +9,7 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "semi": "error",
-    "import/named": "off"
+    "import/named": "off",
+    "import/order": ["error", { "newlines-between": "always" }]
   }
 }
