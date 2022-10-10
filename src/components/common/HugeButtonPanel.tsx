@@ -1,6 +1,7 @@
 import { ReactNode, useState } from "react";
 import styled from "styled-components";
-import { hugeButtonContainer } from "../../sharedStyles";
+
+import { clearDefaultButtonStyles, hugeButtonContainer } from "../../sharedStyles";
 
 import HugeButtonContent from "./HugeButtonContent";
 
@@ -31,6 +32,7 @@ const Container = styled.div<ContainerProps>`
 `;
 
 const StyledButton = styled.button`
+  ${clearDefaultButtonStyles}
   ${hugeButtonContainer}
 `;
 
@@ -53,7 +55,7 @@ const HugeButtonPanel = (props: ComponentProps) => {
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-  }
+  };
 
   return (
     <Container withBottomGutter={withBottomGutter}>

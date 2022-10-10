@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import styled from "styled-components";
+import Image from "next/image";
 
 import Button from "../common/Button";
 import question_sign from '../../../public/images/question_sign.svg';
-import Image from "next/image";
 import PagePaths from "../../utils/constants/pagePaths";
 
 const Container = styled.div`

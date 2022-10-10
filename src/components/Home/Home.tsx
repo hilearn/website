@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import WhatWeDo from './WhatWeDo';
 
+import WhatWeDo from './WhatWeDo';
 import Advantages from './Advantages';
 import CareersBlock from './CareersBlock';
 import TeamImages from './TeamImages';
-import Team from '../Team/Team';
-import GroupedPartnersBlock from '../GroupedPartnersBlock';
-import HeadingPart from '../HeadingPart';
+import GroupedPartnersBlock from './GroupedPartnersBlock';
+import HeadingPart from './HeadingPart';
 
 const Container = styled.div`
   display: flex;

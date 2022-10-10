@@ -1,4 +1,4 @@
-export const Agilities = [
+const agilities = [
   "Machine learning",
   "Blockchain",
   "Artificial intelligence",
@@ -8,3 +8,5 @@ export const Agilities = [
   "Product Design",
   "Quality assurance"
 ];
+
+export default agilities;

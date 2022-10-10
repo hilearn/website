@@ -1,11 +1,11 @@
-import WealthTech from "../../public/images/wealthTech.png";
-import MoneyLionImg from "../../public/images/moneyLionImg.png";
-import MoneyLionLogo from "../../public/images/moneyLionLogo.png";
-
-import PartnersBox from "./common/PartnerBox";
-import Typography from "./common/Typography";
 import styled from "styled-components";
-import { homePageBlocksSpacing } from "../sharedStyles";
+
+import WealthTech from "../../../public/images/wealthTech.png";
+import MoneyLionImg from "../../../public/images/moneyLionImg.png";
+import MoneyLionLogo from "../../../public/images/moneyLionLogo.png";
+import PartnersBox from "../common/PartnerBox";
+import Typography from "../common/Typography";
+import { homePageBlocksSpacing } from "../../sharedStyles";
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
@@ -21,8 +21,6 @@ const StyledPartnersBlock = styled.div`
 `;
 
 const StyledTypography = styled(Typography)`
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 600;
   margin-bottom: 40px;
 `;

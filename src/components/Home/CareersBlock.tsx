@@ -1,15 +1,17 @@
 import Image from 'next/image';
+import styled from "styled-components";
+import { useRouter } from 'next/router';
 
 import HugeButton from "../common/HugeButton";
 import website from '../../../public/images/website.svg';
 import settings from '../../../public/images/settings.svg';
-import styled from "styled-components";
 import BlockTitle from "../common/BlockTitle";
 import Typography from "../common/Typography";
 import Button from "../common/Button";
 import careers from '../../../public/images/careers.svg';
 import { homePageBlocksSpacing } from '../../sharedStyles';
-import { useRouter } from 'next/router';
+import PagePaths from '../../utils/constants/pagePaths';
+
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
@@ -41,7 +43,7 @@ const CareersBlock = () => {
   const router = useRouter();
 
   const handleGoToCareers = () => {
-    router.push('/careers');
+    router.push(PagePaths.careers);
   };
 
   return (

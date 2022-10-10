@@ -1,8 +1,10 @@
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+
 import PagePaths from "../../utils/constants/pagePaths";
+
 import Typography from "./Typography";
 
 type ComponentProps = ContainerProps & {
@@ -26,20 +28,6 @@ const Container = styled.div<ContainerProps>`
 const StyledTypography = styled(Typography)`
   font-weight: 500;
   line-height: 19px;
-`;
-
-const activeStyle = css`
-  position: relative;
-  ::before {
-    content: " ";
-    height: 4px;
-    width: 18px;
-    position: absolute;
-    left: 50%;
-    bottom: -8px;
-    transform: translateX(-50%);
-    background-color: ${({ theme }) => theme.colors.primary};
-  }
 `;
 
 const StyledAnchor = styled.a`
@@ -82,7 +70,7 @@ const CustomLink = (props: CustomLinkProps) => (
       </StyledTypography>
     </StyledAnchor>
   </Link>
-)
+);
 
 const NavigationLinks = ({ vertical, onClick }: ComponentProps) => {
   const router = useRouter();
