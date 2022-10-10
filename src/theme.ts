@@ -21,6 +21,7 @@ const theme: DefaultTheme = {
     s: '375px',
     m: '768px',
     l: '1600px',
+    footer: '860px'
   }
 };
 
