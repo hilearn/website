@@ -61,7 +61,12 @@ const WhatWeDo = () => (
     <AgilitiesBlock>
     {
       agilities.map((agility) => (
-      <AgilityBox key={agility} agility={agility} />
+        <AgilityBox
+          key={agility.title}
+          img={agility.icon}
+          title={agility.title}
+          subtitle={agility.subtitle}
+        />
       ))
     }
     </AgilitiesBlock>
