@@ -4,14 +4,8 @@ import styled from "styled-components";
 import Typography from "./Typography";
 
 interface ComponentProps {
-  logo?: StaticImageData;
-  companyName: string;
+  logo: StaticImageData;
   title: string;
-  image: StaticImageData;
-}
-
-interface BgColorProps {
-  bgColor?: boolean;
 }
 
 const Banner = styled.div`
@@ -35,31 +29,14 @@ const PartnerLogoNameBlock = styled.div`
   gap: 14px;
 `;
 
-const StyledCompanyName = styled(Typography)`
-  font-weight: 600;
-  line-height: 30px;
-`;
-
 const StyledPartnerDescription = styled(Typography)`
   max-width: 532px;
   font-weight: 400;
   line-height: 130%;
 `;
 
-const PartnerLogo = styled.div<BgColorProps>`
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-`;
-
-const StyledImage = styled(Image)`
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-`;
-
 const PartnersBox = ({
   logo,
-  image,
-  companyName,
   title,
 }: ComponentProps) => {
   return (
@@ -67,15 +44,11 @@ const PartnersBox = ({
       <PartnersBlock>
         <PartnerLogoNameBlock>
           {logo && (
-            <Image src={logo} height={37} width={37} alt="Logo" />
+            <Image src={logo} height={37} alt="Logo" />
           )}
-          <StyledCompanyName size="lg">{companyName}</StyledCompanyName>
         </PartnerLogoNameBlock>
         <StyledPartnerDescription>{title}</StyledPartnerDescription>
       </PartnersBlock>
-      <PartnerLogo>
-        <StyledImage src={image} alt="Partner logo" />
-      </PartnerLogo>
     </Banner>
   );
 };
