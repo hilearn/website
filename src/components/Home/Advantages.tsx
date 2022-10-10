@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import advantages from "../../utils/constants/advantages";
 import Advantage from "../common/Advantage";
-import BlockTitle from "../common/BlockTitle";
+import BlockTitle from "../common/BlockTypography";
 
 const Container = styled.div`
   ${homePageBlocksSpacing}

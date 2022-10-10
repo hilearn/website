@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
+import { Fragment } from "react";
 import styled from "styled-components";
 
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import members, { Member } from "../../utils/constants/members";
 import PagePaths from "../../utils/constants/pagePaths";
-import BlockTitle from "../common/BlockTitle";
+import BlockTitle, { BlockSubtitle } from "../common/BlockTypography";
 import Button from "../common/Button";
 import RoundedImage from "../common/RoundedImage";
-import Typography from "../common/Typography";
 
 const getMembersArray = (members: Member[]) => {
   const section1 = members.slice(0, 4);
@@ -67,9 +67,7 @@ const Section = styled.div<SectionProps>`
   `}
 `;
 
-const StyledTypography = styled(Typography)`
-  font-weight: 400;
-  line-height: 21px;
+const StyledTypography = styled(BlockSubtitle)`
   margin-bottom: 32px;
 `;
 
@@ -100,17 +98,17 @@ const TeamImages = () => {
             {section.map((m, ii) => {
               if ((i === 0 || i === 2) && ii === 0) {
                 return (
-                  <>
+                  <Fragment key={m.name}>
                     <span />
-                    <RoundedImage key={m.name} src={m.img} />
-                  </>
+                    <RoundedImage src={m.img} />
+                  </Fragment>
                 );
               } else if ((i === 0 || i === 2) && ii === section.length - 1) {
                 return (
-                  <>
-                    <RoundedImage key={m.name} src={m.img} />
+                  <Fragment key={m.name}>
+                    <RoundedImage src={m.img} />
                     <span />
-                  </>
+                  </Fragment>
                 );
               }
                else {

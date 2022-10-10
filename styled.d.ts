@@ -24,6 +24,7 @@ declare module 'styled-components' {
       l: string;
       footer: string;
       withImageBlock: string;
+      blockAlignCenter: string;
     }
   }
 }
