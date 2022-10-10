@@ -1,6 +1,7 @@
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 import { ReactNode } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import PagePaths from "../../utils/constants/pagePaths";
 import Typography from "./Typography";
 
@@ -13,13 +14,13 @@ interface ContainerProps {
 }
 
 const Container = styled.div<ContainerProps>`
-  display: grid;
+  display: flex;
   grid-gap: 32px;
   ${({ vertical }) => vertical ? (`
-    grid-template: repeat(5, 1fr) / 1fr;
+    flex-direction: column;
   `) : (`
-    grid-template: 1fr / repeat(5, 1fr);
-  `)}
+    flex-direction: row;
+  `)};
 `;
 
 const StyledTypography = styled(Typography)`
@@ -27,34 +28,77 @@ const StyledTypography = styled(Typography)`
   line-height: 19px;
 `;
 
+const activeStyle = css`
+  position: relative;
+  ::before {
+    content: " ";
+    height: 4px;
+    width: 18px;
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    background-color: ${({ theme }) => theme.colors.primary};
+  }
+`;
+
+const StyledAnchor = styled.a`
+  display: flex;
+  & p {
+    position: relative;
+    ::before {
+      transition: all 300ms;
+      content: " ";
+      height: 4px;
+      width: 18px;
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      transform: translateX(-50%);
+      background-color: ${({ theme }) => theme.colors.primary};
+      opacity: 0;
+    }
+  }
+  :hover, &.active {
+    & p {
+      ::before {
+        opacity: 1;
+      }
+    }
+  }
+`;
+
 type CustomLinkProps = LinkProps & {
   children: ReactNode;
   onClick: VoidFunction;
+  className?: string;
 }
 
 const CustomLink = (props: CustomLinkProps) => (
   <Link {...props} passHref>
-    <a onClick={props.onClick}>
+    <StyledAnchor onClick={props.onClick} className={props.className}>
       <StyledTypography>
         {props.children}
       </StyledTypography>
-    </a>
+    </StyledAnchor>
   </Link>
 )
 
 const NavigationLinks = ({ vertical, onClick }: ComponentProps) => {
+  const router = useRouter();
+
   return (
     <Container vertical={vertical}>
-      <CustomLink href="/w" onClick={onClick}>
+      <CustomLink href="/#what-we-do" onClick={onClick}>
         What we do
       </CustomLink>
-      <CustomLink href={PagePaths.team} onClick={onClick}>
+      <CustomLink href={PagePaths.team} onClick={onClick} className={`${router.pathname === PagePaths.team ? 'active' : ''}`}>
         The Team
       </CustomLink>
-      <CustomLink href={PagePaths.careers} onClick={onClick}>
+      <CustomLink href={PagePaths.careers} onClick={onClick} className={`${router.pathname === PagePaths.careers ? 'active' : ''}`}>
         Careers
       </CustomLink>
-      <CustomLink href="/w" onClick={onClick}>
+      <CustomLink href="/#partners" onClick={onClick}>
         Partners
       </CustomLink>
       <CustomLink href="#contacts" onClick={onClick}>
