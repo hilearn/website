@@ -21,8 +21,6 @@ const StyledPartnersBlock = styled.div`
 `;
 
 const StyledTypography = styled(Typography)`
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 600;
   margin-bottom: 40px;
 `;

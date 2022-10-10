@@ -26,8 +26,6 @@ const Description = styled.div`
 `;
 
 const StyledTitle = styled(Typography)`
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 800;
   line-height: 77px;
   color: #1C1C1C;
@@ -47,8 +45,6 @@ const StyledTitle = styled(Typography)`
 `;
 
 const StyledSubTitle = styled(Typography)`
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
   line-height: 130%;
   color: #1C1C1C;
