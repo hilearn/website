@@ -14,9 +14,9 @@ import PagePaths from '../../utils/constants/pagePaths';
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
-  display: flex;
-  flex-direction: row;
-  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  @media (max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
     display: flex;
     flex-direction: column;
   }
@@ -24,8 +24,10 @@ const Container = styled.div`
 
 const Content = styled.div`
   margin-right: 40px;
-  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+  margin-bottom: 0;
+  @media (max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
     margin-right: 0;
+    margin-bottom: 60px;
   }
 `;
 

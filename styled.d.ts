@@ -23,6 +23,7 @@ declare module 'styled-components' {
       m: string;
       l: string;
       footer: string;
+      withImageBlock: string;
     }
   }
 }

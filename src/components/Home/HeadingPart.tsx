@@ -23,7 +23,7 @@ const ImageContainer = styled.div`
   position: absolute;
   left: 0;
   top: 275px;
-  @media(max-width: 1320px) {
+  @media(max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
     top: 500px;
   };
   @media(max-width: 768px) {
@@ -36,7 +36,7 @@ const ImageContainer = styled.div`
 
 const Description = styled.div`
   max-width: 614px;
-  @media(max-width: 1320px) {
+  @media(max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +75,7 @@ const StyledSubTitle = styled(Typography)`
 `;
 
 const StyledImage = styled(Image)`
-  @media(max-width: 1320px) {
+  @media(max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
     margin-top: 40px !important;
     padding-bottom: 40px !important;
   };
