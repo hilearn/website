@@ -4,8 +4,11 @@ import AgilityBox from "../common/AgilityBox";
 import Typography from "../common/Typography";
 import { Agilities } from "../constants";
 
+const Container = styled.div`
+  ${homePageBlocksSpacing}
+`;
+
 const StyledTypography = styled(Typography)`
-${homePageBlocksSpacing}
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -46,7 +49,7 @@ const AgilitiesBlock = styled.div`
 `;
 
 const WhatWeDo = () => (
-  <>
+  <Container id="what-we-do">
     <StyledTypography>What we do</StyledTypography>
     <Subtitle>
       HiLearn is a Technology company based in Yerevan,
@@ -63,7 +66,7 @@ const WhatWeDo = () => (
       ))
     }
     </AgilitiesBlock>
-  </>
+  </Container>
 );
 
 export default WhatWeDo;

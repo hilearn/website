@@ -21,6 +21,10 @@ const StyledButton = styled.button<StyledButtonProps>`
   ${({ withBottomGutter }) => withBottomGutter && `
     margin-bottom: 16px;
   `}
+  transition: background-color 300ms;
+  :hover {
+    background-color: ${({ theme }) => theme.colors.hover.onWhite};
+  }
 `;
 
 const HugeButton = (props: ComponentProps) => {
