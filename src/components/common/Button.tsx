@@ -18,6 +18,11 @@ const StyledButton = styled.button`
   border: 1px solid #000000;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: background-color 300ms;
+  :hover {
+    background-color: ${({ theme }) => theme.colors.hover.onPrimary};
+  }
 `;
 
 const StyledTypography = styled(Typography)`

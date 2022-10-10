@@ -10,6 +10,12 @@ declare module 'styled-components' {
         primary: string;
         secondary: string;
       };
+      hover: {
+        onPrimary: string;
+        onSecondary: string;
+        onWhite: string;
+        onBlack: string;
+      }
     };
     breakpoints: {
       s: string,
