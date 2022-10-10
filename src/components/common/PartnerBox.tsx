@@ -4,11 +4,8 @@ import styled from "styled-components";
 
 interface ComponentProps {
   logo?: StaticImageData;
-  bgColor?: boolean;
   companyName: string;
   title: string;
-  height?: number;
-  width?: number;
   image: StaticImageData;
 }
 
@@ -17,8 +14,8 @@ interface BgColorProps {
 };
 
 const Banner = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template: 1fr / 1fr;
 `;
 
 const PartnersBlock = styled.div`
@@ -28,7 +25,6 @@ const PartnersBlock = styled.div`
   background-color: #FFFFFF;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  height: 222px;
   gap: 32px;
 `;
 
@@ -57,13 +53,6 @@ const StyledPartnerDescription = styled.div`
 const PartnerLogo = styled.div<BgColorProps>`
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  ${({ bgColor }) => bgColor && `
-    background-color: #D7E6EF;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  `}
 `;
 
 const StyledImage = styled(Image)`
@@ -76,9 +65,6 @@ const PartnersBox = ({
   image,
   companyName,
   title,
-  bgColor,
-  height,
-  width
 }: ComponentProps) => {
   return (
     <Banner>
@@ -91,8 +77,8 @@ const PartnersBox = ({
         </PartnerLogoNameBlock>
         <StyledPartnerDescription>{title}</StyledPartnerDescription>
       </PartnersBlock>
-      <PartnerLogo bgColor={bgColor}>
-        <StyledImage src={image} alt="Partner logo" width={width} height={height} />
+      <PartnerLogo>
+        <StyledImage src={image} alt="Partner logo" />
       </PartnerLogo>
     </Banner>
   )
