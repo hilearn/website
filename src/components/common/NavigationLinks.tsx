@@ -89,7 +89,7 @@ const NavigationLinks = ({ vertical, onClick }: ComponentProps) => {
 
   return (
     <Container vertical={vertical}>
-      <CustomLink href="/w" onClick={onClick}>
+      <CustomLink href="/#what-we-do" onClick={onClick}>
         What we do
       </CustomLink>
       <CustomLink href={PagePaths.team} onClick={onClick} className={`${router.pathname === PagePaths.team ? 'active' : ''}`}>
@@ -98,7 +98,7 @@ const NavigationLinks = ({ vertical, onClick }: ComponentProps) => {
       <CustomLink href={PagePaths.careers} onClick={onClick} className={`${router.pathname === PagePaths.careers ? 'active' : ''}`}>
         Careers
       </CustomLink>
-      <CustomLink href="/w" onClick={onClick}>
+      <CustomLink href="/#partners" onClick={onClick}>
         Partners
       </CustomLink>
       <CustomLink href="#contacts" onClick={onClick}>

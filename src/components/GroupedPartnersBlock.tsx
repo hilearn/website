@@ -7,17 +7,20 @@ import Typography from "./common/Typography";
 import styled from "styled-components";
 import { homePageBlocksSpacing } from "../sharedStyles";
 
+const Container = styled.div`
+  ${homePageBlocksSpacing}
+`;
+
 const StyledPartnersBlock = styled.div`
   display: grid;
   gap: 40px;
   grid-template: 1fr / 1fr 1fr;
   @media(max-width: 768px) {
-    grid-template: 1fr  1fr/ 1fr;
+    grid-template: 1fr  1fr / 1fr;
   }
 `;
 
 const StyledTypography = styled(Typography)`
-  ${homePageBlocksSpacing}
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -25,7 +28,7 @@ const StyledTypography = styled(Typography)`
 `;
 
 const GroupedPartnersBlock = () => (
-  <>
+  <Container id="partners">
     <StyledTypography size="xl">Partners</StyledTypography>
     <StyledPartnersBlock>
       <PartnersBox
@@ -46,8 +49,8 @@ const GroupedPartnersBlock = () => (
         database, that allowed us to understand consumer needs, and
         helped with user clustering."
       />
-  </StyledPartnersBlock>
-</>
+    </StyledPartnersBlock>
+  </Container>
 );
 
 export default GroupedPartnersBlock;
