@@ -32,6 +32,7 @@ const Container = styled.div<ContainerProps>`
 
 const StyledButton = styled.button`
   ${hugeButtonContainer}
+  cursor: pointer;
 `;
 
 const PanelInfo = styled.div`

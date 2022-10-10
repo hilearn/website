@@ -21,6 +21,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   ${({ withBottomGutter }) => withBottomGutter && `
     margin-bottom: 16px;
   `}
+  cursor: pointer;
   transition: background-color 300ms;
   :hover {
     background-color: ${({ theme }) => theme.colors.hover.onWhite};
