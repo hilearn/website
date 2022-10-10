@@ -1,14 +1,19 @@
 import styled from "styled-components";
+import { homePageBlocksSpacing } from "../../sharedStyles";
 import AgilityBox from "../common/AgilityBox";
 import Typography from "../common/Typography";
 import { Agilities } from "../constants";
 
 const StyledTypography = styled(Typography)`
+${homePageBlocksSpacing}
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
+  @media(max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 const Subtitle = styled(Typography)`
@@ -20,6 +25,10 @@ const Subtitle = styled(Typography)`
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+  @media(max-width: 768px) {
+    text-align: center;
+    max-width: none;
+  }
 `;
 
 const AgilitiesBlock = styled.div`
@@ -30,6 +39,9 @@ const AgilitiesBlock = styled.div`
   @media(max-width: 768px) {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
+  };
+  @media(max-width: 375px) {
+    gap: 16px;
   }
 `;
 
