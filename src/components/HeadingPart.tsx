@@ -29,7 +29,6 @@ const StyledTitle = styled(Typography)`
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
-  font-size: 64px;
   line-height: 77px;
   color: #1C1C1C;
   width: 555px;
@@ -42,6 +41,8 @@ const StyledTitle = styled(Typography)`
   };
   @media(max-width: 375px) {
     font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
   };
 `;
 
@@ -49,12 +50,14 @@ const StyledSubTitle = styled(Typography)`
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 130%;
   color: #1C1C1C;
   max-width: 484px;
   margin-top: 24px;
   margin-bottom: 32px;
+  @media(max-width: 375px) {
+    margin-bottom: 24px;
+  };
 `;
 
 const StyledImage = styled(Image)`
@@ -74,7 +77,7 @@ const HeadingPart = () => {
   return(
     <HeadingBlock>
       <Description>
-        <StyledTitle>
+        <StyledTitle size="xxxl">
           Innovating solutions for the FinTech industry
         </StyledTitle>
         <StyledSubTitle>

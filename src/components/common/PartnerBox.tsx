@@ -40,12 +40,11 @@ const PartnerLogoNameBlock = styled.div`
   gap: 14px;
 `;
 
-const StyledPartnerDescription = styled.div`
+const StyledPartnerDescription = styled(Typography)`
   max-width: 532px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 130%;
   color: #1C1C1C;
 `;
