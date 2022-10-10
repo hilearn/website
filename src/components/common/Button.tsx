@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import styled from "styled-components";
 
 import arrow from '../../../public/images/long_right.svg'
+import { clearDefaultButtonStyles } from "../../sharedStyles";
 import Typography from "./Typography";
 
 interface ComponentProps {
@@ -12,13 +13,13 @@ interface ComponentProps {
 }
 
 const StyledButton = styled.button`
+  ${clearDefaultButtonStyles}
   background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 24px;
   padding: 8px 24px;
   border: 1px solid #000000;
   display: flex;
   align-items: center;
-  cursor: pointer;
   transition: background-color 300ms;
   :hover {
     background-color: ${({ theme }) => theme.colors.hover.onPrimary};

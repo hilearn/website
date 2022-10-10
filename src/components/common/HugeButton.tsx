@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { hugeButtonContainer } from "../../sharedStyles";
+import { clearDefaultButtonStyles, hugeButtonContainer } from "../../sharedStyles";
 
 import HugeButtonContent from "./HugeButtonContent";
 
@@ -17,11 +17,11 @@ interface StyledButtonProps {
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
+  ${clearDefaultButtonStyles}
   ${hugeButtonContainer}
   ${({ withBottomGutter }) => withBottomGutter && `
     margin-bottom: 16px;
   `}
-  cursor: pointer;
   transition: background-color 300ms;
   :hover {
     background-color: ${({ theme }) => theme.colors.hover.onWhite};

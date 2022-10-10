@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Typography from "./Typography";
 import email from '../../../public/images/mail.svg';
-import { homePageBlocksSpacing } from "../../sharedStyles";
+import { clearDefaultButtonStyles, homePageBlocksSpacing } from "../../sharedStyles";
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
@@ -32,8 +32,7 @@ const Texts = styled.div`
 `;
 
 const Email = styled.button`
-  cursor: pointer;
-  border: none;
+  ${clearDefaultButtonStyles}
   display: flex;
   align-items: center;
   padding: 32px 64px;

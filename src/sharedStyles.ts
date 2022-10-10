@@ -26,7 +26,14 @@ export const hugeButtonContainer = css`
   align-items: center;
   padding: 24px;
   border-radius: 16px;
-  border: none;
   background-color: #fff;
   width: 100%;
+`;
+
+export const clearDefaultButtonStyles = css`
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
 `;

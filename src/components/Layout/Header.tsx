@@ -7,6 +7,7 @@ import menuClose from '../../../public/images/menuClose.svg';
 import { startTransition, useState } from 'react';
 import { Larger, Smaller } from '../common/Togglers';
 import Link from 'next/link';
+import { clearDefaultButtonStyles } from '../../sharedStyles';
 
 const Container = styled.nav`
   position: relative;
@@ -26,9 +27,7 @@ const StyledImage = styled(Image)`
 `;
 
 const Menu = styled.button`
-  border: none;
-  background: none;
-  cursor: pointer;
+  ${clearDefaultButtonStyles}
 `;
 
 const MobileNavigationContainer = styled.div`

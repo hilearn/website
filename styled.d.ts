@@ -6,6 +6,7 @@ declare module 'styled-components' {
       primary: string;
       secondary: string;
       background: string;
+      socialIcon: string;
       text: {
         primary: string;
         secondary: string;
