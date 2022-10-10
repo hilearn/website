@@ -10,6 +10,7 @@ import Typography from "../common/Typography";
 import Button from "../common/Button";
 import careers from '../../../public/images/careers.svg';
 import { homePageBlocksSpacing } from '../../sharedStyles';
+import PagePaths from '../../utils/constants/pagePaths';
 
 
 const Container = styled.div`
@@ -42,7 +43,7 @@ const CareersBlock = () => {
   const router = useRouter();
 
   const handleGoToCareers = () => {
-    router.push('/careers');
+    router.push(PagePaths.careers);
   };
 
   return (

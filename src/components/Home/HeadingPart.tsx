@@ -5,6 +5,7 @@ import styled from "styled-components";
 import HeadingBgImage from "../../../public/images/headingBgImage.svg";
 import Button from "../common/Button";
 import Typography from "../common/Typography";
+import PagePaths from "../../utils/constants/pagePaths";
 
 const HeadingBlock = styled.div`
   display: flex;
@@ -66,7 +67,7 @@ const HeadingPart = () => {
   const router = useRouter();
 
   const handelGoToTeam = () => (
-    router.push('/team')
+    router.push(PagePaths.team)
   );
 
   return(
