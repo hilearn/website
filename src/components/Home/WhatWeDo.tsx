@@ -38,7 +38,7 @@ const AgilitiesBlock = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 40px;
-  @media(max-width: 768px) {
+  @media(max-width: 920px) {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
   };
@@ -61,7 +61,12 @@ const WhatWeDo = () => (
     <AgilitiesBlock>
     {
       agilities.map((agility) => (
-      <AgilityBox key={agility} agility={agility} />
+        <AgilityBox
+          key={agility.title}
+          img={agility.icon}
+          title={agility.title}
+          subtitle={agility.subtitle}
+        />
       ))
     }
     </AgilitiesBlock>
