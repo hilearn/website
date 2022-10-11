@@ -28,9 +28,10 @@ const HeaderAndMainContainer = styled.div`
 
 const Layout = ({ children }: ComponentProps) => {
   return (
+    <>
+    <Header />
     <Container>
       <HeaderAndMainContainer>
-        <Header />
         <main>
           {children}
         </main>
@@ -38,6 +39,7 @@ const Layout = ({ children }: ComponentProps) => {
       </HeaderAndMainContainer>
       <Footer />
     </Container>
+    </>
   );
 };
 
