@@ -45,6 +45,16 @@ const StyledTitle = styled(Typography)`
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  @media (max-width: 395px) {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
 `;
 
 const StyledCaption = styled(Typography)`

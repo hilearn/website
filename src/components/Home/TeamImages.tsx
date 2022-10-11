@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
+import { Fragment } from "react";
 import styled from "styled-components";
 
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import members, { Member } from "../../utils/constants/members";
 import PagePaths from "../../utils/constants/pagePaths";
-import BlockTitle from "../common/BlockTitle";
+import BlockTitle, { BlockSubtitle } from "../common/BlockTypography";
 import Button from "../common/Button";
 import RoundedImage from "../common/RoundedImage";
-import Typography from "../common/Typography";
 
 const getMembersArray = (members: Member[]) => {
   const section1 = members.slice(0, 4);
@@ -57,18 +57,14 @@ const ImagesContainer = styled.div`
 `;
 
 const Section = styled.div<SectionProps>`
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template: 1fr / repeat(5, 1fr);
   grid-gap: 24px;
+  margin: 0 auto;
   ${({ withRightLeftSpaces }) => withRightLeftSpaces && `
-    margin: 0 60px;
+    grid-template: 1fr / 1fr repeat(4, 2fr) 1fr;
   `}
-`;
-
-const StyledTypography = styled(Typography)`
-  font-weight: 400;
-  line-height: 21px;
-  margin-bottom: 32px;
 `;
 
 const TeamImages = () => {
@@ -83,11 +79,11 @@ const TeamImages = () => {
     <Container>
       <Content>
         <BlockTitle text="The team" />
-        <StyledTypography>
+        <BlockSubtitle margin="0 0 32px 0">
           We have one of the most innovative and highly-skilled teams in Armenia. Many of them are with international achievements at olympiads.
           The team consists of Data scientists, Backend and Frontend developers, Product and Project Managers and Product Designers.
           We work according to Agile methodology. Team tech stack includes: React JS, Webpack, Typescript, Nodejs, AWS.
-        </StyledTypography>
+        </BlockSubtitle>
         <Button onClick={handleGoToTeam}>
           Meet the team
         </Button>
@@ -95,9 +91,28 @@ const TeamImages = () => {
       <ImagesContainer>
         {getMembersArray(members).map((section, i) => (
           <Section key={i} withRightLeftSpaces={i === 0 || i === 2}>
-            {section.map((m) => (
-              <RoundedImage key={m.name} src={m.img} />
-            ))}
+            {section.map((m, ii) => {
+              if ((i === 0 || i === 2) && ii === 0) {
+                return (
+                  <Fragment key={m.name}>
+                    <span />
+                    <RoundedImage src={m.img} />
+                  </Fragment>
+                );
+              } else if ((i === 0 || i === 2) && ii === section.length - 1) {
+                return (
+                  <Fragment key={m.name}>
+                    <RoundedImage src={m.img} />
+                    <span />
+                  </Fragment>
+                );
+              }
+               else {
+                return (
+                  <RoundedImage key={m.name} src={m.img} />
+                );
+              }
+          })}
           </Section>
         ))}
       </ImagesContainer>

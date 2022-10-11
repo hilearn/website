@@ -5,7 +5,7 @@ import logo from '../../../public/images/logo.svg';
 import NavigationLinks from "../common/NavigationLinks";
 import Typography from "../common/Typography";
 import { homePageResponsivePadding } from "../../sharedStyles";
-import { Larger, Smaller } from "../common/Togglers";
+import { FooterSmall, FooterLarger } from "../common/Togglers";
 import Linkedin from "../common/Linkedin";
 
 const Container = styled.footer`
@@ -32,7 +32,7 @@ const LinksAndCopyrightContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.footer}) {
     position: absolute;
     left: 0;
     top: 83px;
@@ -55,12 +55,12 @@ const Footer = () => {
           alt="Logo"
         />
         <LinksAndCopyrightContainer>  
-          <Smaller>
+          <FooterSmall>
             <NavigationLinks vertical />
-          </Smaller>
-          <Larger>
+          </FooterSmall>
+          <FooterLarger>
             <NavigationLinks />
-          </Larger>    
+          </FooterLarger>    
           <Copyright size="xs" margin="27px 0 0 0" color="secondary">
             Copyright © Hilearn 2022
           </Copyright>

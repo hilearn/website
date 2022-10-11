@@ -21,6 +21,9 @@ const theme: DefaultTheme = {
     s: '375px',
     m: '768px',
     l: '1600px',
+    footer: '860px',
+    withImageBlock: '1320px',
+    blockAlignCenter: '1000px'
   }
 };
 

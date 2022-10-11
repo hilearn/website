@@ -4,8 +4,7 @@ import { useRouter } from 'next/router';
 
 import HugeButton from "../common/HugeButton";
 import website from '../../../public/images/website.svg';
-import BlockTitle from "../common/BlockTitle";
-import Typography from "../common/Typography";
+import BlockTitle, { BlockSubtitle } from "../common/BlockTypography";
 import Button from "../common/Button";
 import careers from '../../../public/images/careers.svg';
 import { homePageBlocksSpacing } from '../../sharedStyles';
@@ -14,9 +13,9 @@ import PagePaths from '../../utils/constants/pagePaths';
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
-  display: flex;
-  flex-direction: row;
-  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  @media (max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
     display: flex;
     flex-direction: column;
   }
@@ -24,14 +23,11 @@ const Container = styled.div`
 
 const Content = styled.div`
   margin-right: 40px;
-  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+  margin-bottom: 0;
+  @media (max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
     margin-right: 0;
+    margin-bottom: 60px;
   }
-`;
-
-const StyledTypography = styled(Typography)`
-  font-weight: 400;
-  line-height: 21px;
 `;
 
 const ButtonContainer = styled.div`
@@ -49,10 +45,10 @@ const CareersBlock = () => {
     <Container>
       <Content>
         <BlockTitle text="Careers" />
-        <StyledTypography margin="0 0 24px 0">
+        <BlockSubtitle margin="0 0 24px 0">
           HiLearn is always looking for well-rounded specialists that are proficient in creating engaging experiences and are
           familiar with all aspects of product development from ideation to implementation.
-        </StyledTypography>
+        </BlockSubtitle>
         <HugeButton
           iconSrc={website}
           title="Front-end engineer"

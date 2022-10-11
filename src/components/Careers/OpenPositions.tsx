@@ -30,9 +30,9 @@ const OpenPositions = () => {
           <Paragraph>
           HiLearn is looking for a well-rounded frontend developer that is proficient in creating engaging experiences
            and is familiar with all aspects of product development from ideation to implementation.
-           You will play a critical part in the design, implementation, testing, and deployment of HiLearn's
+           You will play a critical part in the design, implementation, testing, and deployment of HiLearn&apos;s
            consumer facing products, you will be instrumental in the architecture and implementation of products
-           handling millions of dollars' worth of financial transactions.
+           handling millions of dollars worth of financial transactions.
           </Paragraph>
           <ListWithLabel
             label="As a Front-End Engineer you will:"
