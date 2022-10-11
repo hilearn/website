@@ -88,7 +88,7 @@ const members: Member[] = [
   },
   {
     'name': 'Naira Babayan',
-    'role': 'Senior Quant Engineer',
+    'role': 'Lead Back-End Engineer',
     'bio': 'Naira has extensive experience in building production software, and has been shifting her expertise into more theoretical projects.',
     'email': 'naira.b@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/naira-babayan-3074752b/',
@@ -96,7 +96,7 @@ const members: Member[] = [
   },
   {
     'name': 'Naira Mnatsakanyan',
-    'role': 'Lead Back-End Engineer',
+    'role': 'Research Engineer',
     'bio': 'Naira studies at YSU Applied Mathematics department. She is eager to start solving real time problems.',
     'email': 'naira.m@hilearn.io',
     'linkedin': '',
