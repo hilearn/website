@@ -17,9 +17,9 @@ const StyledPartnersBlock = styled.div`
   gap: 40px;
   grid-template: 1fr / 1fr 1fr;
   @media(max-width: 768px) {
-    grid-template: 1fr  1fr / 1fr;
-    gap: 24px;
-  }
+    display: flex;
+    flex-direction: column;
+  };
 `;
 
 const GroupedPartnersBlock = () => (
