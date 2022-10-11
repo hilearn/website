@@ -1,9 +1,11 @@
+import { useRouter } from "next/router";
 import styled from "styled-components";
 
 import { homePageBlocksSpacing } from "../../sharedStyles";
 import advantages from "../../utils/constants/advantages";
 import Advantage from "../common/Advantage";
 import BlockTitle from "../common/BlockTypography";
+import Button from "../common/Button";
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
@@ -26,6 +28,11 @@ const Content = styled.div`
 `;
 
 const Advantages = () => {
+  const router = useRouter();
+
+  const handelPartnersClick = () => (
+    router.push("#contacts")
+  );
   return (
     <Container>
       <BlockTitle text="Our advantages" />
@@ -38,6 +45,7 @@ const Advantages = () => {
             description={a.description}
           />
         ))}
+        <Button onClick={handelPartnersClick}>Become a partner</Button>
       </Content>
     </Container>
   );
