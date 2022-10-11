@@ -27,6 +27,15 @@ const Content = styled.div`
   `)}
 `;
 
+  const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F1EA;
+    border-radius: 16px;
+    padding: 40px 8px;
+  `;
+
 const Advantages = () => {
   const router = useRouter();
 
@@ -45,7 +54,9 @@ const Advantages = () => {
             description={a.description}
           />
         ))}
-        <Button onClick={handelPartnersClick}>Become a partner</Button>
+        <ButtonContainer>
+          <Button onClick={handelPartnersClick}>Become a partner</Button>
+        </ButtonContainer>
       </Content>
     </Container>
   );
