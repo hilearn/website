@@ -39,6 +39,8 @@ const MobileNavigationContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   padding: 24px 0;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
 `;
 
 const Header = () => {

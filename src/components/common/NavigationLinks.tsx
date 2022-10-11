@@ -13,13 +13,15 @@ type ComponentProps = ContainerProps & {
 
 interface ContainerProps {
   vertical?: boolean;
+  inFooter?: boolean;
 }
 
 const Container = styled.div<ContainerProps>`
   display: flex;
   grid-gap: 32px;
-  ${({ vertical }) => vertical ? (`
+  ${({ vertical, inFooter }) => vertical ? (`
     flex-direction: column;
+    ${inFooter ? '' : 'align-items: center;'}
   `) : (`
     flex-direction: row;
   `)};
@@ -72,11 +74,11 @@ const CustomLink = (props: CustomLinkProps) => (
   </Link>
 );
 
-const NavigationLinks = ({ vertical, onClick }: ComponentProps) => {
+const NavigationLinks = ({ vertical, inFooter, onClick }: ComponentProps) => {
   const router = useRouter();
 
   return (
-    <Container vertical={vertical}>
+    <Container vertical={vertical} inFooter={inFooter}>
       <CustomLink href="/#what-we-do" onClick={onClick}>
         What we do
       </CustomLink>

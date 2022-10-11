@@ -63,7 +63,7 @@ const Footer = () => {
         />
         <LinksAndCopyrightContainer>  
           <FooterSmall>
-            <NavigationLinks vertical />
+            <NavigationLinks vertical inFooter />
           </FooterSmall>
           <FooterLarger>
             <NavigationLinks />
