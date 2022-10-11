@@ -21,6 +21,7 @@ const Content = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const StyledImage = styled(Image)`
