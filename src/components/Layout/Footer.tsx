@@ -66,7 +66,7 @@ const Footer = () => {
             <NavigationLinks vertical inFooter />
           </FooterSmall>
           <FooterLarger>
-            <NavigationLinks />
+            <NavigationLinks inFooter />
           </FooterLarger>    
           <Copyright size="xs" margin="27px 0 0 0" color="secondary">
             Copyright © Hilearn 2022

@@ -32,11 +32,16 @@ const StyledTypography = styled(Typography)`
   line-height: 19px;
 `;
 
-const StyledAnchor = styled.a`
+interface StyledAnchorProps {
+  activeIsBold: boolean;
+}
+
+const StyledAnchor = styled.a<StyledAnchorProps>`
   display: flex;
   & p {
     position: relative;
     ::before {
+      ${({ activeIsBold }) => activeIsBold ? 'visibility: hidden;' : ''}
       transition: all 300ms;
       content: " ";
       height: 4px;
@@ -56,17 +61,23 @@ const StyledAnchor = styled.a`
       }
     }
   }
+  &.active {
+    & p {
+      ${({ activeIsBold }) => activeIsBold ? 'font-weight: 700;' : ''}
+    }
+  }
 `;
 
 type CustomLinkProps = LinkProps & {
   children: ReactNode;
   onClick: VoidFunction;
+  activeIsBold?: boolean;
   className?: string;
 }
 
 const CustomLink = (props: CustomLinkProps) => (
   <Link {...props} passHref>
-    <StyledAnchor onClick={props.onClick} className={props.className}>
+    <StyledAnchor activeIsBold={props.activeIsBold} onClick={props.onClick} className={props.className}>
       <StyledTypography>
         {props.children}
       </StyledTypography>
@@ -79,19 +90,41 @@ const NavigationLinks = ({ vertical, inFooter, onClick }: ComponentProps) => {
 
   return (
     <Container vertical={vertical} inFooter={inFooter}>
-      <CustomLink href="/#what-we-do" onClick={onClick}>
+      <CustomLink
+        activeIsBold={inFooter}
+        href="/#what-we-do"
+        onClick={onClick}
+      >
         What we do
       </CustomLink>
-      <CustomLink href={PagePaths.team} onClick={onClick} className={`${router.pathname === PagePaths.team ? 'active' : ''}`}>
+      <CustomLink
+        activeIsBold={inFooter}
+        href={PagePaths.team}
+        onClick={onClick}
+        className={`${router.pathname === PagePaths.team ? 'active' : ''}`}
+      >
         The Team
       </CustomLink>
-      <CustomLink href={PagePaths.careers} onClick={onClick} className={`${router.pathname === PagePaths.careers ? 'active' : ''}`}>
+      <CustomLink
+        activeIsBold={inFooter}
+        href={PagePaths.careers}
+        onClick={onClick}
+        className={`${router.pathname === PagePaths.careers ? 'active' : ''}`}
+      >
         Careers
       </CustomLink>
-      <CustomLink href="/#partners" onClick={onClick}>
+      <CustomLink
+        activeIsBold={inFooter}
+        href="/#partners"
+        onClick={onClick}
+      >
         Partners
       </CustomLink>
-      <CustomLink href="#contacts" onClick={onClick}>
+      <CustomLink
+        activeIsBold={inFooter}
+        href="#contacts"
+        onClick={onClick}
+      >
         Contacts
       </CustomLink>
     </Container>
