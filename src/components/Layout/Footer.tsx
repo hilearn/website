@@ -4,29 +4,35 @@ import Image from 'next/image';
 import logo from '../../../public/images/logo.svg';
 import NavigationLinks from "../common/NavigationLinks";
 import Typography from "../common/Typography";
-import { homePageResponsivePadding } from "../../sharedStyles";
 import { FooterSmall, FooterLarger } from "../common/Togglers";
 import Linkedin from "../common/Linkedin";
 
 const Container = styled.footer`
-  ${homePageResponsivePadding}
   width: 100%;
   background-color: #fff;
   box-sizing: border-box;
   margin-top: 64px;
+  display: flex;
+  justify-content: center;
 `;
 
 const Content = styled.div`
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 100%;
+  max-width: 1168px;
+  @media (min-width: 600px) {
+    margin-left: 60px;
+    margin-right: 60px;
+    max-width: 1080px;
+  }
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
   background-color: #fff;
-  padding: 27px 16px 16px 16px;
+  padding: 27px 0 16px 0;
   position: relative;
-  @media(max-width: 375px) {
-    padding: 27px 16px 16px 0px;
-  };
 `;
 
 const LinksAndCopyrightContainer = styled.div`
@@ -41,7 +47,7 @@ const LinksAndCopyrightContainer = styled.div`
     top: 83px;
     padding-bottom: 16px;
   }
-  @media (max-width: ${({ theme }) => theme.breakpoints.s}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.footer}) {
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -63,10 +69,10 @@ const Footer = () => {
         />
         <LinksAndCopyrightContainer>  
           <FooterSmall>
-            <NavigationLinks vertical />
+            <NavigationLinks vertical inFooter />
           </FooterSmall>
           <FooterLarger>
-            <NavigationLinks />
+            <NavigationLinks inFooter />
           </FooterLarger>    
           <Copyright size="xs" margin="27px 0 0 0" color="secondary">
             Copyright © Hilearn 2022

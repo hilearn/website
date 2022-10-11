@@ -27,6 +27,7 @@ const Content = styled.div`
   display: flex;
   width: 1200px;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const StyledImage = styled(Image)`
@@ -44,6 +45,8 @@ const MobileNavigationContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   padding: 24px 0;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
 `;
 
 const Header = () => {

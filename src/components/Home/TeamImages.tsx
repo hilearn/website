@@ -67,6 +67,15 @@ const Section = styled.div<SectionProps>`
   `}
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  @media (max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
+    justify-content: center;
+  }
+`;
+
 const TeamImages = () => {
   const router = useRouter();
 
@@ -87,9 +96,11 @@ const TeamImages = () => {
           Product and Project Managers and Product Designers. We work
           according to Agile methodology.
         </BlockSubtitle>
-        <Button onClick={handleGoToTeam}>
-          Meet the team
-        </Button>
+        <ButtonContainer>
+          <Button onClick={handleGoToTeam}>
+            Meet the team
+          </Button>
+        </ButtonContainer>
       </Content>
       <ImagesContainer>
         {getMembersArray(members).map((section, i) => (

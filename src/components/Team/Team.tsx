@@ -7,11 +7,18 @@ import NewMember from "./NewMember";
 import TeamMember from "./TeamMember";
 
 const MembersContainer = styled.div`
-  display: flex;
+  display: grid;
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 40px;
   column-gap: 24px;
+  grid-template: auto / 1fr 1fr;
+  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
+    grid-template: auto / 1fr 1fr 1fr;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.l}) {
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+  }
 `;
 
 const StyledTitle = styled(Typography)`

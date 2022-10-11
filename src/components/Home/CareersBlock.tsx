@@ -32,6 +32,10 @@ const Content = styled.div`
 
 const ButtonContainer = styled.div`
   margin: 32px 0;
+  @media (max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const CareersBlock = () => {

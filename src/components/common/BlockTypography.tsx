@@ -18,7 +18,7 @@ const StyledTitle = styled(Typography)`
   ${responsiveAlignment}
   font-weight: 600;
   line-height: 39px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 `;
 
 export const BlockSubtitle = styled(Typography)`
