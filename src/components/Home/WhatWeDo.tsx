@@ -24,7 +24,7 @@ const AgilitiesBlock = styled.div`
     gap: 24px;
   };
   @media(max-width: 375px) {
-    gap: 16px;
+    gap: 9px;
   }
 `;
 

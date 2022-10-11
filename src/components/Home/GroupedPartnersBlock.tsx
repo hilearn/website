@@ -19,6 +19,7 @@ const StyledPartnersBlock = styled.div`
   @media(max-width: 768px) {
     display: flex;
     flex-direction: column;
+    gap: 24px;
   };
 `;
 
