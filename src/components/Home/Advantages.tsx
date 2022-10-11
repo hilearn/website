@@ -10,16 +10,17 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-  display: grid;
-  flex-wrap: wrap;
-  grid-template: repeat(5, 1fr) / 1fr;
+  display: flex;
+  flex-direction: column;
   grid-gap: 40px;
   ${({ theme }) => (`    
     @media (min-width: 545px) {
+      display: grid;
       grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     }
 
     @media (min-width: ${theme.breakpoints.m}) {
+      display: grid;
       grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
   `)}
