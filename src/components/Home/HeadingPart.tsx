@@ -11,7 +11,6 @@ const HeadingBlock = styled.div`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-top: 134px;
   @media(max-width: 1320px) {
     flex-direction: column;
     margin-left: 0;
@@ -93,7 +92,7 @@ const HeadingPart = () => {
           companies in the fields of data science,
           AI and ML, software development.
         </StyledSubTitle>
-        <Button onClick={handelGoToTeam}>Join our team</Button>
+        <Button onClick={handelGoToTeam}>See our partners</Button>
       </Description>
       <RightImageBlock>
         <StyledImage src={HeadingBgImage} alt="" />
