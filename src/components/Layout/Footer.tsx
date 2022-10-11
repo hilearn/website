@@ -24,6 +24,9 @@ const Content = styled.div`
   background-color: #fff;
   padding: 27px 16px 16px 16px;
   position: relative;
+  @media(max-width: 375px) {
+    padding: 27px 16px 16px 0px;
+  };
 `;
 
 const LinksAndCopyrightContainer = styled.div`
@@ -37,6 +40,10 @@ const LinksAndCopyrightContainer = styled.div`
     left: 0;
     top: 83px;
     padding-bottom: 16px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.s}) {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 `;
 

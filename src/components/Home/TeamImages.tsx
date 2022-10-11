@@ -80,9 +80,12 @@ const TeamImages = () => {
       <Content>
         <BlockTitle text="The team" />
         <BlockSubtitle margin="0 0 32px 0">
-          We have one of the most innovative and highly-skilled teams in Armenia. Many of them are with international achievements at olympiads.
-          The team consists of Data scientists, Backend and Frontend developers, Product and Project Managers and Product Designers.
-          We work according to Agile methodology. Team tech stack includes: React JS, Webpack, Typescript, Nodejs, AWS.
+          We have one of the most innovative and highly-skilled
+          teams in Armenia. Many of them are with international
+          achievements at olympiads. The team consists of AI/ML
+          engineers, Data scientists, Backend and Frontend developers,
+          Product and Project Managers and Product Designers. We work
+          according to Agile methodology.
         </BlockSubtitle>
         <Button onClick={handleGoToTeam}>
           Meet the team

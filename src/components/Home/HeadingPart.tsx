@@ -2,36 +2,20 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import styled from "styled-components";
 
-import DotImage from "../../../public/images/Dots.svg";
 import HeadingBgImage from "../../../public/images/headingBgImage.svg";
 import Button from "../common/Button";
 import Typography from "../common/Typography";
-import PagePaths from "../../utils/constants/pagePaths";
 
 const HeadingBlock = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 150px;
+  position: relative;
   @media(max-width: 1320px) {
     flex-direction: column;
     margin-left: 0;
+    position: unset;
   }
-`;
-
-const ImageContainer = styled.div`
-  position: absolute;
-  left: 0;
-  top: 275px;
-  @media(max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
-    top: 500px;
-  };
-  @media(max-width: 768px) {
-    top: 400px;
-  };
-  @media(max-width: 540px) {
-    display: none;
-  };
 `;
 
 const Description = styled.div`
@@ -81,18 +65,24 @@ const StyledImage = styled(Image)`
   };
 `;
 
+const RightImageBlock = styled.div`
+  position: absolute;
+  max-width: 670px;
+  right: 0;
+  @media(max-width: 1320px) {
+    position: unset;
+  }
+`;
+
 const HeadingPart = () => {
   const router = useRouter();
 
   const handelGoToTeam = () => (
-    router.push(PagePaths.team)
+    router.push("#partners")
   );
 
   return(
     <HeadingBlock>
-      <ImageContainer>
-        <Image src={DotImage} alt="Dots" />
-      </ImageContainer>
       <Description>
         <StyledTitle size="xxxl">
           Innovating solutions for the FinTech industry
@@ -104,7 +94,9 @@ const HeadingPart = () => {
         </StyledSubTitle>
         <Button onClick={handelGoToTeam}>Join our team</Button>
       </Description>
-      <StyledImage src={HeadingBgImage} alt="" />
+      <RightImageBlock>
+        <StyledImage src={HeadingBgImage} alt="" />
+      </RightImageBlock>
     </HeadingBlock>
   );
 };
