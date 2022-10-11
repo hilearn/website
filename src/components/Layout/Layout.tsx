@@ -26,15 +26,22 @@ const HeaderAndMainContainer = styled.div`
   max-width: 1200px;
 `;
 
+const StyledMain = styled.main`
+  margin-top: 147px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.m}) {
+    margin-top: 127px;
+  }
+`;
+
 const Layout = ({ children }: ComponentProps) => {
   return (
     <>
     <Header />
     <Container>
       <HeaderAndMainContainer>
-        <main>
+        <StyledMain>
           {children}
-        </main>
+        </StyledMain>
         <Contacts />
       </HeaderAndMainContainer>
       <Footer />
