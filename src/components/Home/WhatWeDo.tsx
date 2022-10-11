@@ -21,9 +21,10 @@ const AgilitiesBlock = styled.div`
   @media(max-width: 920px) {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
+    gap: 24px;
   };
   @media(max-width: 375px) {
-    gap: 16px;
+    gap: 9px;
   }
 `;
 
@@ -31,12 +32,8 @@ const WhatWeDo = () => (
   <Container id="what-we-do">
     <BlockTitle text="What we do" />
     <Subtitle>
-      HiLearn is a Technology company based in Yerevan,
-      Armenia. HiLearn started as an algorithmic trading
-      startup, but we pivoted in late 2019 to form a strategic
-      partnership with Wealth Technologies Inc, and recently with
-      MoneyLion Inc. The latter is a US fintech company providing
-      online banking services.
+      We have nurtured our services with an aim to provide 
+      turn-key solutions for our partners:
     </Subtitle>
     <AgilitiesBlock>
     {

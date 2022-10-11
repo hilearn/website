@@ -67,6 +67,15 @@ const Section = styled.div<SectionProps>`
   `}
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  @media (max-width: ${({ theme }) => theme.breakpoints.withImageBlock}) {
+    justify-content: center;
+  }
+`;
+
 const TeamImages = () => {
   const router = useRouter();
 
@@ -80,13 +89,18 @@ const TeamImages = () => {
       <Content>
         <BlockTitle text="The team" />
         <BlockSubtitle margin="0 0 32px 0">
-          We have one of the most innovative and highly-skilled teams in Armenia. Many of them are with international achievements at olympiads.
-          The team consists of Data scientists, Backend and Frontend developers, Product and Project Managers and Product Designers.
-          We work according to Agile methodology. Team tech stack includes: React JS, Webpack, Typescript, Nodejs, AWS.
+          We have one of the most innovative and highly-skilled
+          teams in Armenia. Many of them are with international
+          achievements at olympiads. The team consists of AI/ML
+          engineers, Data scientists, Backend and Frontend developers,
+          Product and Project Managers and Product Designers. We work
+          according to Agile methodology.
         </BlockSubtitle>
-        <Button onClick={handleGoToTeam}>
-          Meet the team
-        </Button>
+        <ButtonContainer>
+          <Button onClick={handleGoToTeam}>
+            Meet the team
+          </Button>
+        </ButtonContainer>
       </Content>
       <ImagesContainer>
         {getMembersArray(members).map((section, i) => (

@@ -5,11 +5,11 @@ interface Advantage {
 
 const advantages: Advantage[] = [
   {
-    title: 'Ability to solve hard AI/ML Problems',
+    title: 'Ability to solve hard AI/ML problems',
     description: 'Our engineering and science expertise covers AI/ML, Data Science / Data Mining and Quantitative Analysis. With our team\'s (5 International Math and Physics Olympiad winners) expertise you will be able to apply state of the art AI/ML solutions to your problems.',
   },
   {
-    title: 'Engineering Excellence',
+    title: 'Engineering excellence',
     description: 'We apply Engineering Excellence programs learned at Silicon Valley companies and equip our engineers with all the new technology trends and frameworks.',
   },
   {
