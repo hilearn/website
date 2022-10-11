@@ -3,11 +3,7 @@ import { css } from "styled-components";
 export const homePageResponsivePadding = css`
   padding-left: 16px;
   padding-right: 16px;
-  @media (min-width: 375px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     padding-left: 60px;
     padding-right: 60px;
   }

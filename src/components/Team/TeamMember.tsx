@@ -18,11 +18,19 @@ const StyledImage = styled(Image)`
 const FullName = styled(Typography)`
   font-weight: 600;
   line-height: 19px;
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
 `;
 
 const JobPosition = styled(Typography)`
   font-weight: 400;
   line-height: 17px;
+  @media (max-width: 400px) {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+  }
 `;
 
 const IconsContainer = styled.div`
@@ -43,8 +51,6 @@ const TeamMember = (props: ComponentProps) => {
       <StyledImage
         src={imageSrc}
         alt={fullName}
-        width={213}
-        height={213}
       />
       <FullName margin="16px 0 8px 0">
         {fullName}
