@@ -15,6 +15,10 @@ import Sevak from '../../../public/images/team/Sevak.jpg';
 import Vardges from '../../../public/images/team/Vardges.jpg';
 import Yeva from '../../../public/images/team/Yeva.jpg';
 import zidder from '../../../public/images/team/zidder.jpg';
+import Arayik from '../../../public/images/team/Arayik.jpg';
+import Vazgen from '../../../public/images/team/Vazgen.jpg';
+import Suren from '../../../public/images/team/Suren.jpg';
+
 
 export interface Member {
   'name': string,
@@ -36,7 +40,7 @@ const members: Member[] = [
   },
   {
     'name': 'Arsen Hambardzumyan',
-    'role': 'Senior Research Engineer',
+    'role': 'Lead Research Engineer',
     'bio': 'Arsen graduated from Applied Mathematics department at YSU, he leads our efforts in Financial Analysis, and loves participating in Olympiads.',
     'email': 'zidder@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/arsen-hambardzumyan-812571239/',
@@ -44,7 +48,7 @@ const members: Member[] = [
   },
   {
     'name': 'Vardges Mambreyan',
-    'role': 'Senior Research Engineer',
+    'role': 'Lead Research Engineer',
     'linkedin': 'https://www.linkedin.com/in/vardges-mambreyan-418236159/',
     'bio': 'Vardges has a Masters Degree in Physics from YSU and a white cat, he leads our efforts in Long Term Market Simulation. On his spare time, he co-leads Armenian Astronomy Olympiad team.',
     'email': 'vardges@hilearn.io',
@@ -60,7 +64,7 @@ const members: Member[] = [
   },
   {
     'name': 'Sevak Abrahamyan',
-    'role': 'Research & Quant Engineer',
+    'role': 'Senior Research Engineer',
     'bio': 'Sevak graduated from the Applied Mathematics department at YSU. He is eager to get apply his theoretical and practical skills to real life problems.',
     'email': 'sevak@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/sevak-abrahamyan-a13046171/',
@@ -84,7 +88,7 @@ const members: Member[] = [
   },
   {
     'name': 'Naira Mnatsakanyan',
-    'role': 'Quant Engineer',
+    'role': 'Lead Back-End Engineer',
     'bio': 'Naira studies at YSU Applied Mathematics department. She is eager to start solving real time problems.',
     'email': 'naira.m@hilearn.io',
     'linkedin': '',
@@ -92,7 +96,7 @@ const members: Member[] = [
   },
   {
     'name': 'Karine Avetisyan',
-    'role': 'Senior Quant Engineer',
+    'role': 'Senior Back-End Engineer',
     'bio': 'Karine has good experience in building production software, and has been shifting her expertise into more theoretical projects.',
     'email': 'karine.a@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/karine-avetisyan-21bbb5142/',
@@ -107,8 +111,16 @@ const members: Member[] = [
     'img': Seda,
   },
   {
+    'name': 'Vazgen Zohranyan',
+    'role': 'Research Engineer',
+    'bio': 'Vazgen',
+    'email': 'vazgen@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/vazgenzohranyan',
+    'img': Vazgen,
+  },
+  {
     'name': 'Karen Baghdasaryan',
-    'role': 'Strategic Product Owner',
+    'role': 'Senior Product Manager',
     'bio': 'Karen',
     'email': 'karen.b@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/baghdasaryankaren/',
@@ -116,7 +128,7 @@ const members: Member[] = [
   },
   {
     'name': 'Aram Mkhoyan',
-    'role': 'Technical Product Manager',
+    'role': 'Senior Product Manager',
     'bio': 'Aram',
     'email': 'aram.m@hilearn.io',
     'linkedin': 'http://linkedin.com/in/mkhoyan',
@@ -124,7 +136,7 @@ const members: Member[] = [
   },
   {
     'name': 'Artavazd Vardanyan',
-    'role': 'Quant Engineer',
+    'role': 'Back End Engineer',
     'bio': 'Artavazd',
     'email': 'artavazd.v@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/artavazd-vardanyan/',
@@ -145,6 +157,22 @@ const members: Member[] = [
     'email': 'ashot.a@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/ashot1arzumanyan',
     'img': Ashot,
+  },
+  {
+    'name': 'Arayik Sargsyan',
+    'role': 'Front-End Tech Lead',
+    'bio': 'Arayik',
+    'email': 'arayik.s@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/araysargsyan',
+    'img': Arayik,
+  },
+  {
+    'name': 'Suren Muradyan',
+    'role': 'HR Specialist',
+    'bio': 'Suren',
+    'email': 'suren.m@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/suren-muradyan-7a8418240',
+    'img': Suren,
   },
 ];
 

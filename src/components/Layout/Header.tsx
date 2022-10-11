@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import { startTransition, useState } from 'react';
+import { startTransition, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
 import logo from '../../../public/images/logo.svg';
@@ -8,18 +8,24 @@ import NavigationLinks from '../common/NavigationLinks';
 import menu from '../../../public/images/menu.svg';
 import menuClose from '../../../public/images/menuClose.svg';
 import { Larger, Smaller } from '../common/Togglers';
-import { clearDefaultButtonStyles } from '../../sharedStyles';
+import { clearDefaultButtonStyles, homePageResponsivePadding } from '../../sharedStyles';
+import theme from '../../theme';
 
 const Container = styled.nav`
   position: relative;
-  margin-bottom: 40px;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
 `;
 
 const Content = styled.div`
+  ${homePageResponsivePadding};
   display: flex;
-  width: 100%;
+  width: 1200px;
   justify-content: space-between;
   align-items: center;
 `;
@@ -44,7 +50,23 @@ const MobileNavigationContainer = styled.div`
 `;
 
 const Header = () => {
+
   const [open, setOpen] = useState(false);
+  const header = useRef(null);
+
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.pageYOffset >= 10) {
+        header.current.style.backgroundColor = "#FFFFFF";
+      } else {
+        header.current.style.backgroundColor = theme.colors.background;
+      }
+    };
+    window.addEventListener('scroll', scrollListener);
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    };
+  }, []);
 
   const handleToggleMenu = () => {
     setOpen(!open);
@@ -59,7 +81,7 @@ const Header = () => {
   const icon = open ? menuClose : menu;
 
   return (
-    <Container>
+    <Container ref={header} >
       <Content>
         <Link href="/">
           <StyledImage
