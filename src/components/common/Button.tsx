@@ -22,6 +22,7 @@ const StyledButton = styled.button`
   display: flex;
   align-items: center;
   transition: background-color 300ms;
+  user-select: none;
   :hover {
     background-color: ${({ theme }) => theme.colors.hover.onPrimary};
   }
