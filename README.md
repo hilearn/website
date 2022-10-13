@@ -9,5 +9,5 @@
 
 - run `yarn build` for building static files.
 - run `yarn export -o docs`, this will export static files in `out` folder.
-- run `cp CNAME ./docs/` and `cp .nojekyll ./docs/` to move confiuration files back.
+- run `cp CNAME ./docs/` and `cp .nojekyll ./docs/` to move configuration files back.
 - commit the modified `docs` folder.
