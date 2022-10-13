@@ -10,6 +10,7 @@ import menuClose from '../../../public/images/menuClose.svg';
 import { Larger, Smaller } from '../common/Togglers';
 import { clearDefaultButtonStyles, homePageResponsivePadding } from '../../sharedStyles';
 import theme from '../../theme';
+import getHeaderIsFixed from '../../utils/helpers/getHeaderIsFixed';
 
 const Container = styled.nav`
   position: relative;
@@ -38,11 +39,16 @@ const Menu = styled.button`
   ${clearDefaultButtonStyles}
 `;
 
-const MobileNavigationContainer = styled.div`
+interface MobileNavigationContainerProps {
+  headerIsFixed: boolean;
+}
+
+const MobileNavigationContainer = styled.div<MobileNavigationContainerProps>`
   position: absolute;
+  top: 87px;
   left: 0;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme, headerIsFixed }) => headerIsFixed ? '#fff' : theme.colors.background};
   padding: 24px 0;
   z-index: 9999;
   display: flex;
@@ -56,7 +62,8 @@ const Header = () => {
 
   useEffect(() => {
     const scrollListener = () => {
-      if (window.pageYOffset >= 10) {
+      const headerIsFixed = getHeaderIsFixed();
+      if (headerIsFixed) {
         header.current.style.backgroundColor = "#FFFFFF";
       } else {
         header.current.style.backgroundColor = theme.colors.background;
@@ -101,7 +108,7 @@ const Header = () => {
         </Larger>
       </Content>
       {open && (
-          <MobileNavigationContainer>
+          <MobileNavigationContainer headerIsFixed={getHeaderIsFixed()}>
             <NavigationLinks vertical onClick={handleCloseMenu} />
           </MobileNavigationContainer>
         )}

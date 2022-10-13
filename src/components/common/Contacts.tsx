@@ -8,6 +8,9 @@ import Typography from "./Typography";
 
 const Container = styled.div`
   ${homePageBlocksSpacing}
+`;
+
+const Content = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -75,20 +78,22 @@ const Contacts = () => {
 
   return (
     <Container id="contacts">
-      <Texts>
-        <StyledTitle size="xl" margin="0 0 16px 0">
-          Contacts
-        </StyledTitle>
-        <StyledCaption>
-          Write to us if you are interested in partnership with us.
-        </StyledCaption>
-      </Texts>
-      <Email onClick={handleOpenDefaultMail}>
-        <Image src={email} alt="Email" />
-        <StyledHiLearnEmail margin="0 0 0 16px">
-          info@hilearn.io
-        </StyledHiLearnEmail>
-      </Email>
+      <Content>
+        <Texts>
+          <StyledTitle size="xl" margin="0 0 16px 0">
+            Contacts
+          </StyledTitle>
+          <StyledCaption>
+            Write to us if you are interested in partnership with us.
+          </StyledCaption>
+        </Texts>
+        <Email onClick={handleOpenDefaultMail}>
+          <Image src={email} alt="Email" />
+          <StyledHiLearnEmail margin="0 0 0 16px">
+            info@hilearn.io
+          </StyledHiLearnEmail>
+        </Email>
+      </Content>
     </Container>
   );
 };
