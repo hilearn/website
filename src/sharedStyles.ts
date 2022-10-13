@@ -33,3 +33,11 @@ export const clearDefaultButtonStyles = css`
   cursor: pointer;
   outline: none;
 `;
+
+export const responsiveAlignment = css`
+  width: 100%;
+  text-align: center;
+  @media (min-width: ${({ theme }) => theme.breakpoints.blockAlignCenter}) {
+    text-align: start;
+  }
+`;

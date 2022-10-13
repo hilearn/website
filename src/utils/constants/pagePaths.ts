@@ -1,6 +1,6 @@
 enum PagePaths {
-  'careers' = '/careers_v2',
-  'team' = '/team_v2',
+  'careers' = '/careers',
+  'team' = '/team',
 }
 
 export default PagePaths;

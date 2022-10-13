@@ -1,18 +1,12 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+
+import { responsiveAlignment } from "../../sharedStyles";
 
 import Typography from "./Typography";
 
 interface ComponentProps {
   text: string;
 }
-
-const responsiveAlignment = css`
-  width: 100%;
-  text-align: center;
-  @media (min-width: ${({ theme }) => theme.breakpoints.blockAlignCenter}) {
-    text-align: start;
-  }
-`;
 
 const StyledTitle = styled(Typography)`
   ${responsiveAlignment}
