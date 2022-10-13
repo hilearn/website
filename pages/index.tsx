@@ -1,8 +1,15 @@
+import Head from "next/head";
+
 import Home from "../src/components/Home/Home";
 
 const HomePage = () => {
   return (
-    <Home />
+    <>
+      <Head>
+        <title>Home | hilearn.io</title>
+      </Head>
+      <Home />
+    </>
   );
 };
 

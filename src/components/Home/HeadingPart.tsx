@@ -88,9 +88,7 @@ const HeadingPart = () => {
           Innovating solutions for the FinTech industry
         </StyledTitle>
         <StyledSubTitle>
-          Key partner for the several US fintech
-          companies in the fields of data science,
-          AI and ML, software development.
+          Key partner for the several US fintech companies in the fields of AI/ML, Data Science and Quantitative Analysis.
         </StyledSubTitle>
         <Button onClick={handelGoToTeam}>See our partners</Button>
       </Description>
