@@ -6,7 +6,7 @@ const CareersPage = () => {
   return (
     <>
       <Head>
-        <title>Careers | AI/ML, Data Science and Quantitative Analysis. Web & Mobile Development</title>
+        <title>HiLearn | Careers</title>
       </Head>
       <Careers />
     </>
