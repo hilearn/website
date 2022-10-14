@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Home | hilearn.io</title>
+        <title>HiLearn | AI/ML, Data Science and Quantitative Analysis. Web & Mobile Development</title>
       </Head>
       <Home />
     </>

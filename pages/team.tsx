@@ -6,7 +6,7 @@ const TeamPage = () => {
   return (
     <>
       <Head>
-        <title>Team | hilearn.io</title>
+        <title>Team | AI/ML, Data Science and Quantitative Analysis. Web & Mobile Development</title>
       </Head>
       <Team />
     </>
