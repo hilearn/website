@@ -10,6 +10,7 @@ interface ComponentProps {
 
 const StyledTitle = styled(Typography)`
   ${responsiveAlignment}
+  font-size: 32px;
   font-weight: 600;
   line-height: 39px;
   margin-bottom: 40px;
@@ -23,7 +24,7 @@ export const BlockSubtitle = styled(Typography)`
 
 const BlockTitle = ({ text }: ComponentProps) => {
   return (
-    <StyledTitle size="xl">
+    <StyledTitle forwardedAs="h4">
       {text}
     </StyledTitle>
   );
