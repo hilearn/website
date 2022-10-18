@@ -1,22 +1,18 @@
-import { ReactNode } from "react";
 import styled from "styled-components";
 
-interface ComponentProps {
-  children: ReactNode;
-}
+import Typography, { ComponentProps as TypographyProps } from "./Typography";
 
-const StyledTitle = styled.h1`
+type ComponentProps = TypographyProps;
+
+const StyledTitle = styled(Typography)`
   font-size: 32px;
   font-weight: 800;
   line-height: 39px;
-  font-family: Inter;
-  letter-spacing: 0em;
-  color: ${({ theme }) => theme.colors.text.primary};
 `;
 
-const PageTitle = ({ children }: ComponentProps) => {
+const PageTitle = ({ children, ...props }: ComponentProps) => {
   return (
-    <StyledTitle>
+    <StyledTitle {...props} forwardedAs="h1">
       {children}
     </StyledTitle>
   );

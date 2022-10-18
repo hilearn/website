@@ -24,7 +24,7 @@ const MembersContainer = styled.div`
 const Team = () => {
   return (
     <div>
-      <PageTitle>
+      <PageTitle margin="0 0 24px 0">
         Meet our team
       </PageTitle>
       <MembersContainer>

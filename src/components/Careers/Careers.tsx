@@ -18,7 +18,7 @@ const SubTitle = styled(Typography)`
 const Careers = () => {
   return (
     <div>
-      <PageTitle>
+      <PageTitle margin="0 0 16px 0">
         Careers
       </PageTitle>
       <SubTitle>
