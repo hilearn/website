@@ -84,7 +84,7 @@ const HeadingPart = () => {
   return(
     <HeadingBlock>
       <Description>
-        <StyledTitle size="xxxl">
+        <StyledTitle size="xxxl" forwardedAs="h1">
           Innovating solutions for the FinTech industry
         </StyledTitle>
         <StyledSubTitle>

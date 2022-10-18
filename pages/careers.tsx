@@ -6,7 +6,7 @@ const CareersPage = () => {
   return (
     <>
       <Head>
-        <title>Careers | hilearn.io</title>
+        <title>HiLearn | Careers</title>
       </Head>
       <Careers />
     </>

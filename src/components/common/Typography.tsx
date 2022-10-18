@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
 
-interface ComponentProps {
+export interface ComponentProps {
   children: React.ReactNode;
   size?: Size;
   as?: keyof HTMLElementTagNameMap;

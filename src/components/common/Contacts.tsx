@@ -80,7 +80,7 @@ const Contacts = () => {
     <Container id="contacts">
       <Content>
         <Texts>
-          <StyledTitle size="xl" margin="0 0 16px 0">
+          <StyledTitle size="xl" margin="0 0 16px 0" forwardedAs="h4">
             Contacts
           </StyledTitle>
           <StyledCaption>

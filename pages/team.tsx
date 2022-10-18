@@ -6,7 +6,7 @@ const TeamPage = () => {
   return (
     <>
       <Head>
-        <title>Team | hilearn.io</title>
+        <title>HiLearn | Team</title>
       </Head>
       <Team />
     </>

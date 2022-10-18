@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import members from "../../utils/constants/members";
-import Typography from "../common/Typography";
+import PageTitle from "../common/PageTitle";
 
 import NewMember from "./NewMember";
 import TeamMember from "./TeamMember";
@@ -21,17 +21,12 @@ const MembersContainer = styled.div`
   }
 `;
 
-const StyledTitle = styled(Typography)`
-  font-weight: 800;
-  line-height: 29px;
-`;
-
 const Team = () => {
   return (
     <div>
-      <StyledTitle size="lg" margin="0 0 24px 0">
+      <PageTitle margin="0 0 24px 0">
         Meet our team
-      </StyledTitle>
+      </PageTitle>
       <MembersContainer>
         {members.map((m) => (
           <TeamMember
