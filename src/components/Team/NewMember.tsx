@@ -103,6 +103,7 @@ const NewMember = () => {
         <StyledImage
           src={orange}
           alt=""
+          placeholder="blur"
         />
         <ButtonContainer>
           <Button onClick={handleGoToCareers}>
