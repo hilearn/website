@@ -31,7 +31,7 @@ const Team = () => {
         {members.map((m) => (
           <TeamMember
             key={m.name}
-            imageSrc={m.img}
+            imageSrc={m.img_optimized}
             fullName={m.name}
             jobPosition={m.role}
             linkedinUrl={m.linkedin}

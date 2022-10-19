@@ -9,7 +9,8 @@
     "ts": "tsc --noEmit --incremental",
     "ts:watch": "yarn ts --watch",
     "optimize-images:team": "imagemin public/images/team/* --out-dir=public/images/team/optimized --plugin.mozjpeg.quality=80",
-    "optimize-images:svg": "imagemin public/images/*.svg --out-dir=public/images/optimized --plugin.svgo"
+    "optimize-images:svg": "imagemin public/images/*.svg --out-dir=public/images/optimized --plugin.svgo",
+    "optimize-images": "yarn optimize-images:team & yarn optimize-images:svg"
   },
   "dependencies": {
     "next": "^12.3.1",
