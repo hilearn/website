@@ -8,7 +8,8 @@
     "lint": "next lint",
     "ts": "tsc --noEmit --incremental",
     "ts:watch": "yarn ts --watch",
-    "optimize-images:team": "imagemin public/images/team/* --out-dir=public/images/team/optimized --plugin.mozjpeg.quality=80"
+    "optimize-images:team": "imagemin public/images/team/* --out-dir=public/images/team/optimized --plugin.mozjpeg.quality=80",
+    "optimize-images:svg": "imagemin public/images/*.svg --out-dir=public/images/optimized --plugin.svgo"
   },
   "dependencies": {
     "next": "^12.3.1",
@@ -26,6 +27,7 @@
     "eslint-plugin-import": "^2.26.0",
     "imagemin-cli": "^7.0.0",
     "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-svgo": "^10.0.1",
     "styled-components": "^5.3.6",
     "typescript": "4.8.4"
   }
