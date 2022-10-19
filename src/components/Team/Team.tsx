@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import members from "../../utils/constants/members";
+import members, { getMembersImage } from "../../utils/constants/members";
 import PageTitle from "../common/PageTitle";
 
 import NewMember from "./NewMember";
@@ -31,7 +31,7 @@ const Team = () => {
         {members.map((m) => (
           <TeamMember
             key={m.name}
-            imageSrc={m.img_optimized}
+            imageSrc={getMembersImage(m)}
             fullName={m.name}
             jobPosition={m.role}
             linkedinUrl={m.linkedin}

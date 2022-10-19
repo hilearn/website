@@ -37,7 +37,11 @@ import VazgenO from '../../../public/images/team/optimized/Vazgen.jpg';
 import Suren from '../../../public/images/team/Suren.jpg';
 import SurenO from '../../../public/images/team/optimized/Suren.jpg';
 
+export const useOptimizedImages = true;
 
+export const getMembersImage = (member: Member, optimized: boolean = useOptimizedImages) => {
+  return optimized ? member.img_optimized : member.img;
+};
 
 export interface Member {
   'name': string,
