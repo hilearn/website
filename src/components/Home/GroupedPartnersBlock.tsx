@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-import MoneyLionLogo from "../../../public/images/moneyLion.svg";
-import WealthTechLogo from "../../../public/images/wealthtech.svg";
+import MoneyLionLogo from "../../../public/images/optimized/moneyLion.svg";
+import WealthTechLogo from "../../../public/images/optimized/wealthtech.svg";
 import PartnersBox from "../common/PartnerBox";
 import { homePageBlocksSpacing } from "../../sharedStyles";
-import TradingLogo from "../../../public/images/trading.svg";
-import GranatusLogo from "../../../public/images/granatus.svg";
+import TradingLogo from "../../../public/images/optimized/trading.svg";
+import GranatusLogo from "../../../public/images/optimized/granatus.svg";
 import BlockTitle from "../common/BlockTypography";
 
 const Container = styled.div`

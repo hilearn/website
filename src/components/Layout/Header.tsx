@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import { startTransition, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
-import logo from '../../../public/images/logo.svg';
+import logo from '../../../public/images/optimized/logo.svg';
 import NavigationLinks from '../common/NavigationLinks';
-import menu from '../../../public/images/menu.svg';
-import menuClose from '../../../public/images/menuClose.svg';
+import menu from '../../../public/images/optimized/menu.svg';
+import menuClose from '../../../public/images/optimized/menuClose.svg';
 import { Larger, Smaller } from '../common/Togglers';
 import { clearDefaultButtonStyles, homePageResponsivePadding } from '../../sharedStyles';
 import theme from '../../theme';

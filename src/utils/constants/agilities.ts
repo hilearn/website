@@ -1,11 +1,11 @@
-import ArtificialIntelligenceImg from "../../../public/images/artificialIntelligence.svg";
-import WebMobileImg from "../../../public/images/webMobile.svg";
-import DataScience from "../../../public/images/dataScience.svg";
-import FinancialModeling from "../../../public/images/financialModeling .svg";
-import ProductDevelopment from "../../../public/images/productDevelopment.svg";
-import ProjectManagement from "../../../public/images/projectManagement.svg";
-import ProductDesign from "../../../public/images/productDesign.svg";
-import QualityAssurance from "../../../public/images/qualityAssurance.svg";
+import ArtificialIntelligenceImg from "../../../public/images/optimized/artificialIntelligence.svg";
+import WebMobileImg from "../../../public/images/optimized/webMobile.svg";
+import DataScience from "../../../public/images/optimized/dataScience.svg";
+import FinancialModeling from "../../../public/images/optimized/financialModeling .svg";
+import ProductDevelopment from "../../../public/images/optimized/productDevelopment.svg";
+import ProjectManagement from "../../../public/images/optimized/projectManagement.svg";
+import ProductDesign from "../../../public/images/optimized/productDesign.svg";
+import QualityAssurance from "../../../public/images/optimized/qualityAssurance.svg";
 
 export const agilities_1 = [
   {

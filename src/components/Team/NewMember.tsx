@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 import PagePaths from "../../utils/constants/pagePaths";
 import orange from '../../../public/images/orange.png';
-import arrow from '../../../public/images/long_right.svg';
+import arrow from '../../../public/images/optimized/long_right.svg';
 import { clearDefaultButtonStyles } from "../../sharedStyles";
 import Typography from "../common/Typography";
 

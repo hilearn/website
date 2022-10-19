@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-import email from '../../../public/images/mail.svg';
+import email from '../../../public/images/optimized/mail.svg';
 import { clearDefaultButtonStyles, homePageBlocksSpacing } from "../../sharedStyles";
 
 import Typography from "./Typography";
