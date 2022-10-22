@@ -17,7 +17,6 @@ const RoundedImage = ({ src, style }: ComponentProps) => {
       height={96}
       width={96}
       style={style}
-      placeholder="blur"
     />
   );
 };
