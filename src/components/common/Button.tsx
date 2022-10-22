@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import styled from "styled-components";
 
-import arrow from '../../../public/images/long_right.svg';
+import arrow from '../../../public/images/optimized/long_right.svg';
 import { clearDefaultButtonStyles } from "../../sharedStyles";
 
 import Typography from "./Typography";

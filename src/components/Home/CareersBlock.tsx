@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { useRouter } from 'next/router';
 
 import HugeButton from "../common/HugeButton";
-import website from '../../../public/images/website.svg';
+import website from '../../../public/images/optimized/website.svg';
 import BlockTitle, { BlockSubtitle } from "../common/BlockTypography";
 import Button from "../common/Button";
-import careers from '../../../public/images/careers.svg';
+import careers from '../../../public/images/optimized/careers.svg';
 import { homePageBlocksSpacing } from '../../sharedStyles';
 import PagePaths from '../../utils/constants/pagePaths';
 

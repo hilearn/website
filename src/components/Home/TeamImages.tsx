@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import styled from "styled-components";
 
 import { homePageBlocksSpacing } from "../../sharedStyles";
-import members, { Member } from "../../utils/constants/members";
+import members, { getMembersImage, Member } from "../../utils/constants/members";
 import PagePaths from "../../utils/constants/pagePaths";
 import BlockTitle, { BlockSubtitle } from "../common/BlockTypography";
 import Button from "../common/Button";
@@ -110,20 +110,20 @@ const TeamImages = () => {
                 return (
                   <Fragment key={m.name}>
                     <span />
-                    <RoundedImage src={m.img} />
+                    <RoundedImage src={getMembersImage(m)} />
                   </Fragment>
                 );
               } else if ((i === 0 || i === 2) && ii === section.length - 1) {
                 return (
                   <Fragment key={m.name}>
-                    <RoundedImage src={m.img} />
+                    <RoundedImage src={getMembersImage(m)} />
                     <span />
                   </Fragment>
                 );
               }
                else {
                 return (
-                  <RoundedImage key={m.name} src={m.img} />
+                  <RoundedImage key={m.name} src={getMembersImage(m)} />
                 );
               }
           })}

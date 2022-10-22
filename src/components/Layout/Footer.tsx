@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Image from 'next/image';
 
-import logo from '../../../public/images/logo.svg';
+import logo from '../../../public/images/optimized/logo.svg';
 import NavigationLinks from "../common/NavigationLinks";
 import Typography from "../common/Typography";
 import { FooterSmall, FooterLarger } from "../common/Togglers";

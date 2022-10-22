@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import assignment from '../../../public/images/assignment.svg';
+import assignment from '../../../public/images/optimized/assignment.svg';
 import benefits from "../../utils/constants/benefits";
 import Benefit from "../common/Benefit";
 import Typography from "../common/Typography";

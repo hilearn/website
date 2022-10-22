@@ -51,6 +51,7 @@ const TeamMember = (props: ComponentProps) => {
       <StyledImage
         src={imageSrc}
         alt={fullName}
+        placeholder="blur"
       />
       <FullName margin="16px 0 8px 0">
         {fullName}

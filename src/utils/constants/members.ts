@@ -1,30 +1,54 @@
 import { StaticImageData } from 'next/image';
 
 import Aram from '../../../public/images/team/Aram.jpg';
+import AramO from '../../../public/images/team/optimized/Aram.jpg';
 import Arsen from '../../../public/images/team/Arsen.jpg';
+import ArsenO from '../../../public/images/team/optimized/Arsen.jpg';
 import Artavazd from '../../../public/images/team/Artavazd.jpg';
+import ArtavazdO from '../../../public/images/team/optimized/Artavazd.jpg';
 import Ashot from '../../../public/images/team/Ashot.jpg';
+import AshotO from '../../../public/images/team/optimized/Ashot.jpg';
 import Edmon from '../../../public/images/team/Edmon.jpg';
+import EdmonO from '../../../public/images/team/optimized/Edmon.jpg';
 import KarenB from '../../../public/images/team/KarenB.jpg';
+import KarenBO from '../../../public/images/team/optimized/KarenB.jpg';
 import KarenM from '../../../public/images/team/KarenM.jpg';
+import KarenMO from '../../../public/images/team/optimized/KarenM.jpg';
 import Karine from '../../../public/images/team/Karine.jpg';
+import KarineO from '../../../public/images/team/optimized/Karine.jpg';
 import NairaB from '../../../public/images/team/NairaB.jpg';
+import NairaBO from '../../../public/images/team/optimized/NairaB.jpg';
 import NairaM from '../../../public/images/team/NairaM.jpg';
+import NairaMO from '../../../public/images/team/optimized/NairaM.jpg';
 import Seda from '../../../public/images/team/Seda.jpg';
+import SedaO from '../../../public/images/team/optimized/Seda.jpg';
 import Sevak from '../../../public/images/team/Sevak.jpg';
+import SevakO from '../../../public/images/team/optimized/Sevak.jpg';
 import Vardges from '../../../public/images/team/Vardges.jpg';
+import VardgesO from '../../../public/images/team/optimized/Vardges.jpg';
 import Yeva from '../../../public/images/team/Yeva.jpg';
+import YevaO from '../../../public/images/team/optimized/Yeva.jpg';
 import zidder from '../../../public/images/team/zidder.jpg';
+import zidderO from '../../../public/images/team/optimized/zidder.jpg';
 import Arayik from '../../../public/images/team/Arayik.jpg';
+import ArayikO from '../../../public/images/team/optimized/Arayik.jpg';
 import Vazgen from '../../../public/images/team/Vazgen.jpg';
+import VazgenO from '../../../public/images/team/optimized/Vazgen.jpg';
 import Suren from '../../../public/images/team/Suren.jpg';
+import SurenO from '../../../public/images/team/optimized/Suren.jpg';
 
+export const useOptimizedImages = true;
+
+export const getMembersImage = (member: Member, optimized: boolean = useOptimizedImages) => {
+  return optimized ? member.img_optimized : member.img;
+};
 
 export interface Member {
   'name': string,
   'role': string,
   'bio': string,
   'img': StaticImageData,
+  'img_optimized': StaticImageData,
   'email': string,
   'linkedin': string,
 }
@@ -35,6 +59,7 @@ const members: Member[] = [
     'role': 'CEO/Head of Engineering',
     'bio': 'Arsen finished his studies at MIT, he leads the overall team, and wants to start a yacht sailing club in Sevan.',
     'img': Arsen,
+    'img_optimized': ArsenO,
     'email': 'arsen@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/mamikonyana/',
   },
@@ -45,6 +70,7 @@ const members: Member[] = [
     'bio': 'Vardges has a Masters Degree in Physics from YSU and a white cat, he leads our efforts in Long Term Market Simulation. On his spare time, he co-leads Armenian Astronomy Olympiad team.',
     'email': 'vardges@hilearn.io',
     'img': Vardges,
+    'img_optimized': VardgesO
   },
   {
     'name': 'Arsen Hambardzumyan',
@@ -53,6 +79,7 @@ const members: Member[] = [
     'email': 'zidder@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/arsen-hambardzumyan-812571239/',
     'img': zidder,
+    'img_optimized': zidderO
   },
   {
     'name': 'Vazgen Zohranyan',
@@ -61,6 +88,7 @@ const members: Member[] = [
     'email': 'vazgen@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/vazgenzohranyan',
     'img': Vazgen,
+    'img_optimized': VazgenO
   },
   {
     'name': 'Yeva Hunanyan',
@@ -69,6 +97,7 @@ const members: Member[] = [
     'email': 'yeva@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/yeva-hunanyan-9849bb24a/',
     'img': Yeva,
+    'img_optimized': YevaO
   },
   {
     'name': 'Sevak Abrahamyan',
@@ -77,6 +106,7 @@ const members: Member[] = [
     'email': 'sevak@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/sevak-abrahamyan-a13046171/',
     'img': Sevak,
+    'img_optimized': SevakO
   },
   {
     'name': 'Karen Muradyan',
@@ -85,6 +115,7 @@ const members: Member[] = [
     'email': 'karen.m@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/karen-muradyan-b725021ab/',
     'img': KarenM,
+    'img_optimized': KarenMO
   },
   {
     'name': 'Naira Babayan',
@@ -93,6 +124,7 @@ const members: Member[] = [
     'email': 'naira.b@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/naira-babayan-3074752b/',
     'img': NairaB,
+    'img_optimized': NairaBO
   },
   {
     'name': 'Naira Mnatsakanyan',
@@ -101,6 +133,7 @@ const members: Member[] = [
     'email': 'naira.m@hilearn.io',
     'linkedin': '',
     'img': NairaM,
+    'img_optimized': NairaMO
   },
   {
     'name': 'Karine Avetisyan',
@@ -109,6 +142,7 @@ const members: Member[] = [
     'email': 'karine.a@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/karine-avetisyan-21bbb5142/',
     'img': Karine,
+    'img_optimized':  KarineO
   },
   {
     'name': 'Seda Sedrakyan',
@@ -117,6 +151,7 @@ const members: Member[] = [
     'email': 'seda.s@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/seda-sedrakyan-2314a014b/',
     'img': Seda,
+    'img_optimized': SedaO
   },
   {
     'name': 'Karen Baghdasaryan',
@@ -125,6 +160,7 @@ const members: Member[] = [
     'email': 'karen.b@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/baghdasaryankaren/',
     'img': KarenB,
+    'img_optimized': KarenBO
   },
   {
     'name': 'Aram Mkhoyan',
@@ -133,6 +169,7 @@ const members: Member[] = [
     'email': 'aram.m@hilearn.io',
     'linkedin': 'http://linkedin.com/in/mkhoyan',
     'img': Aram,
+    'img_optimized': AramO
   },
   {
     'name': 'Artavazd Vardanyan',
@@ -141,6 +178,7 @@ const members: Member[] = [
     'email': 'artavazd.v@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/artavazd-vardanyan/',
     'img': Artavazd,
+    'img_optimized': ArtavazdO
   },
   {
     'name': 'Edmon Ghambaryan',
@@ -149,6 +187,7 @@ const members: Member[] = [
     'email': 'edmon.g@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/edmon-ghambaryan-40b560171/',
     'img': Edmon,
+    'img_optimized': EdmonO
   },
   {
     'name': 'Ashot Arzumanyan',
@@ -157,6 +196,7 @@ const members: Member[] = [
     'email': 'ashot.a@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/ashot1arzumanyan',
     'img': Ashot,
+    'img_optimized': AshotO
   },
   {
     'name': 'Suren Muradyan',
@@ -165,6 +205,7 @@ const members: Member[] = [
     'email': 'suren.m@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/suren-muradyan-7a8418240',
     'img': Suren,
+    'img_optimized': SurenO
   },
   {
     'name': 'Arayik Sargsyan',
@@ -173,6 +214,7 @@ const members: Member[] = [
     'email': 'arayik.s@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/araysargsyan',
     'img': Arayik,
+    'img_optimized': ArayikO
   },
 ];
 
