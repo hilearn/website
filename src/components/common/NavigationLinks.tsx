@@ -99,6 +99,13 @@ const NavigationLinks = ({ vertical, inFooter, onClick }: ComponentProps) => {
       </CustomLink>
       <CustomLink
         activeIsBold={inFooter}
+        href="/#partners"
+        onClick={onClick}
+      >
+        Partners
+      </CustomLink>
+      <CustomLink
+        activeIsBold={inFooter}
         href={PagePaths.team}
         onClick={onClick}
         className={`${router.pathname === PagePaths.team ? 'active' : ''}`}
@@ -112,13 +119,6 @@ const NavigationLinks = ({ vertical, inFooter, onClick }: ComponentProps) => {
         className={`${router.pathname === PagePaths.careers ? 'active' : ''}`}
       >
         Careers
-      </CustomLink>
-      <CustomLink
-        activeIsBold={inFooter}
-        href="/#partners"
-        onClick={onClick}
-      >
-        Partners
       </CustomLink>
       <CustomLink
         activeIsBold={inFooter}

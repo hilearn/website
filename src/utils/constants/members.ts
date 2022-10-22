@@ -173,7 +173,7 @@ const members: Member[] = [
   },
   {
     'name': 'Artavazd Vardanyan',
-    'role': 'Back End Engineer',
+    'role': 'Back-End Engineer',
     'bio': 'Artavazd',
     'email': 'artavazd.v@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/artavazd-vardanyan/',
@@ -209,7 +209,7 @@ const members: Member[] = [
   },
   {
     'name': 'Arayik Sargsyan',
-    'role': 'Front-End Tech Lead',
+    'role': 'Lead Front-End Engineer',
     'bio': 'Arayik',
     'email': 'arayik.s@hilearn.io',
     'linkedin': 'https://www.linkedin.com/in/araysargsyan',
