@@ -11,6 +11,11 @@ interface ComponentProps {
   linkedinUrl: string;
 }
 
+const ImageContainer = styled.div`
+  overflow: hidden;
+  border-radius: 16px;
+`;
+
 const StyledImage = styled(Image)`
   border-radius: 16px;
 `;
@@ -48,11 +53,13 @@ const TeamMember = (props: ComponentProps) => {
   } = props;
   return (
     <div>
-      <StyledImage
-        src={imageSrc}
-        alt={fullName}
-        placeholder="blur"
-      />
+      <ImageContainer>
+        <StyledImage
+          src={imageSrc}
+          alt={fullName}
+          placeholder="blur"
+        />
+      </ImageContainer>
       <FullName margin="16px 0 8px 0">
         {fullName}
       </FullName>
