@@ -36,6 +36,8 @@ import Vazgen from '../../../public/images/team/Vazgen.jpg';
 import VazgenO from '../../../public/images/team/optimized/Vazgen.jpg';
 import Suren from '../../../public/images/team/Suren.jpg';
 import SurenO from '../../../public/images/team/optimized/Suren.jpg';
+import Viktorya from '../../../public/images/team/Viktorya.jpg';
+import ViktoryaO from '../../../public/images/team/optimized/Viktorya.jpg';
 
 export const useOptimizedImages = true;
 
@@ -215,6 +217,15 @@ const members: Member[] = [
     'linkedin': 'https://www.linkedin.com/in/araysargsyan',
     'img': Arayik,
     'img_optimized': ArayikO
+  },
+  {
+    'name': 'Viktorya Hakobyan',
+    'role': 'Front-End Engineer',
+    'bio': 'Viktorya',
+    'email': 'viktorya.h@hilearn.io',
+    'linkedin': 'https://www.linkedin.com/in/viktorya-hakobyan-8a6128199',
+    'img': Viktorya,
+    'img_optimized': ViktoryaO
   },
 ];
 
