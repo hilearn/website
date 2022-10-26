@@ -11,7 +11,6 @@ const HomePage = () => {
       <Head>
         <title>{title}</title>
         <meta name="title" property="og:title" content={title} />
-        <meta name="title" property="og:title" content={title} />
         <meta name="image" property="og:image" content={preview.src} />
         <meta name="twitter:image" content={preview.src} />
       </Head>
