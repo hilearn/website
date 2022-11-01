@@ -1,6 +1,6 @@
 # HiLearn website
 
-#### To run localy
+#### To run locally
 
 - `yarn dev` for development
 - `yarn dev:ts` for development and additionally for type checking 
