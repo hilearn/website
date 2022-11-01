@@ -5,6 +5,7 @@ import LinkedinIcon from "../icons/LinkedinIcon";
 
 interface ComponentProps {
   href: string;
+  ariaLabel: string;
 }
 
 const IconContainer = styled.a`
@@ -16,10 +17,10 @@ const IconContainer = styled.a`
   }
 `;
 
-const Linkedin = ({ href }: ComponentProps) => {
+const Linkedin = ({ href, ariaLabel }: ComponentProps) => {
   return (
     <Link href={href} passHref>
-      <IconContainer target="_blank" >
+      <IconContainer target="_blank" rel="noopener noreferrer" aria-label={ariaLabel}>
         <LinkedinIcon />
       </IconContainer>
     </Link>

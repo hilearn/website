@@ -68,7 +68,7 @@ const TeamMember = (props: ComponentProps) => {
       </JobPosition>
       <IconsContainer>
         {linkedinUrl && (
-          <Linkedin href={linkedinUrl} />
+          <Linkedin href={linkedinUrl} ariaLabel={`${fullName}'s LinkedIn`} />
         )}
       </IconsContainer>
     </div>
