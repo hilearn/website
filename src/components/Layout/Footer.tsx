@@ -78,7 +78,7 @@ const Footer = () => {
             Copyright © Hilearn 2022
           </Copyright>
         </LinksAndCopyrightContainer>
-        <Linkedin href="https://www.linkedin.com/company/hilearn/" />
+        <Linkedin href="https://www.linkedin.com/company/hilearn/" ariaLabel="LinkedIn" />
       </Content>
     </Container>
   );

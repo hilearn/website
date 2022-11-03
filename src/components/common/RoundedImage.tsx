@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 interface ComponentProps {
   src: StaticImageData;
-  style?: React.CSSProperties;
+  alt: string;
 }
 
 const Container = styled.div`
@@ -18,14 +18,14 @@ const StyledImage = styled(Image)`
   border-radius: 50%;
 `;
 
-const RoundedImage = ({ src, style }: ComponentProps) => {
+const RoundedImage = ({ src, alt }: ComponentProps) => {
   return (
     <Container>
       <StyledImage
         src={src}
         height={96}
         width={96}
-        style={style}
+        alt={alt}
         placeholder="blur"
       />
     </Container>

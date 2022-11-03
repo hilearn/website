@@ -110,20 +110,20 @@ const TeamImages = () => {
                 return (
                   <Fragment key={m.name}>
                     <span />
-                    <RoundedImage src={getMembersImage(m)} />
+                    <RoundedImage src={getMembersImage(m)} alt={m.name} />
                   </Fragment>
                 );
               } else if ((i === 0 || i === 2) && ii === section.length - 1) {
                 return (
                   <Fragment key={m.name}>
-                    <RoundedImage src={getMembersImage(m)} />
+                    <RoundedImage src={getMembersImage(m)} alt={m.name} />
                     <span />
                   </Fragment>
                 );
               }
                else {
                 return (
-                  <RoundedImage key={m.name} src={getMembersImage(m)} />
+                  <RoundedImage key={m.name} src={getMembersImage(m)} alt={m.name} />
                 );
               }
           })}
