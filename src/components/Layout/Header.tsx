@@ -90,11 +90,13 @@ const Header = () => {
   return (
     <Container ref={header} >
       <Content>
-        <Link href="/">
-          <StyledImage
-            src={logo}
-            alt="Logo"
-          />
+        <Link href="/" passHref>
+          <a>
+            <StyledImage
+              src={logo}
+              alt="Logo"
+            />
+          </a>
         </Link>
         <Smaller>
           <Menu onClick={handleToggleMenu}>
@@ -108,10 +110,10 @@ const Header = () => {
         </Larger>
       </Content>
       {open && (
-          <MobileNavigationContainer headerIsFixed={getHeaderIsFixed()}>
-            <NavigationLinks vertical onClick={handleCloseMenu} />
-          </MobileNavigationContainer>
-        )}
+        <MobileNavigationContainer headerIsFixed={getHeaderIsFixed()}>
+          <NavigationLinks vertical onClick={handleCloseMenu} />
+        </MobileNavigationContainer>
+      )}
     </Container>
   );
 };
