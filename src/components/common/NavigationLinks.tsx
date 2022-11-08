@@ -76,7 +76,7 @@ type CustomLinkProps = LinkProps & {
 }
 
 const CustomLink = (props: CustomLinkProps) => (
-  <Link {...props} passHref>
+  <Link href={props.href} passHref>
     <StyledAnchor activeIsBold={props.activeIsBold} onClick={props.onClick} className={props.className}>
       <StyledTypography>
         {props.children}
