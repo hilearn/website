@@ -53,6 +53,18 @@ const MobileNavigationContainer = styled.div<MobileNavigationContainerProps>`
   z-index: 9999;
   display: flex;
   justify-content: center;
+  animation: openNavBar .2s linear;
+  animation-fill-mode: forwards;
+  transition: all .2s ease-out;
+
+  @keyframes openNavBar {
+    from {
+      height: 0px;
+    }
+    to {
+      height: 273px;
+    }
+  }
 `;
 
 const Header = () => {

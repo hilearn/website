@@ -30,6 +30,17 @@ const Container = styled.div<ContainerProps>`
 const StyledTypography = styled(Typography)`
   font-weight: 500;
   line-height: 19px;
+  animation: openNavBarLink .2s linear;
+  transition: all .2 ease-out;
+
+  @keyframes openNavBarLink {
+    from {
+      height: 0px;
+    }
+    to {
+      height: 21px;
+    }
+  }
 `;
 
 interface StyledAnchorProps {
