@@ -9,8 +9,6 @@ import menu from '../../../public/images/optimized/menu.svg';
 import menuClose from '../../../public/images/optimized/menuClose.svg';
 import { Larger, Smaller } from '../common/Togglers';
 import { clearDefaultButtonStyles, homePageResponsivePadding } from '../../sharedStyles';
-import theme from '../../theme';
-import getHeaderIsFixed from '../../utils/helpers/getHeaderIsFixed';
 
 interface MobileNavigationContainerProps {
   headerIsFixed?: boolean;
@@ -26,7 +24,7 @@ const Container = styled.nav<MobileNavigationContainerProps>`
   z-index: 1000;
   display: flex;
   justify-content: center;
-  background-color: ${({ theme, open }) => open ? '#fff' : theme.colors.background};
+  background-color: ${({ theme, headerIsFixed , open}) => headerIsFixed || open? '#fff' : theme.colors.background};
 `;
 
 const Content = styled.div`
@@ -50,7 +48,7 @@ const MobileNavigationContainer = styled.div<MobileNavigationContainerProps>`
   top: 87px;
   left: 0;
   width: 100%;
-  background-color: ${({ theme, open }) => open ? '#fff' : theme.colors.background};
+  background-color: ${({ open }) => open && '#fff'};
   padding: 24px 0;
   z-index: 9999;
   display: flex;
@@ -72,16 +70,12 @@ const MobileNavigationContainer = styled.div<MobileNavigationContainerProps>`
 const Header = () => {
 
   const [open, setOpen] = useState(false);
-  const header = useRef(null);
-
+  const [headerIsFixed, setHeaderIsFixed] = useState(false);
+  const header = useRef(null);  
+  
   useEffect(() => {
     const scrollListener = () => {
-      const headerIsFixed = getHeaderIsFixed();
-      if (headerIsFixed) {
-        header.current.style.backgroundColor = "#FFFFFF";
-      } else {
-        header.current.style.backgroundColor = theme.colors.background;
-      }
+      setHeaderIsFixed(window && window.scrollY > 10);        
     };
     window.addEventListener('scroll', scrollListener);
     return () => {
@@ -102,7 +96,7 @@ const Header = () => {
   const icon = open ? menuClose : menu;
 
   return (
-    <Container ref={header} open={open}>
+    <Container ref={header} open={open} headerIsFixed={headerIsFixed}>
       <Content>
         <Link href="/" passHref>
           <a>
@@ -124,7 +118,7 @@ const Header = () => {
         </Larger>
       </Content>
       {open && (
-        <MobileNavigationContainer headerIsFixed={getHeaderIsFixed()} open={open}>
+        <MobileNavigationContainer open={open}>
           <NavigationLinks vertical onClick={handleCloseMenu} />
         </MobileNavigationContainer>
       )}
