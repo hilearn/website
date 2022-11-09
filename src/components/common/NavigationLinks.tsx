@@ -36,9 +36,11 @@ const StyledTypography = styled(Typography)`
   @keyframes openNavBarLink {
     from {
       height: 0px;
+      opacity: 0;
     }
     to {
       height: 21px;
+      opacity: 1;
     }
   }
 `;
