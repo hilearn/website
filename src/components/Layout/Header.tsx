@@ -9,10 +9,13 @@ import menu from '../../../public/images/optimized/menu.svg';
 import menuClose from '../../../public/images/optimized/menuClose.svg';
 import { Larger, Smaller } from '../common/Togglers';
 import { clearDefaultButtonStyles, homePageResponsivePadding } from '../../sharedStyles';
-import theme from '../../theme';
-import getHeaderIsFixed from '../../utils/helpers/getHeaderIsFixed';
 
-const Container = styled.nav`
+interface MobileNavigationContainerProps {
+  headerIsFixed?: boolean;
+  open?: boolean;
+}
+
+const Container = styled.nav<MobileNavigationContainerProps>`
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -21,6 +24,7 @@ const Container = styled.nav`
   z-index: 1000;
   display: flex;
   justify-content: center;
+  background-color: ${({ theme, headerIsFixed , open}) => headerIsFixed || open? '#fff' : theme.colors.background};
 `;
 
 const Content = styled.div`
@@ -39,35 +43,39 @@ const Menu = styled.button`
   ${clearDefaultButtonStyles}
 `;
 
-interface MobileNavigationContainerProps {
-  headerIsFixed: boolean;
-}
-
 const MobileNavigationContainer = styled.div<MobileNavigationContainerProps>`
   position: absolute;
   top: 87px;
   left: 0;
   width: 100%;
-  background-color: ${({ theme, headerIsFixed }) => headerIsFixed ? '#fff' : theme.colors.background};
+  background-color: ${({ open }) => open && '#fff'};
   padding: 24px 0;
   z-index: 9999;
   display: flex;
   justify-content: center;
+  animation: openNavBar .2s linear;
+  animation-fill-mode: forwards;
+  transition: all .2s ease-out;
+
+  @keyframes openNavBar {
+    from {
+      height: 0px;
+    }
+    to {
+      height: 273px;
+    }
+  }
 `;
 
 const Header = () => {
 
   const [open, setOpen] = useState(false);
-  const header = useRef(null);
-
+  const [headerIsFixed, setHeaderIsFixed] = useState(false);
+  const header = useRef(null);  
+  
   useEffect(() => {
     const scrollListener = () => {
-      const headerIsFixed = getHeaderIsFixed();
-      if (headerIsFixed) {
-        header.current.style.backgroundColor = "#FFFFFF";
-      } else {
-        header.current.style.backgroundColor = theme.colors.background;
-      }
+      setHeaderIsFixed(window && window.scrollY > 10);        
     };
     window.addEventListener('scroll', scrollListener);
     return () => {
@@ -88,7 +96,7 @@ const Header = () => {
   const icon = open ? menuClose : menu;
 
   return (
-    <Container ref={header} >
+    <Container ref={header} open={open} headerIsFixed={headerIsFixed}>
       <Content>
         <Link href="/" passHref>
           <a>
@@ -110,7 +118,7 @@ const Header = () => {
         </Larger>
       </Content>
       {open && (
-        <MobileNavigationContainer headerIsFixed={getHeaderIsFixed()}>
+        <MobileNavigationContainer open={open}>
           <NavigationLinks vertical onClick={handleCloseMenu} />
         </MobileNavigationContainer>
       )}
