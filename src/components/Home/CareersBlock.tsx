@@ -38,6 +38,11 @@ const ButtonContainer = styled.div`
   }
 `;
 
+const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 const CareersBlock = () => {
   const router = useRouter();
 
@@ -66,10 +71,14 @@ const CareersBlock = () => {
           </Button>
         </ButtonContainer>
       </Content>
-      <Image
-        src={careers}
-        alt="Careers"
-      />
+      <ImageContainer>
+        <Image
+          src={careers}
+          alt="Careers"
+          width={540}
+          height={413}
+        />
+      </ImageContainer>
     </Container>
   );
 };
