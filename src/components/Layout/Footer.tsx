@@ -78,10 +78,10 @@ const Footer = () => {
             Copyright © Hilearn 2022
           </Copyright>
         </LinksAndCopyrightContainer>
-        <Linkedin href="https://www.linkedin.com/company/hilearn/" ariaLabel="LinkedIn" />
       </Content>
     </Container>
   );
+//        <Linkedin href="https://www.linkedin.com/company/hilearn/" ariaLabel="LinkedIn" />
 };
 
 export default Footer;
